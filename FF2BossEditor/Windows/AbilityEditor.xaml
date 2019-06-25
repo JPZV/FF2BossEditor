@@ -1,0 +1,77 @@
+﻿<Window x:Class="FF2BossEditor.Windows.AbilityEditor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FF2BossEditor.Windows"
+        mc:Ignorable="d"
+        MinHeight="300" MinWidth="300"
+        Height="350" Width="350"
+        Title="Ability">
+
+    <DockPanel>
+        <Grid DockPanel.Dock="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="SaveBtn" Content="Save" Grid.Column="0" Style="{StaticResource HeadBtnStyle}" Click="SaveBtn_Click"/>
+            <Button x:Name="CancelBtn" Content="Cancel" Grid.Column="1" Style="{StaticResource HeadBtnStyle}" Click="CancelBtn_Click"/>
+        </Grid>
+
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Templates">
+                <MenuItem Header="FF2 Official">
+                    <MenuItem Header="Super Jump"/>
+                </MenuItem>
+                <Separator/>
+                <MenuItem Header="FreakFortressBat">
+                    <MenuItem Header="Super Jump"/>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Ability Name-->
+            <Label Content="Name: " Grid.Row="0" Grid.Column="0"/>
+            <TextBox Text="{Binding Path=Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Grid.Column="1"/>
+
+            <!--Ability Script-->
+            <Label Content="Plugin: " Grid.Row="1" Grid.Column="0"/>
+            <TextBox Text="{Binding Path=Plugin, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" Grid.Column="1"/>
+
+            <!--Ability Arguments-->
+            <Label Content="Arguments: " Grid.Row="2" Grid.Column="0"/>
+            <Label Content="(Press in the last row to add an argument)" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource WarningStyle}"/>
+            <DataGrid x:Name="ArgsDataGrid" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" ItemsSource="{Binding Path=Arguments, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" RowHeaderWidth="0" IsReadOnly="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Index"  Binding="{Binding Path=Index, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <DataGridTextColumn Header="Value" Binding="{Binding Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <DataGridTextColumn Header="Alias" Binding="{Binding Path=Alias, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <DataGridTemplateColumn Header="Action">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Click="DelArg_Click" Loaded="DelArg_Loaded" Content="Delete"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </DockPanel>
+</Window>

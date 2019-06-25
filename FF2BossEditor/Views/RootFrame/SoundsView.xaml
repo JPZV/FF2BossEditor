@@ -1,0 +1,276 @@
+﻿<core:ExpandedTabControl x:Class="FF2BossEditor.Views.RootFrame.SoundsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FF2BossEditor.Views.RootFrame"
+             xmlns:core="clr-namespace:FF2BossEditor.Core"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <DockPanel Background="White">
+        <Label Content="All sounds must be located in a folder called sound." DockPanel.Dock="Top" Style="{StaticResource WarningStyle}"/>
+
+        <ScrollViewer>
+            <StackPanel>
+                <Expander Header="Startup Sounds">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Button Tag="startup" Content="Add sound(s)" Grid.Row="0" Style="{StaticResource HeadBtnStyle}" Click="AddBtn_Click"/>
+                        <DataGrid Grid.Row="1" ItemsSource="{Binding Path=Sounds.Startup}" Style="{StaticResource DataGridWithoutScroll}">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="File's path"  Binding="{Binding Path=Path}"/>
+                                <DataGridTemplateColumn Header="Action">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button Click="DelSound_Click" Content="Delete" Tag="startup"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </Expander>
+
+                <Expander Header="Victory Sounds">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Button Tag="victory" Content="Add sound(s)" Grid.Row="0" Style="{StaticResource HeadBtnStyle}" Click="AddBtn_Click"/>
+                        <DataGrid Grid.Row="1" ItemsSource="{Binding Path=Sounds.Victory}" Style="{StaticResource DataGridWithoutScroll}">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="File's path"  Binding="{Binding Path=Path}"/>
+                                <DataGridTemplateColumn Header="Action">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button Click="DelSound_Click" Content="Delete" Tag="victory"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </Expander>
+
+                <Expander Header="Death Sounds">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Button Tag="death" Content="Add sound(s)" Grid.Row="0" Style="{StaticResource HeadBtnStyle}" Click="AddBtn_Click"/>
+                        <DataGrid Grid.Row="1" ItemsSource="{Binding Path=Sounds.Death}" Style="{StaticResource DataGridWithoutScroll}">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="File's path"  Binding="{Binding Path=Path}"/>
+                                <DataGridTemplateColumn Header="Action">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button Click="DelSound_Click" Content="Delete" Tag="death"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </Expander>
+
+                <Expander Header="Kill Player Sounds">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Button Tag="kill" Content="Add sound(s)" Grid.Row="0" Style="{StaticResource HeadBtnStyle}" Click="AddBtn_Click"/>
+                        <DataGrid Grid.Row="1" ItemsSource="{Binding Path=Sounds.KillPlayer}" Style="{StaticResource DataGridWithoutScroll}">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="File's path"  Binding="{Binding Path=Path}"/>
+                                <DataGridTemplateColumn Header="Action">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button Click="DelSound_Click" Content="Delete" Tag="kill"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </Expander>
+
+                <Expander Header="Last Man Sounds">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Button Tag="last" Content="Add sound(s)" Grid.Row="0" Style="{StaticResource HeadBtnStyle}" Click="AddBtn_Click"/>
+                        <DataGrid Grid.Row="1" ItemsSource="{Binding Path=Sounds.LastMan}" Style="{StaticResource DataGridWithoutScroll}">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="File's path"  Binding="{Binding Path=Path}"/>
+                                <DataGridTemplateColumn Header="Action">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button Click="DelSound_Click" Content="Delete" Tag="last"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </Expander>
+
+                <Expander Header="Killing spree Sounds">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Content="(Kill 3 players in 5 seconds)" Grid.Row="0" Style="{StaticResource WarningStyle}"/>
+
+                        <Button Tag="spree" Content="Add sound(s)" Grid.Row="1" Style="{StaticResource HeadBtnStyle}" Click="AddBtn_Click"/>
+                        <DataGrid Grid.Row="2" ItemsSource="{Binding Path=Sounds.KillingSpree}" Style="{StaticResource DataGridWithoutScroll}">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="File's path"  Binding="{Binding Path=Path}"/>
+                                <DataGridTemplateColumn Header="Action">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button Click="DelSound_Click" Content="Delete" Tag="spree"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </Expander>
+
+                <Expander Header="Ability Sounds">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Button Tag="ability" Content="Add sound(s)" Grid.Row="0" Style="{StaticResource HeadBtnStyle}" Click="AddBtn_Click"/>
+                        <DataGrid Grid.Row="1" ItemsSource="{Binding Path=Sounds.Ability}" Style="{StaticResource DataGridWithoutScroll}" IsReadOnly="False" CanUserAddRows="False">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="File's path"  Binding="{Binding Path=Path}" IsReadOnly="True"/>
+                                <DataGridTextColumn Header="Ability's slot"  Binding="{Binding Path=Slot}"/>
+                                <DataGridTemplateColumn Header="Action">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button Click="DelSound_Click" Content="Delete" Tag="ability"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </Expander>
+
+                <Expander Header="Catch Phrase Sounds">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Content="(All Voice lines will be replaced with this/these sound(s))" Grid.Row="0" Style="{StaticResource WarningStyle}"/>
+
+                        <Button Tag="catch" Content="Add sound(s)" Grid.Row="1" Style="{StaticResource HeadBtnStyle}" Click="AddBtn_Click"/>
+                        <DataGrid Grid.Row="2" ItemsSource="{Binding Path=Sounds.CatchPhrase}" Style="{StaticResource DataGridWithoutScroll}">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="File's path"  Binding="{Binding Path=Path}"/>
+                                <DataGridTemplateColumn Header="Action">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button Click="DelSound_Click" Content="Delete" Tag="catch"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </Expander>
+
+                <Expander Header="Musics">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Button Tag="music" Content="Add sound(s)" Grid.Row="0" Style="{StaticResource HeadBtnStyle}" Click="AddBtn_Click"/>
+                        <DataGrid Grid.Row="1" ItemsSource="{Binding Path=Sounds.Music}" Style="{StaticResource DataGridWithoutScroll}" IsReadOnly="False" CanUserAddRows="False">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="File's path"  Binding="{Binding Path=Path}" IsReadOnly="True"/>
+                                <DataGridTextColumn Header="Length (Seconds)"  Binding="{Binding Path=Length}"/>
+                                <DataGridTemplateColumn Header="Action">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button Click="DelSound_Click" Content="Delete" Tag="music"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </Expander>
+
+                <Expander Header="Backstab Sounds">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Button Tag="backstab" Content="Add sound(s)" Grid.Row="0" Style="{StaticResource HeadBtnStyle}" Click="AddBtn_Click"/>
+                        <DataGrid Grid.Row="1" ItemsSource="{Binding Path=Sounds.Backstab}" Style="{StaticResource DataGridWithoutScroll}">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="File's path"  Binding="{Binding Path=Path}"/>
+                                <DataGridTemplateColumn Header="Action">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button Click="DelSound_Click" Content="Delete" Tag="backstab"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </Expander>
+            </StackPanel>
+        </ScrollViewer>
+    </DockPanel>
+</core:ExpandedTabControl>

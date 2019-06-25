@@ -1,0 +1,89 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+
+namespace FF2BossEditor
+{
+    /// <summary>
+    /// Interaction logic for RootFrame.xaml
+    /// </summary>
+    public partial class RootFrame : Window
+    {
+        public Core.Classes.Boss ActualBoss = new Core.Classes.Boss();
+
+        public RootFrame()
+        {
+            InitializeComponent();
+            DataContext = this;
+        }
+
+        private void RootFrame_Loaded(object sender, RoutedEventArgs e)
+        {
+            UpdateBossInViews();
+        }
+
+        private void UpdateBossInViews()
+        {
+            BasicInfo.UpdateBoss(ActualBoss);
+            Desc.UpdateBoss(ActualBoss);
+            Weps.UpdateBoss(ActualBoss);
+            Abilities.UpdateBoss(ActualBoss);
+            Sounds.UpdateBoss(ActualBoss);
+            CustomFiles.UpdateBoss(ActualBoss);
+        }
+
+        private Core.Classes.Boss MergeBossesFromViews()
+        {
+            Core.Classes.Boss neoBoss = new Core.Classes.Boss();
+            if(BasicInfo.ActualBoss != null)
+            {
+                neoBoss.Name = BasicInfo.ActualBoss.Name;
+                neoBoss.Class = BasicInfo.ActualBoss.Class;
+                neoBoss.Model = BasicInfo.ActualBoss.Model;
+                neoBoss.RageDist = BasicInfo.ActualBoss.RageDist;
+                neoBoss.RageDamage = BasicInfo.ActualBoss.RageDamage;
+                neoBoss.Health = BasicInfo.ActualBoss.Health;
+                neoBoss.Speed = BasicInfo.ActualBoss.Speed;
+                neoBoss.Lives = BasicInfo.ActualBoss.Lives;
+                neoBoss.BlockVoice = BasicInfo.ActualBoss.BlockVoice;
+            }
+            if(Desc.ActualBoss != null)
+            {
+                neoBoss.Descriptions = Desc.ActualBoss.Descriptions;
+            }
+            if(Weps.ActualBoss != null)
+            {
+                neoBoss.Weapons = Weps.ActualBoss.Weapons;
+            }
+            if(Abilities.ActualBoss != null)
+            {
+                neoBoss.Abilities = Abilities.ActualBoss.Abilities;
+            }
+            if(Sounds.ActualBoss != null)
+            {
+                neoBoss.Sounds = Sounds.ActualBoss.Sounds;
+            }
+            if(CustomFiles.ActualBoss != null)
+            {
+                neoBoss.CustomFiles = CustomFiles.ActualBoss.CustomFiles;
+            }
+
+            return neoBoss;
+        }
+
+        private void ExportCFGBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ActualBoss = MergeBossesFromViews();
+        }
+    }
+}
