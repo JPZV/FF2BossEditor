@@ -19,13 +19,12 @@ namespace FF2BossEditor
     /// </summary>
     public partial class RootFrame : Window
     {
-        public Core.Classes.Boss ActualBoss = new Core.Classes.Boss();
-
         public RootFrame()
         {
             InitializeComponent();
-            DataContext = this;
         }
+
+        public Core.Classes.Boss ActualBoss = new Core.Classes.Boss();
 
         private void RootFrame_Loaded(object sender, RoutedEventArgs e)
         {
@@ -84,6 +83,46 @@ namespace FF2BossEditor
         private void ExportCFGBtn_Click(object sender, RoutedEventArgs e)
         {
             ActualBoss = MergeBossesFromViews();
+        }
+
+        private void NewMI_Click(object sender, RoutedEventArgs e)
+        {
+            ActualBoss = new Core.Classes.Boss();
+            UpdateBossInViews();
+        }
+
+        private async void OpenMI_Click(object sender, RoutedEventArgs e)
+        {
+            Core.Classes.Boss tmpBoss = await Core.StorageCore<Core.Classes.Boss>.GenericGetObject(
+                                            DefaultExt: ".ff2boss",
+                                            ExtFilter: "FF2 Boss File (*.ff2boss)|*.ff2boss"
+                                        );
+
+            if(tmpBoss != null)
+            {
+                ActualBoss = tmpBoss;
+                UpdateBossInViews();
+            }
+        }
+
+        private async void SaveMI_Click(object sender, RoutedEventArgs e)
+        {
+            ActualBoss = MergeBossesFromViews();
+            await Core.StorageCore<Core.Classes.Boss>.GenericSaveObject(ActualBoss,
+                                            DefaultExt: ".ff2boss",
+                                            ExtFilter: "FF2 Boss File (*.ff2boss)|*.ff2boss"
+                                        );
+        }
+
+        private async void ImportCFGMI_Click(object sender, RoutedEventArgs e)
+        {
+            Core.Classes.Boss tmpBoss = await Core.CFGCore.ImportBoss();
+
+            if (tmpBoss != null)
+            {
+                ActualBoss = tmpBoss;
+                UpdateBossInViews();
+            }
         }
     }
 }

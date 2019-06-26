@@ -57,4 +57,27 @@ namespace FF2BossEditor.Views.RootFrame
             e.Handled = !Core.CommonFunctions.IsStringInFormat(e.Text, "0123456789.n+-*/^");
         }
     }
+
+    public class ClassIndexConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        {
+            if (value is int valueInt)
+            {
+                return valueInt - 1;
+            }
+
+            return value;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        {
+            if (value is int valueInt)
+            {
+                return valueInt + 1;
+            }
+
+            return value;
+        }
+    }
 }

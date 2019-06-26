@@ -7,7 +7,11 @@
              xmlns:core="clr-namespace:FF2BossEditor.Core"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    
+
+    <core:ExpandedTabControl.Resources>
+        <local:ClassIndexConverter x:Key="ClassIndexConverter"/>
+    </core:ExpandedTabControl.Resources>
+
     <Grid Background="White">
         <ScrollViewer>
             <StackPanel>
@@ -32,7 +36,7 @@
 
                     <!--Class-->
                     <Label Content="Class: " Grid.Row="1" Grid.Column="0"/>
-                    <ComboBox Grid.Row="1" Grid.Column="1" SelectedIndex="{Binding Path=Class, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                    <ComboBox Grid.Row="1" Grid.Column="1" SelectedIndex="{Binding Path=Class, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource ClassIndexConverter}}">
                         <ComboBoxItem>Scout</ComboBoxItem>
                         <ComboBoxItem>Sniper</ComboBoxItem>
                         <ComboBoxItem>Soldier</ComboBoxItem>

@@ -16,19 +16,19 @@
 
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="File">
-                <MenuItem Header="New"/>
-                <MenuItem Header="Open"/>
-                <MenuItem Header="Save"/>
+                <MenuItem Header="New" Click="NewMI_Click"/>
+                <MenuItem Header="Open" Click="OpenMI_Click"/>
+                <MenuItem Header="Save" Click="SaveMI_Click"/>
                 <Separator/>
-                <MenuItem Header="Import CFG"/>
+                <MenuItem Header="Import CFG" Click="ImportCFGMI_Click"/>
                 <MenuItem Header="Export CFG"/>
                 <Separator/>
                 <MenuItem Header="Exit"/>
             </MenuItem>
             <MenuItem Header="Settings">
-                <MenuItem Header="Download Weapon Database"/>
+                <MenuItem Header="Download Weapon Database" IsEnabled="False"/>
                 <Separator/>
-                <MenuItem Header="Settings"/>
+                <MenuItem Header="Settings" IsEnabled="False"/>
             </MenuItem>
         </Menu>
 
