@@ -80,9 +80,10 @@ namespace FF2BossEditor
             return neoBoss;
         }
 
-        private void ExportCFGBtn_Click(object sender, RoutedEventArgs e)
+        private async void ExportCFGBtn_Click(object sender, RoutedEventArgs e)
         {
             ActualBoss = MergeBossesFromViews();
+            await Core.CFGCore.ExportBoss(ActualBoss);
         }
 
         private void NewMI_Click(object sender, RoutedEventArgs e)

@@ -21,7 +21,7 @@
                 <MenuItem Header="Save" Click="SaveMI_Click"/>
                 <Separator/>
                 <MenuItem Header="Import CFG" Click="ImportCFGMI_Click"/>
-                <MenuItem Header="Export CFG"/>
+                <MenuItem Header="Export CFG" Click="ExportCFGBtn_Click"/>
                 <Separator/>
                 <MenuItem Header="Exit"/>
             </MenuItem>
