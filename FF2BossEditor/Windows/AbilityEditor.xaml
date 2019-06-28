@@ -1,4 +1,4 @@
-﻿<Window x:Class="FF2BossEditor.Windows.AbilityEditor"
+﻿<Window x:Name="window" x:Class="FF2BossEditor.Windows.AbilityEditor"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -22,8 +22,12 @@
 
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Templates">
-                <MenuItem Header="FF2 Official">
-                    <MenuItem Header="Super Jump"/>
+                <MenuItem x:Name="FF2OfficialMI" Header="FF2 Official" ItemsSource="{Binding}" Click="FF2OfficialMI_Click">
+                    <MenuItem.ItemContainerStyle>
+                        <Style>
+                            <Setter Property="MenuItem.Header" Value="{Binding PublicName}"/>
+                        </Style>
+                    </MenuItem.ItemContainerStyle>
                 </MenuItem>
                 <Separator/>
                 <MenuItem Header="FreakFortressBat">
