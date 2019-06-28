@@ -22,7 +22,7 @@
 
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Templates">
-                <MenuItem x:Name="FF2OfficialMI" Header="FF2 Official" ItemsSource="{Binding}" Click="FF2OfficialMI_Click">
+                <MenuItem x:Name="FF2OfficialMI" Header="FF2 Official" ItemsSource="{Binding}" Click="FF2TemplateMI_Click">
                     <MenuItem.ItemContainerStyle>
                         <Style>
                             <Setter Property="MenuItem.Header" Value="{Binding PublicName}"/>
@@ -30,8 +30,12 @@
                     </MenuItem.ItemContainerStyle>
                 </MenuItem>
                 <Separator/>
-                <MenuItem Header="FreakFortressBat">
-                    <MenuItem Header="Super Jump"/>
+                <MenuItem x:Name="FF2BatMI" Header="FreakFortressBat" ItemsSource="{Binding}" Click="FF2TemplateMI_Click">
+                    <MenuItem.ItemContainerStyle>
+                        <Style>
+                            <Setter Property="MenuItem.Header" Value="{Binding PublicName}"/>
+                        </Style>
+                    </MenuItem.ItemContainerStyle>
                 </MenuItem>
             </MenuItem>
         </Menu>
