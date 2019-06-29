@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FF2BossEditor", "FF2BossEditor\FF2BossEditor.csproj", "{91FCF78F-1E20-4F00-A565-C459AD68F818}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{BF15466D-2F7F-462D-A013-7474EC6ACBDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TF2WepDDBBDownloader", "Tools\TF2WepDDBBDownloader\TF2WepDDBBDownloader.csproj", "{55F27474-092C-4B14-9DEC-59EDE5EBC8BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{91FCF78F-1E20-4F00-A565-C459AD68F818}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91FCF78F-1E20-4F00-A565-C459AD68F818}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91FCF78F-1E20-4F00-A565-C459AD68F818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55F27474-092C-4B14-9DEC-59EDE5EBC8BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55F27474-092C-4B14-9DEC-59EDE5EBC8BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55F27474-092C-4B14-9DEC-59EDE5EBC8BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55F27474-092C-4B14-9DEC-59EDE5EBC8BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{55F27474-092C-4B14-9DEC-59EDE5EBC8BB} = {BF15466D-2F7F-462D-A013-7474EC6ACBDE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8CC5575E-1DFA-4BFC-9881-D0D0F42BEF34}

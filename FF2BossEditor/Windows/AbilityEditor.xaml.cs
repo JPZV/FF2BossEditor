@@ -1211,7 +1211,6 @@ namespace FF2BossEditor.Windows
             #endregion
         }.OrderBy(t => t.PublicName).ToList();
 
-        //TODO: Add Templates
         public AbilityEditor(Core.Classes.Ability _Ability)
         {
             InitializeComponent();

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TF2WepDDBBDownloader": {
+      "commandName": "Project",
+      "workingDirectory": "E:\\Users\\juanp\\Documents\\Visual Studio\\New Projects\\FF2BE\\Tools\\TF2WepDDBBDownloader\\debug"
+    }
+  }
+}

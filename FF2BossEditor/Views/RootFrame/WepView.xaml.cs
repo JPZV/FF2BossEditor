@@ -109,6 +109,16 @@ namespace FF2BossEditor.Views.RootFrame
                 }
             }
         }
+
+        private void SelectWeaponBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (sender == null)
+                return;
+            if (((FrameworkElement)sender).DataContext is Core.Classes.Weapon wep)
+            {
+                //TODO: Add Weapons DataBase
+            }
+        }
     }
 
     public class WeaponIndexConverter : IValueConverter
