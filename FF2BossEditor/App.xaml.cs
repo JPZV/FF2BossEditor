@@ -16,7 +16,16 @@ namespace FF2BossEditor
     public partial class App : Application
     {
         public static List<Core.Classes.Weapon.Attribute> WeaponsAttributes = new List<Core.Classes.Weapon.Attribute>();
+        public static List<Core.Classes.WeaponTemplate> WeaponsTemplates = new List<Core.Classes.WeaponTemplate>();
         protected override async void OnStartup(StartupEventArgs e)
+        {
+            await ReloadWeaponsAttributes();
+            await ReloadWeaponsTemplates();
+            
+            base.OnStartup(e);
+        }
+
+        public static async Task ReloadWeaponsAttributes()
         {
             try
             {
@@ -34,7 +43,26 @@ namespace FF2BossEditor
             {
                 System.Diagnostics.Debug.WriteLine(ex.ToString());
             }
-            base.OnStartup(e);
+        }
+
+        public static async Task ReloadWeaponsTemplates()
+        {
+            try
+            {
+                string wepJsonPath = AppDomain.CurrentDomain.BaseDirectory + "/Data/weapons.json";
+                if (File.Exists(wepJsonPath))
+                {
+                    using (StreamReader sr = new StreamReader(wepJsonPath))
+                    {
+                        string json = await sr.ReadToEndAsync();
+                        WeaponsTemplates = JsonConvert.DeserializeObject<List<Core.Classes.WeaponTemplate>>(json);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.ToString());
+            }
         }
     }
 }

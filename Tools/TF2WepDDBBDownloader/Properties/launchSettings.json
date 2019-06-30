@@ -2,6 +2,7 @@
   "profiles": {
     "TF2WepDDBBDownloader": {
       "commandName": "Project",
+      "commandLineArgs": "-w -i \"D:\\Program Files (x86)\\Steam\\steamapps\\common\\Team Fortress 2\\tf\\scripts\\items\\items_game.txt\"",
       "workingDirectory": "E:\\Users\\juanp\\Documents\\Visual Studio\\New Projects\\FF2BE\\Tools\\TF2WepDDBBDownloader\\debug"
     }
   }

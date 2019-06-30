@@ -540,5 +540,30 @@ namespace FF2BossEditor.Core
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
             }
         }
+
+        public class WeaponTemplate : Weapon
+        {
+            private List<int> _Characters = new List<int>();
+            private string _Name = "";
+
+            public List<int> Characters
+            {
+                get => _Characters;
+                set
+                {
+                    _Characters = value;
+                    OnPropertyChanged("Characters");
+                }
+            }
+            public string Name
+            {
+                get => _Name;
+                set
+                {
+                    _Name = value;
+                    OnPropertyChanged("Name");
+                }
+            }
+        }
     }
 }
