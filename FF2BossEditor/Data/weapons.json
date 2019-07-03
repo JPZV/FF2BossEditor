@@ -1,0 +1,4221 @@
+[
+  {
+    "Index": 0,
+    "Class": "tf_weapon_bat",
+    "Name": "Bat",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 1,
+    "Class": "tf_weapon_bottle",
+    "Name": "Bottle",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 2,
+    "Class": "tf_weapon_fireaxe",
+    "Name": "Fire Axe",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 3,
+    "Class": "tf_weapon_club",
+    "Name": "Kukri",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 4,
+    "Class": "tf_weapon_knife",
+    "Name": "Knife",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 5,
+    "Class": "tf_weapon_fists",
+    "Name": "Fists",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 6,
+    "Class": "tf_weapon_shovel",
+    "Name": "Shovel",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 7,
+    "Class": "tf_weapon_wrench",
+    "Name": "Wrench",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 8,
+    "Class": "tf_weapon_bonesaw",
+    "Name": "Bonesaw",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 9,
+    "Class": "tf_weapon_shotgun",
+    "Name": "Engineer's Shotgun",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 10,
+    "Class": "tf_weapon_shotgun",
+    "Name": "Soldier's Shotgun",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 11,
+    "Class": "tf_weapon_shotgun",
+    "Name": "Heavy's Shotgun",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 12,
+    "Class": "tf_weapon_shotgun",
+    "Name": "Pyro's Shotgun",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 13,
+    "Class": "tf_weapon_scattergun",
+    "Name": "Scattergun",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 14,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "Sniper Rifle",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15,
+    "Class": "tf_weapon_minigun",
+    "Name": "Minigun",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 16,
+    "Class": "tf_weapon_smg",
+    "Name": "SMG",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 17,
+    "Class": "tf_weapon_syringegun_medic",
+    "Name": "Syringe Gun",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 18,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "Rocket Launcher",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 19,
+    "Class": "tf_weapon_grenadelauncher",
+    "Name": "Grenade Launcher",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 20,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "Stickybomb Launcher",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 21,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "TF_WEAPON_FLAMETHROWER",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 22,
+    "Class": "tf_weapon_pistol",
+    "Name": "Engineer's Pistol",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 23,
+    "Class": "tf_weapon_pistol",
+    "Name": "Scout's Pistol",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 24,
+    "Class": "tf_weapon_revolver",
+    "Name": "Revolver",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 25,
+    "Class": "tf_weapon_pda_engineer_build",
+    "Name": "Construction PDA",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 26,
+    "Class": "tf_weapon_pda_engineer_destroy",
+    "Name": "Destruction PDA",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 27,
+    "Class": "tf_weapon_pda_spy",
+    "Name": "Disguise Kit PDA",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 28,
+    "Class": "tf_weapon_builder",
+    "Name": "PDA",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 29,
+    "Class": "tf_weapon_medigun",
+    "Name": "Medi Gun",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 30,
+    "Class": "tf_weapon_invis",
+    "Name": "Invis Watch",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 735,
+    "Class": "tf_weapon_builder",
+    "Name": "Sapper",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 736,
+    "Class": "tf_weapon_builder",
+    "Name": "Sapper (Renamed/Strange)",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 737,
+    "Class": "tf_weapon_pda_engineer_build",
+    "Name": "Construction PDA (Renamed/Strange)",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 1132,
+    "Class": "tf_weapon_spellbook",
+    "Name": "Spellbook Magazine (Stock)",
+    "Characters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      7
+    ]
+  },
+  {
+    "Index": 1152,
+    "Class": "tf_weapon_grapplinghook",
+    "Name": "Grappling Hook",
+    "Characters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      7
+    ]
+  },
+  {
+    "Index": 35,
+    "Class": "tf_weapon_medigun",
+    "Name": "The Kritzkrieg",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 36,
+    "Class": "tf_weapon_syringegun_medic",
+    "Name": "The Blutsauger",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 37,
+    "Class": "tf_weapon_bonesaw",
+    "Name": "The Ubersaw",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 38,
+    "Class": "tf_weapon_fireaxe",
+    "Name": "The Axtinguisher",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 39,
+    "Class": "tf_weapon_flaregun",
+    "Name": "The Flare Gun",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 40,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "The Backburner",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 41,
+    "Class": "tf_weapon_minigun",
+    "Name": "Natascha",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 42,
+    "Class": "tf_weapon_lunchbox",
+    "Name": "The Sandvich",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 43,
+    "Class": "tf_weapon_fists",
+    "Name": "The Killing Gloves of Boxing",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 44,
+    "Class": "tf_weapon_bat_wood",
+    "Name": "The Sandman",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 45,
+    "Class": "tf_weapon_scattergun",
+    "Name": "The Force-a-Nature",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 46,
+    "Class": "tf_weapon_lunchbox_drink",
+    "Name": "Bonk! Atomic Punch",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 56,
+    "Class": "tf_weapon_compound_bow",
+    "Name": "The Huntsman",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 58,
+    "Class": "tf_weapon_jar",
+    "Name": "Jarate",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 59,
+    "Class": "tf_weapon_invis",
+    "Name": "The Dead Ringer",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 60,
+    "Class": "tf_weapon_invis",
+    "Name": "The Cloak and Dagger",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 61,
+    "Class": "tf_weapon_revolver",
+    "Name": "The Ambassador",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 127,
+    "Class": "tf_weapon_rocketlauncher_directhit",
+    "Name": "The Direct Hit",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 128,
+    "Class": "tf_weapon_shovel",
+    "Name": "The Equalizer",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 129,
+    "Class": "tf_weapon_buff_item",
+    "Name": "The Buff Banner",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 130,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "The Scottish Resistance",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 132,
+    "Class": "tf_weapon_sword",
+    "Name": "The Eyelander",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 140,
+    "Class": "tf_weapon_laser_pointer",
+    "Name": "The Wrangler",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 141,
+    "Class": "tf_weapon_sentry_revenge",
+    "Name": "The Frontier Justice",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 142,
+    "Class": "tf_weapon_robot_arm",
+    "Name": "The Gunslinger",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 153,
+    "Class": "tf_weapon_fireaxe",
+    "Name": "The Homewrecker",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 154,
+    "Class": "tf_weapon_shovel",
+    "Name": "The Pain Train",
+    "Characters": [
+      4,
+      3
+    ]
+  },
+  {
+    "Index": 155,
+    "Class": "tf_weapon_wrench",
+    "Name": "The Southern Hospitality",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 159,
+    "Class": "tf_weapon_lunchbox",
+    "Name": "The Dalokohs Bar",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 160,
+    "Class": "tf_weapon_pistol",
+    "Name": "TTG Max Pistol",
+    "Characters": [
+      1,
+      9
+    ]
+  },
+  {
+    "Index": 161,
+    "Class": "tf_weapon_revolver",
+    "Name": "TTG Sam Revolver",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 163,
+    "Class": "tf_weapon_lunchbox_drink",
+    "Name": "Crit-a-Cola",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 169,
+    "Class": "tf_weapon_wrench",
+    "Name": "Golden Wrench",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 171,
+    "Class": "tf_weapon_club",
+    "Name": "The Tribalman's Shiv",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 172,
+    "Class": "tf_weapon_sword",
+    "Name": "The Scotsman's Skullcutter",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 173,
+    "Class": "tf_weapon_bonesaw",
+    "Name": "The Vita-Saw",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 190,
+    "Class": "tf_weapon_bat",
+    "Name": "Bat (Renamed/Strange)",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 191,
+    "Class": "tf_weapon_bottle",
+    "Name": "Bottle (Renamed/Strange)",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 192,
+    "Class": "tf_weapon_fireaxe",
+    "Name": "Fire Axe (Renamed/Strange)",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 193,
+    "Class": "tf_weapon_club",
+    "Name": "Kukri (Renamed/Strange)",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 194,
+    "Class": "tf_weapon_knife",
+    "Name": "Knife (Renamed/Strange)",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 195,
+    "Class": "tf_weapon_fists",
+    "Name": "Fists (Renamed/Strange)",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 196,
+    "Class": "tf_weapon_shovel",
+    "Name": "Shovel (Renamed/Strange)",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 197,
+    "Class": "tf_weapon_wrench",
+    "Name": "Wrench (Renamed/Strange)",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 198,
+    "Class": "tf_weapon_bonesaw",
+    "Name": "Bonesaw (Renamed/Strange)",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 199,
+    "Class": "tf_weapon_shotgun",
+    "Name": "Engineer's Shotgun (Renamed/Strange)",
+    "Characters": []
+  },
+  {
+    "Index": 200,
+    "Class": "tf_weapon_scattergun",
+    "Name": "Scattergun (Renamed/Strange)",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 201,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "Sniper Rifle (Renamed/Strange)",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 202,
+    "Class": "tf_weapon_minigun",
+    "Name": "Minigun (Renamed/Strange)",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 203,
+    "Class": "tf_weapon_smg",
+    "Name": "SMG (Renamed/Strange)",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 204,
+    "Class": "tf_weapon_syringegun_medic",
+    "Name": "Syringe Gun (Renamed/Strange)",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 205,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "Rocket Launcher (Renamed/Strange)",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 206,
+    "Class": "tf_weapon_grenadelauncher",
+    "Name": "Grenade Launcher (Renamed/Strange)",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 207,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "Stickybomb Launcher (Renamed/Strange)",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 208,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "Upgradeable TF_WEAPON_FLAMETHROWER",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 209,
+    "Class": "tf_weapon_pistol",
+    "Name": "Engineer's Pistol (Renamed/Strange)",
+    "Characters": [
+      9,
+      1
+    ]
+  },
+  {
+    "Index": 210,
+    "Class": "tf_weapon_revolver",
+    "Name": "Revolver (Renamed/Strange)",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 211,
+    "Class": "tf_weapon_medigun",
+    "Name": "Medi Gun (Renamed/Strange)",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 212,
+    "Class": "tf_weapon_invis",
+    "Name": "Invis Watch (Renamed/Strange)",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 214,
+    "Class": "tf_weapon_fireaxe",
+    "Name": "The Powerjack",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 215,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "The Degreaser",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 220,
+    "Class": "tf_weapon_handgun_scout_primary",
+    "Name": "The Shortstop",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 221,
+    "Class": "tf_weapon_bat_fish",
+    "Name": "The Holy Mackerel",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 222,
+    "Class": "tf_weapon_jar_milk",
+    "Name": "Mad Milk",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 224,
+    "Class": "tf_weapon_revolver",
+    "Name": "L'Etranger",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 225,
+    "Class": "tf_weapon_knife",
+    "Name": "Your Eternal Reward",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 226,
+    "Class": "tf_weapon_buff_item",
+    "Name": "The Battalion's Backup",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 228,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "The Black Box",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 230,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "The Sydney Sleeper",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 232,
+    "Class": "tf_weapon_club",
+    "Name": "The Bushwacka",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 237,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "Rocket Jumper",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 239,
+    "Class": "tf_weapon_fists",
+    "Name": "Gloves of Running Urgently",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 264,
+    "Class": "saxxy",
+    "Name": "Frying Pan",
+    "Characters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "Index": 265,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "Stickybomb Jumper",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 266,
+    "Class": "tf_weapon_sword",
+    "Name": "The Horseless Headless Horseman's Headtaker",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 294,
+    "Class": "tf_weapon_pistol",
+    "Name": "TTG Max Pistol - Poker Night",
+    "Characters": [
+      1,
+      9
+    ]
+  },
+  {
+    "Index": 297,
+    "Class": "tf_weapon_invis",
+    "Name": "TTG Watch",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 298,
+    "Class": "tf_weapon_minigun",
+    "Name": "Iron Curtain",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 304,
+    "Class": "tf_weapon_bonesaw",
+    "Name": "The Amputator",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 305,
+    "Class": "tf_weapon_crossbow",
+    "Name": "The Crusader's Crossbow",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 307,
+    "Class": "tf_weapon_stickbomb",
+    "Name": "The Ullapool Caber",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 308,
+    "Class": "tf_weapon_grenadelauncher",
+    "Name": "The Loch-n-Load",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 310,
+    "Class": "tf_weapon_fists",
+    "Name": "Warrior's Spirit",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 311,
+    "Class": "tf_weapon_lunchbox",
+    "Name": "The Buffalo Steak Sandvich",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 312,
+    "Class": "tf_weapon_minigun",
+    "Name": "The Brass Beast",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 317,
+    "Class": "tf_weapon_bat",
+    "Name": "The Candy Cane",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 325,
+    "Class": "tf_weapon_bat",
+    "Name": "The Boston Basher",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 326,
+    "Class": "tf_weapon_fireaxe",
+    "Name": "The Back Scratcher",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 327,
+    "Class": "tf_weapon_sword",
+    "Name": "The Claidheamohmor",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 329,
+    "Class": "tf_weapon_wrench",
+    "Name": "The Jag",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 331,
+    "Class": "tf_weapon_fists",
+    "Name": "Fists of Steel",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 348,
+    "Class": "tf_weapon_fireaxe",
+    "Name": "Sharpened Volcano Fragment",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 349,
+    "Class": "tf_weapon_bat",
+    "Name": "Sun-on-a-Stick",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 351,
+    "Class": "tf_weapon_flaregun",
+    "Name": "The Detonator",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 354,
+    "Class": "tf_weapon_buff_item",
+    "Name": "The Concheror",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 355,
+    "Class": "tf_weapon_bat",
+    "Name": "The Fan O'War",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 356,
+    "Class": "tf_weapon_knife",
+    "Name": "Conniver's Kunai",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 357,
+    "Class": "tf_weapon_katana",
+    "Name": "The Half-Zatoichi",
+    "Characters": [
+      3,
+      4
+    ]
+  },
+  {
+    "Index": 401,
+    "Class": "tf_weapon_club",
+    "Name": "The Shahanshah",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 402,
+    "Class": "tf_weapon_sniperrifle_decap",
+    "Name": "The Bazaar Bargain",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 404,
+    "Class": "tf_weapon_sword",
+    "Name": "The Persian Persuader",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 411,
+    "Class": "tf_weapon_medigun",
+    "Name": "The Quick-Fix",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 412,
+    "Class": "tf_weapon_syringegun_medic",
+    "Name": "The Overdose",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 413,
+    "Class": "tf_weapon_bonesaw",
+    "Name": "The Solemn Vow",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 414,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "The Liberty Launcher",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 415,
+    "Class": "tf_weapon_shotgun",
+    "Name": "The Reserve Shooter",
+    "Characters": [
+      3,
+      7
+    ]
+  },
+  {
+    "Index": 416,
+    "Class": "tf_weapon_shovel",
+    "Name": "The Market Gardener",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 423,
+    "Class": "saxxy",
+    "Name": "Saxxy",
+    "Characters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      7
+    ]
+  },
+  {
+    "Index": 424,
+    "Class": "tf_weapon_minigun",
+    "Name": "Tomislav",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 425,
+    "Class": "tf_weapon_shotgun",
+    "Name": "The Family Business",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 426,
+    "Class": "tf_weapon_fists",
+    "Name": "The Eviction Notice",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 433,
+    "Class": "tf_weapon_lunchbox",
+    "Name": "Fishcake",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 441,
+    "Class": "tf_weapon_particle_cannon",
+    "Name": "The Cow Mangler 5000",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 442,
+    "Class": "tf_weapon_raygun",
+    "Name": "The Righteous Bison",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 447,
+    "Class": "tf_weapon_shovel",
+    "Name": "The Disciplinary Action",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 448,
+    "Class": "tf_weapon_soda_popper",
+    "Name": "The Soda Popper",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 449,
+    "Class": "tf_weapon_handgun_scout_secondary",
+    "Name": "The Winger",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 450,
+    "Class": "tf_weapon_bat",
+    "Name": "The Atomizer",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 452,
+    "Class": "tf_weapon_bat",
+    "Name": "Three-Rune Blade",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 457,
+    "Class": "tf_weapon_fireaxe",
+    "Name": "The Postal Pummeler",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 460,
+    "Class": "tf_weapon_revolver",
+    "Name": "The Enforcer",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 461,
+    "Class": "tf_weapon_knife",
+    "Name": "The Big Earner",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 466,
+    "Class": "tf_weapon_fireaxe",
+    "Name": "The Maul",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 474,
+    "Class": "saxxy",
+    "Name": "The Conscientious Objector",
+    "Characters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "Index": 482,
+    "Class": "tf_weapon_sword",
+    "Name": "Nessie's Nine Iron",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 513,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "The Original",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 525,
+    "Class": "tf_weapon_revolver",
+    "Name": "The Diamondback",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 526,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "The Machina",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 527,
+    "Class": "tf_weapon_shotgun_primary",
+    "Name": "The Widowmaker",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 528,
+    "Class": "tf_weapon_mechanical_arm",
+    "Name": "The Short Circuit",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 572,
+    "Class": "tf_weapon_bat_fish",
+    "Name": "Unarmed Combat",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 574,
+    "Class": "tf_weapon_knife",
+    "Name": "The Wanga Prick",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 587,
+    "Class": "tf_weapon_fists",
+    "Name": "Apoco-Fists",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 588,
+    "Class": "tf_weapon_drg_pomson",
+    "Name": "The Pomson 6000",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 589,
+    "Class": "tf_weapon_wrench",
+    "Name": "The Eureka Effect",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 593,
+    "Class": "tf_weapon_fireaxe",
+    "Name": "The Third Degree",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 594,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "The Phlogistinator",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 595,
+    "Class": "tf_weapon_flaregun_revenge",
+    "Name": "The Manmelter",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 609,
+    "Class": "tf_weapon_bottle",
+    "Name": "The Scottish Handshake",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 638,
+    "Class": "tf_weapon_knife",
+    "Name": "The Sharp Dresser",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 648,
+    "Class": "tf_weapon_bat_giftwrap",
+    "Name": "The Wrap Assassin",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 649,
+    "Class": "tf_weapon_knife",
+    "Name": "The Spy-cicle",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 654,
+    "Class": "tf_weapon_minigun",
+    "Name": "Festive Minigun 2011",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 656,
+    "Class": "tf_weapon_fists",
+    "Name": "The Holiday Punch",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 658,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "Festive Rocket Launcher 2011",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 659,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "Festive Flamethrower 2011",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 660,
+    "Class": "tf_weapon_bat",
+    "Name": "Festive Bat 2011",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 661,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "Festive Stickybomb Launcher 2011",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 662,
+    "Class": "tf_weapon_wrench",
+    "Name": "Festive Wrench 2011",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 663,
+    "Class": "tf_weapon_medigun",
+    "Name": "Festive Medigun 2011",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 664,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "Festive Sniper Rifle 2011",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 665,
+    "Class": "tf_weapon_knife",
+    "Name": "Festive Knife 2011",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 669,
+    "Class": "tf_weapon_scattergun",
+    "Name": "Festive Scattergun 2011",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 727,
+    "Class": "tf_weapon_knife",
+    "Name": "The Black Rose",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 730,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "The Beggar's Bazooka",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 739,
+    "Class": "tf_weapon_fireaxe",
+    "Name": "The Lollichop",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 740,
+    "Class": "tf_weapon_flaregun",
+    "Name": "The Scorch Shot",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 741,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "The Rainblower",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 751,
+    "Class": "tf_weapon_charged_smg",
+    "Name": "The Cleaner's Carbine",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 752,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "The Hitman's Heatmaker",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 772,
+    "Class": "tf_weapon_pep_brawler_blaster",
+    "Name": "Baby Face's Blaster",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 773,
+    "Class": "tf_weapon_handgun_scout_secondary",
+    "Name": "Pretty Boy's Pocket Pistol",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 775,
+    "Class": "tf_weapon_shovel",
+    "Name": "The Escape Plan",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 792,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "Silver Botkiller Sniper Rifle Mk.I",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 793,
+    "Class": "tf_weapon_minigun",
+    "Name": "Silver Botkiller Minigun Mk.I",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 794,
+    "Class": "tf_weapon_knife",
+    "Name": "Silver Botkiller Knife Mk.I",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 795,
+    "Class": "tf_weapon_wrench",
+    "Name": "Silver Botkiller Wrench Mk.I",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 796,
+    "Class": "tf_weapon_medigun",
+    "Name": "Silver Botkiller Medi Gun Mk.I",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 797,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "Silver Botkiller Stickybomb Launcher Mk.I",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 798,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "Silver Botkiller Flame Thrower Mk.I",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 799,
+    "Class": "tf_weapon_scattergun",
+    "Name": "Silver Botkiller Scattergun Mk.I",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 800,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "Silver Botkiller Rocket Launcher Mk.I",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 801,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "Gold Botkiller Sniper Rifle Mk.I",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 802,
+    "Class": "tf_weapon_minigun",
+    "Name": "Gold Botkiller Minigun Mk.I",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 803,
+    "Class": "tf_weapon_knife",
+    "Name": "Gold Botkiller Knife Mk.I",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 804,
+    "Class": "tf_weapon_wrench",
+    "Name": "Gold Botkiller Wrench Mk.I",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 805,
+    "Class": "tf_weapon_medigun",
+    "Name": "Gold Botkiller Medi Gun Mk.I",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 806,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "Gold Botkiller Stickybomb Launcher Mk.I",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 807,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "Gold Botkiller Flame Thrower Mk.I",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 808,
+    "Class": "tf_weapon_scattergun",
+    "Name": "Gold Botkiller Scattergun Mk.I",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 809,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "Gold Botkiller Rocket Launcher Mk.I",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 810,
+    "Class": "tf_weapon_sapper",
+    "Name": "The Red-Tape Recorder",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 811,
+    "Class": "tf_weapon_minigun",
+    "Name": "The Huo Long Heatmaker",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 812,
+    "Class": "tf_weapon_cleaver",
+    "Name": "The Flying Guillotine",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 813,
+    "Class": "tf_weapon_breakable_sign",
+    "Name": "The Neon Annihilator",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 831,
+    "Class": "tf_weapon_sapper",
+    "Name": "Promo Red-Tape Recorder",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 832,
+    "Class": "tf_weapon_minigun",
+    "Name": "Promo Huo Long Heatmaker",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 833,
+    "Class": "tf_weapon_cleaver",
+    "Name": "Promo Flying Guillotine",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 834,
+    "Class": "tf_weapon_breakable_sign",
+    "Name": "Promo Neon Annihilator",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 850,
+    "Class": "tf_weapon_minigun",
+    "Name": "Deflector",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 851,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "The AWPer Hand",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 863,
+    "Class": "tf_weapon_lunchbox",
+    "Name": "The Robo-Sandvich",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 880,
+    "Class": "saxxy",
+    "Name": "The Freedom Staff",
+    "Characters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "Index": 881,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "Rust Botkiller Sniper Rifle Mk.I",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 882,
+    "Class": "tf_weapon_minigun",
+    "Name": "Rust Botkiller Minigun Mk.I",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 883,
+    "Class": "tf_weapon_knife",
+    "Name": "Rust Botkiller Knife Mk.I",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 884,
+    "Class": "tf_weapon_wrench",
+    "Name": "Rust Botkiller Wrench Mk.I",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 885,
+    "Class": "tf_weapon_medigun",
+    "Name": "Rust Botkiller Medi Gun Mk.I",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 886,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "Rust Botkiller Stickybomb Launcher Mk.I",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 887,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "Rust Botkiller Flame Thrower Mk.I",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 888,
+    "Class": "tf_weapon_scattergun",
+    "Name": "Rust Botkiller Scattergun Mk.I",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 889,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "Rust Botkiller Rocket Launcher Mk.I",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 890,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "Blood Botkiller Sniper Rifle Mk.I",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 891,
+    "Class": "tf_weapon_minigun",
+    "Name": "Blood Botkiller Minigun Mk.I",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 892,
+    "Class": "tf_weapon_knife",
+    "Name": "Blood Botkiller Knife Mk.I",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 893,
+    "Class": "tf_weapon_wrench",
+    "Name": "Blood Botkiller Wrench Mk.I",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 894,
+    "Class": "tf_weapon_medigun",
+    "Name": "Blood Botkiller Medi Gun Mk.I",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 895,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "Blood Botkiller Stickybomb Launcher Mk.I",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 896,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "Blood Botkiller Flame Thrower Mk.I",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 897,
+    "Class": "tf_weapon_scattergun",
+    "Name": "Blood Botkiller Scattergun Mk.I",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 898,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "Blood Botkiller Rocket Launcher Mk.I",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 899,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "Carbonado Botkiller Sniper Rifle Mk.I",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 900,
+    "Class": "tf_weapon_minigun",
+    "Name": "Carbonado Botkiller Minigun Mk.I",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 901,
+    "Class": "tf_weapon_knife",
+    "Name": "Carbonado Botkiller Knife Mk.I",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 902,
+    "Class": "tf_weapon_wrench",
+    "Name": "Carbonado Botkiller Wrench Mk.I",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 903,
+    "Class": "tf_weapon_medigun",
+    "Name": "Carbonado Botkiller Medi Gun Mk.I",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 904,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "Carbonado Botkiller Stickybomb Launcher Mk.I",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 905,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "Carbonado Botkiller Flame Thrower Mk.I",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 906,
+    "Class": "tf_weapon_scattergun",
+    "Name": "Carbonado Botkiller Scattergun Mk.I",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 907,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "Carbonado Botkiller Rocket Launcher Mk.I",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 908,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "Diamond Botkiller Sniper Rifle Mk.I",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 909,
+    "Class": "tf_weapon_minigun",
+    "Name": "Diamond Botkiller Minigun Mk.I",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 910,
+    "Class": "tf_weapon_knife",
+    "Name": "Diamond Botkiller Knife Mk.I",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 911,
+    "Class": "tf_weapon_wrench",
+    "Name": "Diamond Botkiller Wrench Mk.I",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 912,
+    "Class": "tf_weapon_medigun",
+    "Name": "Diamond Botkiller Medi Gun Mk.I",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 913,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "Diamond Botkiller Stickybomb Launcher Mk.I",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 914,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "Diamond Botkiller Flame Thrower Mk.I",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 915,
+    "Class": "tf_weapon_scattergun",
+    "Name": "Diamond Botkiller Scattergun Mk.I",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 916,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "Diamond Botkiller Rocket Launcher Mk.I",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 933,
+    "Class": "tf_weapon_sapper",
+    "Name": "The Ap-Sap",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 939,
+    "Class": "saxxy",
+    "Name": "The Bat Outta Hell",
+    "Characters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "Index": 947,
+    "Class": "tf_weapon_invis",
+    "Name": "The Quackenbirdt",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 954,
+    "Class": "saxxy",
+    "Name": "Memory Maker",
+    "Characters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "Index": 957,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "Silver Botkiller Sniper Rifle Mk.II",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 958,
+    "Class": "tf_weapon_minigun",
+    "Name": "Silver Botkiller Minigun Mk.II",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 959,
+    "Class": "tf_weapon_knife",
+    "Name": "Silver Botkiller Knife Mk.II",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 960,
+    "Class": "tf_weapon_wrench",
+    "Name": "Silver Botkiller Wrench Mk.II",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 961,
+    "Class": "tf_weapon_medigun",
+    "Name": "Silver Botkiller Medi Gun Mk.II",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 962,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "Silver Botkiller Stickybomb Launcher Mk.II",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 963,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "Silver Botkiller Flame Thrower Mk.II",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 964,
+    "Class": "tf_weapon_scattergun",
+    "Name": "Silver Botkiller Scattergun Mk.II",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 965,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "Silver Botkiller Rocket Launcher Mk.II",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 966,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "Gold Botkiller Sniper Rifle Mk.II",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 967,
+    "Class": "tf_weapon_minigun",
+    "Name": "Gold Botkiller Minigun Mk.II",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 968,
+    "Class": "tf_weapon_knife",
+    "Name": "Gold Botkiller Knife Mk.II",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 969,
+    "Class": "tf_weapon_wrench",
+    "Name": "Gold Botkiller Wrench Mk.II",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 970,
+    "Class": "tf_weapon_medigun",
+    "Name": "Gold Botkiller Medi Gun Mk.II",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 971,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "Gold Botkiller Stickybomb Launcher Mk.II",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 972,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "Gold Botkiller Flame Thrower Mk.II",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 973,
+    "Class": "tf_weapon_scattergun",
+    "Name": "Gold Botkiller Scattergun Mk.II",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 974,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "Gold Botkiller Rocket Launcher Mk.II",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 996,
+    "Class": "tf_weapon_cannon",
+    "Name": "The Loose Cannon",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 997,
+    "Class": "tf_weapon_shotgun_building_rescue",
+    "Name": "The Rescue Ranger",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 998,
+    "Class": "tf_weapon_medigun",
+    "Name": "The Vaccinator",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 999,
+    "Class": "tf_weapon_bat_fish",
+    "Name": "Festive Holy Mackerel",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 1000,
+    "Class": "tf_weapon_fireaxe",
+    "Name": "Festive Axtinguisher",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 1001,
+    "Class": "tf_weapon_buff_item",
+    "Name": "Festive Buff Banner",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 1002,
+    "Class": "tf_weapon_lunchbox",
+    "Name": "Festive Sandvich",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 1003,
+    "Class": "tf_weapon_bonesaw",
+    "Name": "Festive Ubersaw",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 1004,
+    "Class": "tf_weapon_sentry_revenge",
+    "Name": "Festive Frontier Justice",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 1005,
+    "Class": "tf_weapon_compound_bow",
+    "Name": "Festive Huntsman",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 1006,
+    "Class": "tf_weapon_revolver",
+    "Name": "Festive Ambassador",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 1007,
+    "Class": "tf_weapon_grenadelauncher",
+    "Name": "Festive Grenade Launcher",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 1013,
+    "Class": "saxxy",
+    "Name": "The Ham Shank",
+    "Characters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "Index": 1069,
+    "Class": "tf_weapon_spellbook",
+    "Name": "Halloween Spellbook",
+    "Characters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      7
+    ]
+  },
+  {
+    "Index": 1070,
+    "Class": "tf_weapon_spellbook",
+    "Name": "Basic Spellbook",
+    "Characters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      7
+    ]
+  },
+  {
+    "Index": 1071,
+    "Class": "saxxy",
+    "Name": "Gold Frying Pan",
+    "Characters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "Index": 1078,
+    "Class": "tf_weapon_scattergun",
+    "Name": "Festive Force-a-Nature",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 1079,
+    "Class": "tf_weapon_crossbow",
+    "Name": "Festive Crusader's Crossbow",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 1080,
+    "Class": "tf_weapon_sapper",
+    "Name": "Festive Sapper",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 1081,
+    "Class": "tf_weapon_flaregun",
+    "Name": "Festive Flare Gun",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 1082,
+    "Class": "tf_weapon_sword",
+    "Name": "Festive Eyelander",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 1083,
+    "Class": "tf_weapon_jar",
+    "Name": "Festive Jarate",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 1084,
+    "Class": "tf_weapon_fists",
+    "Name": "Festive Gloves of Running Urgently",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 1085,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "Festive Black Box",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 1086,
+    "Class": "tf_weapon_laser_pointer",
+    "Name": "Festive Wrangler",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 1092,
+    "Class": "tf_weapon_compound_bow",
+    "Name": "The Fortified Compound",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 1098,
+    "Class": "tf_weapon_sniperrifle_classic",
+    "Name": "The Classic",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 1100,
+    "Class": "tf_weapon_fists",
+    "Name": "The Bread Bite",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 1101,
+    "Class": "tf_weapon_parachute",
+    "Name": "The B.A.S.E. Jumper",
+    "Characters": []
+  },
+  {
+    "Index": 1102,
+    "Class": "tf_weapon_sapper",
+    "Name": "The Snack Attack",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 1103,
+    "Class": "tf_weapon_scattergun",
+    "Name": "The Back Scatter",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 1104,
+    "Class": "tf_weapon_rocketlauncher_airstrike",
+    "Name": "The Air Strike",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 1105,
+    "Class": "tf_weapon_jar",
+    "Name": "The Self-Aware Beauty Mark",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 1121,
+    "Class": "tf_weapon_jar_milk",
+    "Name": "Mutated Milk",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 1123,
+    "Class": "saxxy",
+    "Name": "Necro Smasher",
+    "Characters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9
+    ]
+  },
+  {
+    "Index": 1127,
+    "Class": "saxxy",
+    "Name": "The Crossing Guard",
+    "Characters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "Index": 1133,
+    "Class": "saxxy",
+    "Name": "Powerup Strength",
+    "Characters": []
+  },
+  {
+    "Index": 1134,
+    "Class": "saxxy",
+    "Name": "Powerup Haste",
+    "Characters": []
+  },
+  {
+    "Index": 1135,
+    "Class": "saxxy",
+    "Name": "Powerup Regen",
+    "Characters": []
+  },
+  {
+    "Index": 1136,
+    "Class": "saxxy",
+    "Name": "Powerup Resist",
+    "Characters": []
+  },
+  {
+    "Index": 1137,
+    "Class": "saxxy",
+    "Name": "Powerup Vampire",
+    "Characters": []
+  },
+  {
+    "Index": 1138,
+    "Class": "saxxy",
+    "Name": "Powerup Reflect",
+    "Characters": []
+  },
+  {
+    "Index": 1139,
+    "Class": "saxxy",
+    "Name": "Powerup Precision",
+    "Characters": []
+  },
+  {
+    "Index": 1140,
+    "Class": "saxxy",
+    "Name": "Powerup Agility",
+    "Characters": []
+  },
+  {
+    "Index": 1141,
+    "Class": "tf_weapon_shotgun",
+    "Name": "Festive Shotgun 2014",
+    "Characters": []
+  },
+  {
+    "Index": 1142,
+    "Class": "tf_weapon_revolver",
+    "Name": "Festive Revolver 2014",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 1143,
+    "Class": "tf_weapon_bonesaw",
+    "Name": "Festive Bonesaw 2014",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 1145,
+    "Class": "tf_weapon_lunchbox_drink",
+    "Name": "Festive Bonk 2014",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 1146,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "Festive Backburner 2014",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 1149,
+    "Class": "tf_weapon_smg",
+    "Name": "Festive SMG 2014",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 1150,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "The Quickiebomb Launcher",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 1151,
+    "Class": "tf_weapon_grenadelauncher",
+    "Name": "The Iron Bomber",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 1153,
+    "Class": "tf_weapon_shotgun",
+    "Name": "Panic Attack Shotgun",
+    "Characters": []
+  },
+  {
+    "Index": 1154,
+    "Class": "saxxy",
+    "Name": "Powerup Knockout",
+    "Characters": []
+  },
+  {
+    "Index": 1155,
+    "Class": "tf_weapon_passtime_gun",
+    "Name": "TF_WEAPON_PASSTIME_GUN",
+    "Characters": [
+      4,
+      6,
+      9,
+      5,
+      2,
+      8,
+      7,
+      3,
+      1
+    ]
+  },
+  {
+    "Index": 1159,
+    "Class": "saxxy",
+    "Name": "Powerup King",
+    "Characters": []
+  },
+  {
+    "Index": 1160,
+    "Class": "saxxy",
+    "Name": "Powerup Plague",
+    "Characters": []
+  },
+  {
+    "Index": 1161,
+    "Class": "saxxy",
+    "Name": "Powerup Supernova",
+    "Characters": []
+  },
+  {
+    "Index": 1178,
+    "Class": "tf_weapon_rocketlauncher_fireball",
+    "Name": "The Dragon's Fury",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 1179,
+    "Class": "tf_weapon_rocketpack",
+    "Name": "The Thermal Thruster",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 1180,
+    "Class": "tf_weapon_jar_gas",
+    "Name": "The Gas Passer",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 1181,
+    "Class": "tf_weapon_slap",
+    "Name": "The Hot Hand",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 1184,
+    "Class": "tf_weapon_fists",
+    "Name": "Gloves of Running Urgently MvM",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 1190,
+    "Class": "tf_weapon_lunchbox",
+    "Name": "The Second Banana",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 15000,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "concealedkiller_sniperrifle_nightowl",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15001,
+    "Class": "tf_weapon_smg",
+    "Name": "concealedkiller_smg_woodsywidowmaker",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15002,
+    "Class": "tf_weapon_scattergun",
+    "Name": "concealedkiller_scattergun_nightterror",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 15003,
+    "Class": "tf_weapon_shotgun",
+    "Name": "concealedkiller_shotgun_backwoodsboomstick",
+    "Characters": []
+  },
+  {
+    "Index": 15004,
+    "Class": "tf_weapon_minigun",
+    "Name": "concealedkiller_minigun_kingofthejungle",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 15005,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "concealedkiller_flamethrower_forestfire",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 15006,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "concealedkiller_rocketlauncher_woodlandwarrior",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 15007,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "concealedkiller_sniperrifle_purplerange",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15008,
+    "Class": "tf_weapon_medigun",
+    "Name": "concealedkiller_medigun_maskedmender",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 15009,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "concealedkiller_stickybomblauncher_suddenflurry",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15010,
+    "Class": "tf_weapon_medigun",
+    "Name": "concealedkiller_medigun_wrappedreviver",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 15011,
+    "Class": "tf_weapon_revolver",
+    "Name": "concealedkiller_revolver_psychedelicslugger",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 15012,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "concealedkiller_stickybomblauncher_carpetbomber",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15013,
+    "Class": "tf_weapon_pistol",
+    "Name": "concealedkiller_pistol_redrockroscoe",
+    "Characters": [
+      9,
+      1
+    ]
+  },
+  {
+    "Index": 15014,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "concealedkiller_rocketlauncher_sandcannon",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 15015,
+    "Class": "tf_weapon_scattergun",
+    "Name": "craftsmann_scattergun_tartantorpedo",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 15016,
+    "Class": "tf_weapon_shotgun",
+    "Name": "craftsmann_shotgun_rusticruiner",
+    "Characters": []
+  },
+  {
+    "Index": 15017,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "craftsmann_flamethrower_barnburner",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 15018,
+    "Class": "tf_weapon_pistol",
+    "Name": "craftsmann_pistol_homemadeheater",
+    "Characters": [
+      9,
+      1
+    ]
+  },
+  {
+    "Index": 15019,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "craftsmann_sniperrifle_lumberfromdownunder",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15020,
+    "Class": "tf_weapon_minigun",
+    "Name": "craftsmann_minigun_ironwood",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 15021,
+    "Class": "tf_weapon_scattergun",
+    "Name": "craftsmann_scattergun_countrycrusher",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 15022,
+    "Class": "tf_weapon_smg",
+    "Name": "craftsmann_smg_plaidpotshotter",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15023,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "craftsmann_sniperrifle_shotinthedark",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15024,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "craftsmann_stickybomblauncher_blastedbombardier",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15025,
+    "Class": "tf_weapon_medigun",
+    "Name": "craftsmann_medigun_reclaimedreanimator",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 15026,
+    "Class": "tf_weapon_minigun",
+    "Name": "craftsmann_minigun_antiqueannihilator",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 15027,
+    "Class": "tf_weapon_revolver",
+    "Name": "craftsmann_revolver_oldcountry",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 15028,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "craftsmann_rocketlauncher_americanpastoral",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 15029,
+    "Class": "tf_weapon_scattergun",
+    "Name": "craftsmann_scattergun_backcountryblaster",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 15030,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "teufort_flamethrower_bovineblazemaker",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 15031,
+    "Class": "tf_weapon_minigun",
+    "Name": "teufort_minigun_warroom",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 15032,
+    "Class": "tf_weapon_smg",
+    "Name": "teufort_smg_treadplatetormenter",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15033,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "teufort_sniperrifle_bogtrotter",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15034,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "teufort_flamethrower_earthskyandfire",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 15035,
+    "Class": "tf_weapon_pistol",
+    "Name": "teufort_pistol_hickoryholepuncher",
+    "Characters": [
+      9,
+      1
+    ]
+  },
+  {
+    "Index": 15036,
+    "Class": "tf_weapon_scattergun",
+    "Name": "teufort_scattergun_sprucedeuce",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 15037,
+    "Class": "tf_weapon_smg",
+    "Name": "teufort_smg_teamsprayer",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15038,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "teufort_stickybomblauncher_rooftopwrangler",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15039,
+    "Class": "tf_weapon_medigun",
+    "Name": "teufort_medigun_civilservant",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 15040,
+    "Class": "tf_weapon_minigun",
+    "Name": "teufort_minigun_citizenpain",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 15041,
+    "Class": "tf_weapon_pistol",
+    "Name": "teufort_pistol_localhero",
+    "Characters": [
+      9,
+      1
+    ]
+  },
+  {
+    "Index": 15042,
+    "Class": "tf_weapon_revolver",
+    "Name": "teufort_revolver_mayor",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 15043,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "teufort_rocketlauncher_smalltownbringdown",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 15044,
+    "Class": "tf_weapon_shotgun",
+    "Name": "teufort_shotgun_civicduty",
+    "Characters": []
+  },
+  {
+    "Index": 15045,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "powerhouse_stickybomblauncher_liquidasset",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15046,
+    "Class": "tf_weapon_pistol",
+    "Name": "powerhouse_pistol_blackdahlia",
+    "Characters": [
+      9,
+      1
+    ]
+  },
+  {
+    "Index": 15047,
+    "Class": "tf_weapon_shotgun",
+    "Name": "powerhouse_shotgun_lightningrod",
+    "Characters": []
+  },
+  {
+    "Index": 15048,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "powerhouse_stickybomblauncher_pinkelephant",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15049,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "powerhouse_flamethrower_flashfryer",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 15050,
+    "Class": "tf_weapon_medigun",
+    "Name": "powerhouse_medigun_sparkoflife",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 15051,
+    "Class": "tf_weapon_revolver",
+    "Name": "powerhouse_revolver_deadreckoner",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 15052,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "powerhouse_rocketlauncher_shellshocker",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 15053,
+    "Class": "tf_weapon_scattergun",
+    "Name": "powerhouse_scattergun_currentevent",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 15054,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "powerhouse_flamethrower_turbinetorcher",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 15055,
+    "Class": "tf_weapon_minigun",
+    "Name": "powerhouse_minigun_brickhouse",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 15056,
+    "Class": "tf_weapon_pistol",
+    "Name": "powerhouse_pistol_sandstonespecial",
+    "Characters": [
+      9,
+      1
+    ]
+  },
+  {
+    "Index": 15057,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "powerhouse_rocketlauncher_aquamarine",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 15058,
+    "Class": "tf_weapon_smg",
+    "Name": "powerhouse_smg_lowprofile",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15059,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "powerhouse_sniperrifle_thunderbolt",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15060,
+    "Class": "tf_weapon_pistol",
+    "Name": "harvest_pistol_macabreweb",
+    "Characters": [
+      9,
+      1
+    ]
+  },
+  {
+    "Index": 15061,
+    "Class": "tf_weapon_pistol",
+    "Name": "harvest_pistol_nutcracker",
+    "Characters": [
+      9,
+      1
+    ]
+  },
+  {
+    "Index": 15062,
+    "Class": "tf_weapon_revolver",
+    "Name": "harvest_revolver_boneyard",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 15063,
+    "Class": "tf_weapon_revolver",
+    "Name": "harvest_revolver_wildwood",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 15064,
+    "Class": "tf_weapon_revolver",
+    "Name": "harvest_revolver_macabreweb",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 15065,
+    "Class": "tf_weapon_scattergun",
+    "Name": "harvest_scattergun_macabreweb",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 15066,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "harvest_flamethrower_autumn",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 15067,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "harvest_flamethrower_pumpkinpatch",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 15068,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "harvest_flamethrower_nutcracker",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 15069,
+    "Class": "tf_weapon_scattergun",
+    "Name": "harvest_scattergun_nutcracker",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 15070,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "harvest_sniperrifle_pumpkinpatch",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15071,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "harvest_sniperrifle_boneyard",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15072,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "harvest_sniperrifle_wildwood",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15073,
+    "Class": "tf_weapon_wrench",
+    "Name": "harvest_wrench_nutcracker",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 15074,
+    "Class": "tf_weapon_wrench",
+    "Name": "harvest_wrench_autumn",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 15075,
+    "Class": "tf_weapon_wrench",
+    "Name": "harvest_wrench_boneyard",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 15076,
+    "Class": "tf_weapon_smg",
+    "Name": "harvest_smg_wildwood",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15077,
+    "Class": "tf_weapon_grenadelauncher",
+    "Name": "harvest_grenadelauncher_autumn",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15078,
+    "Class": "tf_weapon_medigun",
+    "Name": "harvest_medigun_wildwood",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 15079,
+    "Class": "tf_weapon_grenadelauncher",
+    "Name": "harvest_grenadelauncher_macabreweb",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15080,
+    "Class": "tf_weapon_knife",
+    "Name": "harvest_knife_boneyard",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 15081,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "harvest_rocketlauncher_autumn",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 15082,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "harvest_stickybomblauncher_autumn",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15083,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "harvest_stickybomblauncher_pumpkinpatch",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15084,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "harvest_stickybomblauncher_macabreweb",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15085,
+    "Class": "tf_weapon_shotgun",
+    "Name": "harvest_shotgun_autumn",
+    "Characters": []
+  },
+  {
+    "Index": 15086,
+    "Class": "tf_weapon_minigun",
+    "Name": "harvest_minigun_macabreweb",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 15087,
+    "Class": "tf_weapon_minigun",
+    "Name": "harvest_minigun_pumpkinpatch",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 15088,
+    "Class": "tf_weapon_minigun",
+    "Name": "harvest_minigun_nutcracker",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 15089,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "pyroland_flamethrower_balloonicorn",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 15090,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "pyroland_flamethrower_rainbow",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 15091,
+    "Class": "tf_weapon_grenadelauncher",
+    "Name": "pyroland_grenadelauncher_rainbow",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15092,
+    "Class": "tf_weapon_grenadelauncher",
+    "Name": "pyroland_grenadelauncher_sweetdreams",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15094,
+    "Class": "tf_weapon_knife",
+    "Name": "pyroland_knife_bluemew",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 15095,
+    "Class": "tf_weapon_knife",
+    "Name": "pyroland_knife_braincandy",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 15096,
+    "Class": "tf_weapon_knife",
+    "Name": "pyroland_knife_stabbedtohell",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 15097,
+    "Class": "tf_weapon_medigun",
+    "Name": "pyroland_medigun_flowerpower",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 15098,
+    "Class": "tf_weapon_minigun",
+    "Name": "pyroland_minigun_braincandy",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 15099,
+    "Class": "tf_weapon_minigun",
+    "Name": "pyroland_minigun_mistercuddles",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 15100,
+    "Class": "tf_weapon_pistol",
+    "Name": "pyroland_pistol_bluemew",
+    "Characters": [
+      9,
+      1
+    ]
+  },
+  {
+    "Index": 15101,
+    "Class": "tf_weapon_pistol",
+    "Name": "pyroland_pistol_braincandy",
+    "Characters": [
+      9,
+      1
+    ]
+  },
+  {
+    "Index": 15102,
+    "Class": "tf_weapon_pistol",
+    "Name": "pyroland_pistol_shottohell",
+    "Characters": [
+      9,
+      1
+    ]
+  },
+  {
+    "Index": 15103,
+    "Class": "tf_weapon_revolver",
+    "Name": "pyroland_revolver_flowerpower",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 15104,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "pyroland_rocketlauncher_bluemew",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 15105,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "pyroland_rocketlauncher_braincandy",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 15106,
+    "Class": "tf_weapon_scattergun",
+    "Name": "pyroland_scattergun_bluemew",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 15107,
+    "Class": "tf_weapon_scattergun",
+    "Name": "pyroland_scattergun_flowerpower",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 15108,
+    "Class": "tf_weapon_scattergun",
+    "Name": "pyroland_scattergun_shottohell",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 15109,
+    "Class": "tf_weapon_shotgun",
+    "Name": "pyroland_shotgun_flowerpower",
+    "Characters": []
+  },
+  {
+    "Index": 15110,
+    "Class": "tf_weapon_smg",
+    "Name": "pyroland_smg_bluemew",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15111,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "pyroland_sniperrifle_balloonicorn",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15112,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "pyroland_sniperrifle_rainbow",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15113,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "pyroland_stickybomblauncher_sweetdreams",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15114,
+    "Class": "tf_weapon_wrench",
+    "Name": "pyroland_wrench_torquedtohell",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 15115,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "gentlemanne_flamethrower_coffinnail",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 15116,
+    "Class": "tf_weapon_grenadelauncher",
+    "Name": "gentlemanne_grenadelauncher_coffinnail",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15117,
+    "Class": "tf_weapon_grenadelauncher",
+    "Name": "gentlemanne_grenadelauncher_topshelf",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15118,
+    "Class": "tf_weapon_knife",
+    "Name": "gentlemanne_knife_dressedtokill",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 15119,
+    "Class": "tf_weapon_knife",
+    "Name": "gentlemanne_knife_topshelf",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 15120,
+    "Class": "tf_weapon_medigun",
+    "Name": "gentlemanne_medigun_coffinnail",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 15121,
+    "Class": "tf_weapon_medigun",
+    "Name": "gentlemanne_medigun_dressedtokill",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 15122,
+    "Class": "tf_weapon_medigun",
+    "Name": "gentlemanne_medigun_highrollers",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 15123,
+    "Class": "tf_weapon_minigun",
+    "Name": "gentlemanne_minigun_coffinnail",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 15124,
+    "Class": "tf_weapon_minigun",
+    "Name": "gentlemanne_minigun_dressedtokill",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 15125,
+    "Class": "tf_weapon_minigun",
+    "Name": "gentlemanne_minigun_topshelf",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 15126,
+    "Class": "tf_weapon_pistol",
+    "Name": "gentlemanne_pistol_dressedtokill",
+    "Characters": [
+      9,
+      1
+    ]
+  },
+  {
+    "Index": 15127,
+    "Class": "tf_weapon_revolver",
+    "Name": "gentlemanne_revolver_coffinnail",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 15128,
+    "Class": "tf_weapon_revolver",
+    "Name": "gentlemanne_revolver_topshelf",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 15129,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "gentlemanne_rocketlauncher_coffinnail",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 15130,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "gentlemanne_rocketlauncher_highrollers",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 15131,
+    "Class": "tf_weapon_scattergun",
+    "Name": "gentlemanne_scattergun_coffinnail",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 15132,
+    "Class": "tf_weapon_shotgun",
+    "Name": "gentlemanne_shotgun_coffinnail",
+    "Characters": []
+  },
+  {
+    "Index": 15133,
+    "Class": "tf_weapon_shotgun",
+    "Name": "gentlemanne_shotgun_dressedtokill",
+    "Characters": []
+  },
+  {
+    "Index": 15134,
+    "Class": "tf_weapon_smg",
+    "Name": "gentlemanne_smg_highrollers",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15135,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "gentlemanne_sniperrifle_coffinnail",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15136,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "gentlemanne_sniperrifle_dressedtokill",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15137,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "gentlemanne_stickybomblauncher_coffinnail",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15138,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "gentlemanne_stickybomblauncher_dressedtokill",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15139,
+    "Class": "tf_weapon_wrench",
+    "Name": "gentlemanne_wrench_dressedtokill",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 15140,
+    "Class": "tf_weapon_wrench",
+    "Name": "gentlemanne_wrench_topshelf",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 15141,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "warbird_flamethrower_warhawk",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 15142,
+    "Class": "tf_weapon_grenadelauncher",
+    "Name": "warbird_grenadelauncher_warhawk",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15143,
+    "Class": "tf_weapon_knife",
+    "Name": "warbird_knife_blitzkrieg",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 15144,
+    "Class": "tf_weapon_knife",
+    "Name": "warbird_knife_airwolf",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 15145,
+    "Class": "tf_weapon_medigun",
+    "Name": "warbird_medigun_blitzkrieg",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 15146,
+    "Class": "tf_weapon_medigun",
+    "Name": "warbird_medigun_corsair",
+    "Characters": [
+      5
+    ]
+  },
+  {
+    "Index": 15147,
+    "Class": "tf_weapon_minigun",
+    "Name": "warbird_minigun_butcherbird",
+    "Characters": [
+      6
+    ]
+  },
+  {
+    "Index": 15148,
+    "Class": "tf_weapon_pistol",
+    "Name": "warbird_pistol_blitzkrieg",
+    "Characters": [
+      9,
+      1
+    ]
+  },
+  {
+    "Index": 15149,
+    "Class": "tf_weapon_revolver",
+    "Name": "warbird_revolver_blitzkrieg",
+    "Characters": [
+      8
+    ]
+  },
+  {
+    "Index": 15150,
+    "Class": "tf_weapon_rocketlauncher",
+    "Name": "warbird_rocketlauncher_warhawk",
+    "Characters": [
+      3
+    ]
+  },
+  {
+    "Index": 15151,
+    "Class": "tf_weapon_scattergun",
+    "Name": "warbird_scattergun_killerbee",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 15152,
+    "Class": "tf_weapon_shotgun",
+    "Name": "warbird_shotgun_redbear",
+    "Characters": []
+  },
+  {
+    "Index": 15153,
+    "Class": "tf_weapon_smg",
+    "Name": "warbird_smg_blitzkrieg",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15154,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "warbird_sniperrifle_airwolf",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 15155,
+    "Class": "tf_weapon_pipebomblauncher",
+    "Name": "warbird_stickybomblauncher_blitzkrieg",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 15156,
+    "Class": "tf_weapon_wrench",
+    "Name": "warbird_wrench_airwolf",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 15157,
+    "Class": "tf_weapon_scattergun",
+    "Name": "warbird_scattergun_corsair",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 15158,
+    "Class": "tf_weapon_grenadelauncher",
+    "Name": "warbird_grenadelauncher_butcherbird",
+    "Characters": [
+      4
+    ]
+  },
+  {
+    "Index": 30474,
+    "Class": "tf_weapon_flamethrower",
+    "Name": "The Nostromo Napalmer",
+    "Characters": [
+      7
+    ]
+  },
+  {
+    "Index": 30665,
+    "Class": "tf_weapon_sniperrifle",
+    "Name": "Shooting Star",
+    "Characters": [
+      2
+    ]
+  },
+  {
+    "Index": 30666,
+    "Class": "tf_weapon_pistol",
+    "Name": "The C.A.P.P.E.R",
+    "Characters": [
+      9,
+      1
+    ]
+  },
+  {
+    "Index": 30667,
+    "Class": "tf_weapon_bat",
+    "Name": "Batsaber",
+    "Characters": [
+      1
+    ]
+  },
+  {
+    "Index": 30668,
+    "Class": "tf_weapon_laser_pointer",
+    "Name": "The Giger Counter",
+    "Characters": [
+      9
+    ]
+  },
+  {
+    "Index": 30758,
+    "Class": "saxxy",
+    "Name": "Prinny Machete",
+    "Characters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "Index": 5605,
+    "Class": "tf_weapon_spellbook",
+    "Name": "Secret Diary",
+    "Characters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      7
+    ]
+  }
+]

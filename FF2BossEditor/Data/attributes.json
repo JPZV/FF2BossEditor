@@ -1,0 +1,3326 @@
+[
+  {
+    "Name": "damage penalty",
+    "ID": 1
+  },
+  {
+    "Name": "damage bonus",
+    "ID": 2
+  },
+  {
+    "Name": "clip size penalty",
+    "ID": 3
+  },
+  {
+    "Name": "clip size bonus",
+    "ID": 4
+  },
+  {
+    "Name": "fire rate penalty",
+    "ID": 5
+  },
+  {
+    "Name": "fire rate bonus",
+    "ID": 6
+  },
+  {
+    "Name": "heal rate penalty",
+    "ID": 7
+  },
+  {
+    "Name": "heal rate bonus",
+    "ID": 8
+  },
+  {
+    "Name": "ubercharge rate penalty",
+    "ID": 9
+  },
+  {
+    "Name": "ubercharge rate bonus",
+    "ID": 10
+  },
+  {
+    "Name": "overheal bonus",
+    "ID": 11
+  },
+  {
+    "Name": "overheal decay penalty",
+    "ID": 12
+  },
+  {
+    "Name": "overheal decay bonus",
+    "ID": 13
+  },
+  {
+    "Name": "overheal decay disabled",
+    "ID": 14
+  },
+  {
+    "Name": "crit mod disabled",
+    "ID": 15
+  },
+  {
+    "Name": "heal on hit for rapidfire",
+    "ID": 16
+  },
+  {
+    "Name": "add uber charge on hit",
+    "ID": 17
+  },
+  {
+    "Name": "medigun charge is crit boost",
+    "ID": 18
+  },
+  {
+    "Name": "tmp dmgbuff on hit",
+    "ID": 19
+  },
+  {
+    "Name": "crit vs burning players",
+    "ID": 20
+  },
+  {
+    "Name": "dmg penalty vs nonburning",
+    "ID": 21
+  },
+  {
+    "Name": "no crit vs nonburning",
+    "ID": 22
+  },
+  {
+    "Name": "mod flamethrower push",
+    "ID": 23
+  },
+  {
+    "Name": "mod flamethrower back crit",
+    "ID": 24
+  },
+  {
+    "Name": "hidden secondary max ammo penalty",
+    "ID": 25
+  },
+  {
+    "Name": "max health additive bonus",
+    "ID": 26
+  },
+  {
+    "Name": "alt-fire disabled",
+    "ID": 27
+  },
+  {
+    "Name": "crit mod disabled hidden",
+    "ID": 28
+  },
+  {
+    "Name": "fists have radial buff",
+    "ID": 30
+  },
+  {
+    "Name": "critboost on kill",
+    "ID": 31
+  },
+  {
+    "Name": "slow enemy on hit",
+    "ID": 32
+  },
+  {
+    "Name": "set cloak is feign death",
+    "ID": 33
+  },
+  {
+    "Name": "mult cloak meter consume rate",
+    "ID": 34
+  },
+  {
+    "Name": "mult cloak meter regen rate",
+    "ID": 35
+  },
+  {
+    "Name": "spread penalty",
+    "ID": 36
+  },
+  {
+    "Name": "hidden primary max ammo bonus",
+    "ID": 37
+  },
+  {
+    "Name": "mod bat launches balls",
+    "ID": 38
+  },
+  {
+    "Name": "dmg penalty vs nonstunned",
+    "ID": 39
+  },
+  {
+    "Name": "zoom speed mod disabled",
+    "ID": 40
+  },
+  {
+    "Name": "sniper charge per sec",
+    "ID": 41
+  },
+  {
+    "Name": "sniper no headshots",
+    "ID": 42
+  },
+  {
+    "Name": "scattergun no reload single",
+    "ID": 43
+  },
+  {
+    "Name": "scattergun has knockback",
+    "ID": 44
+  },
+  {
+    "Name": "bullets per shot bonus",
+    "ID": 45
+  },
+  {
+    "Name": "sniper zoom penalty",
+    "ID": 46
+  },
+  {
+    "Name": "sniper no charge",
+    "ID": 47
+  },
+  {
+    "Name": "set cloak is movement based",
+    "ID": 48
+  },
+  {
+    "Name": "no double jump",
+    "ID": 49
+  },
+  {
+    "Name": "absorb damage while cloaked",
+    "ID": 50
+  },
+  {
+    "Name": "revolver use hit locations",
+    "ID": 51
+  },
+  {
+    "Name": "backstab shield",
+    "ID": 52
+  },
+  {
+    "Name": "fire retardant",
+    "ID": 53
+  },
+  {
+    "Name": "move speed penalty",
+    "ID": 54
+  },
+  {
+    "Name": "obsolete ammo penalty",
+    "ID": 55
+  },
+  {
+    "Name": "jarate description",
+    "ID": 56
+  },
+  {
+    "Name": "health regen",
+    "ID": 57
+  },
+  {
+    "Name": "self dmg push force increased",
+    "ID": 58
+  },
+  {
+    "Name": "self dmg push force decreased",
+    "ID": 59
+  },
+  {
+    "Name": "dmg taken from fire reduced",
+    "ID": 60
+  },
+  {
+    "Name": "dmg taken from fire increased",
+    "ID": 61
+  },
+  {
+    "Name": "dmg taken from crit reduced",
+    "ID": 62
+  },
+  {
+    "Name": "dmg taken from crit increased",
+    "ID": 63
+  },
+  {
+    "Name": "dmg taken from blast reduced",
+    "ID": 64
+  },
+  {
+    "Name": "dmg taken from blast increased",
+    "ID": 65
+  },
+  {
+    "Name": "dmg taken from bullets reduced",
+    "ID": 66
+  },
+  {
+    "Name": "dmg taken from bullets increased",
+    "ID": 67
+  },
+  {
+    "Name": "increase player capture value",
+    "ID": 68
+  },
+  {
+    "Name": "health from healers reduced",
+    "ID": 69
+  },
+  {
+    "Name": "health from healers increased",
+    "ID": 70
+  },
+  {
+    "Name": "weapon burn dmg increased",
+    "ID": 71
+  },
+  {
+    "Name": "weapon burn dmg reduced",
+    "ID": 72
+  },
+  {
+    "Name": "weapon burn time increased",
+    "ID": 73
+  },
+  {
+    "Name": "weapon burn time reduced",
+    "ID": 74
+  },
+  {
+    "Name": "aiming movespeed increased",
+    "ID": 75
+  },
+  {
+    "Name": "maxammo primary increased",
+    "ID": 76
+  },
+  {
+    "Name": "maxammo primary reduced",
+    "ID": 77
+  },
+  {
+    "Name": "maxammo secondary increased",
+    "ID": 78
+  },
+  {
+    "Name": "maxammo secondary reduced",
+    "ID": 79
+  },
+  {
+    "Name": "maxammo metal increased",
+    "ID": 80
+  },
+  {
+    "Name": "maxammo metal reduced",
+    "ID": 81
+  },
+  {
+    "Name": "cloak consume rate increased",
+    "ID": 82
+  },
+  {
+    "Name": "cloak consume rate decreased",
+    "ID": 83
+  },
+  {
+    "Name": "cloak regen rate increased",
+    "ID": 84
+  },
+  {
+    "Name": "cloak regen rate decreased",
+    "ID": 85
+  },
+  {
+    "Name": "minigun spinup time increased",
+    "ID": 86
+  },
+  {
+    "Name": "minigun spinup time decreased",
+    "ID": 87
+  },
+  {
+    "Name": "max pipebombs increased",
+    "ID": 88
+  },
+  {
+    "Name": "max pipebombs decreased",
+    "ID": 89
+  },
+  {
+    "Name": "SRifle Charge rate increased",
+    "ID": 90
+  },
+  {
+    "Name": "SRifle Charge rate decreased",
+    "ID": 91
+  },
+  {
+    "Name": "Construction rate increased",
+    "ID": 92
+  },
+  {
+    "Name": "Construction rate decreased",
+    "ID": 93
+  },
+  {
+    "Name": "Repair rate increased",
+    "ID": 94
+  },
+  {
+    "Name": "Repair rate decreased",
+    "ID": 95
+  },
+  {
+    "Name": "Reload time increased",
+    "ID": 96
+  },
+  {
+    "Name": "Reload time decreased",
+    "ID": 97
+  },
+  {
+    "Name": "selfdmg on hit for rapidfire",
+    "ID": 98
+  },
+  {
+    "Name": "Blast radius increased",
+    "ID": 99
+  },
+  {
+    "Name": "Blast radius decreased",
+    "ID": 100
+  },
+  {
+    "Name": "Projectile range increased",
+    "ID": 101
+  },
+  {
+    "Name": "Projectile range decreased",
+    "ID": 102
+  },
+  {
+    "Name": "Projectile speed increased",
+    "ID": 103
+  },
+  {
+    "Name": "Projectile speed decreased",
+    "ID": 104
+  },
+  {
+    "Name": "overheal penalty",
+    "ID": 105
+  },
+  {
+    "Name": "weapon spread bonus",
+    "ID": 106
+  },
+  {
+    "Name": "move speed bonus",
+    "ID": 107
+  },
+  {
+    "Name": "health from packs increased",
+    "ID": 108
+  },
+  {
+    "Name": "health from packs decreased",
+    "ID": 109
+  },
+  {
+    "Name": "heal on hit for slowfire",
+    "ID": 110
+  },
+  {
+    "Name": "selfdmg on hit for slowfire",
+    "ID": 111
+  },
+  {
+    "Name": "ammo regen",
+    "ID": 112
+  },
+  {
+    "Name": "metal regen",
+    "ID": 113
+  },
+  {
+    "Name": "mod mini-crit airborne",
+    "ID": 114
+  },
+  {
+    "Name": "mod shovel damage boost",
+    "ID": 115
+  },
+  {
+    "Name": "mod soldier buff type",
+    "ID": 116
+  },
+  {
+    "Name": "dmg falloff increased",
+    "ID": 117
+  },
+  {
+    "Name": "dmg falloff decreased",
+    "ID": 118
+  },
+  {
+    "Name": "sticky detonate mode",
+    "ID": 119
+  },
+  {
+    "Name": "sticky arm time penalty",
+    "ID": 120
+  },
+  {
+    "Name": "stickies detonate stickies",
+    "ID": 121
+  },
+  {
+    "Name": "mod demo buff type",
+    "ID": 122
+  },
+  {
+    "Name": "speed boost when active",
+    "ID": 123
+  },
+  {
+    "Name": "mod wrench builds minisentry",
+    "ID": 124
+  },
+  {
+    "Name": "max health additive penalty",
+    "ID": 125
+  },
+  {
+    "Name": "sticky arm time bonus",
+    "ID": 126
+  },
+  {
+    "Name": "sticky air burst mode",
+    "ID": 127
+  },
+  {
+    "Name": "provide on active",
+    "ID": 128
+  },
+  {
+    "Name": "health drain",
+    "ID": 129
+  },
+  {
+    "Name": "medic regen bonus",
+    "ID": 130
+  },
+  {
+    "Name": "medic regen penalty",
+    "ID": 131
+  },
+  {
+    "Name": "community description",
+    "ID": 132
+  },
+  {
+    "Name": "soldier model index",
+    "ID": 133
+  },
+  {
+    "Name": "attach particle effect",
+    "ID": 134
+  },
+  {
+    "Name": "rocket jump damage reduction",
+    "ID": 135
+  },
+  {
+    "Name": "mod sentry killed revenge",
+    "ID": 136
+  },
+  {
+    "Name": "dmg bonus vs buildings",
+    "ID": 137
+  },
+  {
+    "Name": "dmg penalty vs players",
+    "ID": 138
+  },
+  {
+    "Name": "lunchbox adds maxhealth bonus",
+    "ID": 139
+  },
+  {
+    "Name": "hidden maxhealth non buffed",
+    "ID": 140
+  },
+  {
+    "Name": "selfmade description",
+    "ID": 141
+  },
+  {
+    "Name": "set item tint RGB",
+    "ID": 142
+  },
+  {
+    "Name": "custom employee number",
+    "ID": 143
+  },
+  {
+    "Name": "lunchbox adds minicrits",
+    "ID": 144
+  },
+  {
+    "Name": "taunt is highfive",
+    "ID": 145
+  },
+  {
+    "Name": "damage applies to sappers",
+    "ID": 146
+  },
+  {
+    "Name": "Wrench index",
+    "ID": 147
+  },
+  {
+    "Name": "building cost reduction",
+    "ID": 148
+  },
+  {
+    "Name": "bleeding duration",
+    "ID": 149
+  },
+  {
+    "Name": "turn to gold",
+    "ID": 150
+  },
+  {
+    "Name": "DEPRECATED socketed item definition id DEPRECATED",
+    "ID": 151
+  },
+  {
+    "Name": "custom texture lo",
+    "ID": 152
+  },
+  {
+    "Name": "cannot trade",
+    "ID": 153
+  },
+  {
+    "Name": "disguise on backstab",
+    "ID": 154
+  },
+  {
+    "Name": "cannot disguise",
+    "ID": 155
+  },
+  {
+    "Name": "silent killer",
+    "ID": 156
+  },
+  {
+    "Name": "disguise speed penalty",
+    "ID": 157
+  },
+  {
+    "Name": "add cloak on kill",
+    "ID": 158
+  },
+  {
+    "Name": "SET BONUS: cloak blink time penalty",
+    "ID": 159
+  },
+  {
+    "Name": "SET BONUS: quiet unstealth",
+    "ID": 160
+  },
+  {
+    "Name": "flame size penalty",
+    "ID": 161
+  },
+  {
+    "Name": "flame size bonus",
+    "ID": 162
+  },
+  {
+    "Name": "flame life penalty",
+    "ID": 163
+  },
+  {
+    "Name": "flame life bonus",
+    "ID": 164
+  },
+  {
+    "Name": "charged airblast",
+    "ID": 165
+  },
+  {
+    "Name": "add cloak on hit",
+    "ID": 166
+  },
+  {
+    "Name": "disguise damage reduction",
+    "ID": 167
+  },
+  {
+    "Name": "disguise no burn",
+    "ID": 168
+  },
+  {
+    "Name": "SET BONUS: dmg from sentry reduced",
+    "ID": 169
+  },
+  {
+    "Name": "airblast cost increased",
+    "ID": 170
+  },
+  {
+    "Name": "airblast cost decreased",
+    "ID": 171
+  },
+  {
+    "Name": "purchased",
+    "ID": 172
+  },
+  {
+    "Name": "flame ammopersec increased",
+    "ID": 173
+  },
+  {
+    "Name": "flame ammopersec decreased",
+    "ID": 174
+  },
+  {
+    "Name": "jarate duration",
+    "ID": 175
+  },
+  {
+    "Name": "SET BONUS: no death from headshots",
+    "ID": 176
+  },
+  {
+    "Name": "deploy time increased",
+    "ID": 177
+  },
+  {
+    "Name": "deploy time decreased",
+    "ID": 178
+  },
+  {
+    "Name": "minicrits become crits",
+    "ID": 179
+  },
+  {
+    "Name": "heal on kill",
+    "ID": 180
+  },
+  {
+    "Name": "no self blast dmg",
+    "ID": 181
+  },
+  {
+    "Name": "slow enemy on hit major",
+    "ID": 182
+  },
+  {
+    "Name": "aiming movespeed decreased",
+    "ID": 183
+  },
+  {
+    "Name": "duel loser account id",
+    "ID": 184
+  },
+  {
+    "Name": "event date",
+    "ID": 185
+  },
+  {
+    "Name": "gifter account id",
+    "ID": 186
+  },
+  {
+    "Name": "set supply crate series",
+    "ID": 187
+  },
+  {
+    "Name": "preserve ubercharge",
+    "ID": 188
+  },
+  {
+    "Name": "elevate quality",
+    "ID": 189
+  },
+  {
+    "Name": "active health regen",
+    "ID": 190
+  },
+  {
+    "Name": "active health degen",
+    "ID": 191
+  },
+  {
+    "Name": "referenced item id low",
+    "ID": 192
+  },
+  {
+    "Name": "referenced item id high",
+    "ID": 193
+  },
+  {
+    "Name": "referenced item def UPDATED",
+    "ID": 194
+  },
+  {
+    "Name": "always tradable",
+    "ID": 195
+  },
+  {
+    "Name": "noise maker",
+    "ID": 196
+  },
+  {
+    "Name": "halloween item",
+    "ID": 197
+  },
+  {
+    "Name": "collection bits DEPRECATED",
+    "ID": 198
+  },
+  {
+    "Name": "switch from wep deploy time decreased",
+    "ID": 199
+  },
+  {
+    "Name": "enables aoe heal",
+    "ID": 200
+  },
+  {
+    "Name": "gesture speed increase",
+    "ID": 201
+  },
+  {
+    "Name": "charge time increased",
+    "ID": 202
+  },
+  {
+    "Name": "drop health pack on kill",
+    "ID": 203
+  },
+  {
+    "Name": "hit self on miss",
+    "ID": 204
+  },
+  {
+    "Name": "dmg from ranged reduced",
+    "ID": 205
+  },
+  {
+    "Name": "dmg from melee increased",
+    "ID": 206
+  },
+  {
+    "Name": "blast dmg to self increased",
+    "ID": 207
+  },
+  {
+    "Name": "Set DamageType Ignite",
+    "ID": 208
+  },
+  {
+    "Name": "minicrit vs burning player",
+    "ID": 209
+  },
+  {
+    "Name": "tradable after date",
+    "ID": 211
+  },
+  {
+    "Name": "force level display",
+    "ID": 212
+  },
+  {
+    "Name": "kill eater",
+    "ID": 214
+  },
+  {
+    "Name": "apply z velocity on damage",
+    "ID": 215
+  },
+  {
+    "Name": "apply look velocity on damage",
+    "ID": 216
+  },
+  {
+    "Name": "sanguisuge",
+    "ID": 217
+  },
+  {
+    "Name": "mark for death",
+    "ID": 218
+  },
+  {
+    "Name": "decapitate type",
+    "ID": 219
+  },
+  {
+    "Name": "restore health on kill",
+    "ID": 220
+  },
+  {
+    "Name": "mult decloak rate",
+    "ID": 221
+  },
+  {
+    "Name": "mult sniper charge after bodyshot",
+    "ID": 222
+  },
+  {
+    "Name": "mult sniper charge after miss",
+    "ID": 223
+  },
+  {
+    "Name": "dmg bonus while half dead",
+    "ID": 224
+  },
+  {
+    "Name": "dmg penalty while half alive",
+    "ID": 225
+  },
+  {
+    "Name": "honorbound",
+    "ID": 226
+  },
+  {
+    "Name": "custom texture hi",
+    "ID": 227
+  },
+  {
+    "Name": "makers mark id",
+    "ID": 228
+  },
+  {
+    "Name": "unique craft index",
+    "ID": 229
+  },
+  {
+    "Name": "mod medic killed revenge",
+    "ID": 230
+  },
+  {
+    "Name": "medigun charge is megaheal",
+    "ID": 231
+  },
+  {
+    "Name": "mod medic killed minicrit boost",
+    "ID": 232
+  },
+  {
+    "Name": "mod medic healed damage bonus",
+    "ID": 233
+  },
+  {
+    "Name": "mod medic healed deploy time penalty",
+    "ID": 234
+  },
+  {
+    "Name": "mod shovel speed boost",
+    "ID": 235
+  },
+  {
+    "Name": "mod weapon blocks healing",
+    "ID": 236
+  },
+  {
+    "Name": "mult sniper charge after headshot",
+    "ID": 237
+  },
+  {
+    "Name": "minigun no spin sounds",
+    "ID": 238
+  },
+  {
+    "Name": "ubercharge rate bonus for healer",
+    "ID": 239
+  },
+  {
+    "Name": "reload time decreased while healed",
+    "ID": 240
+  },
+  {
+    "Name": "reload time increased hidden",
+    "ID": 241
+  },
+  {
+    "Name": "mod medic killed marked for death",
+    "ID": 242
+  },
+  {
+    "Name": "mod rage on hit penalty",
+    "ID": 243
+  },
+  {
+    "Name": "mod rage on hit bonus",
+    "ID": 244
+  },
+  {
+    "Name": "mod rage damage boost",
+    "ID": 245
+  },
+  {
+    "Name": "mult charge turn control",
+    "ID": 246
+  },
+  {
+    "Name": "no charge impact range",
+    "ID": 247
+  },
+  {
+    "Name": "charge impact damage increased",
+    "ID": 248
+  },
+  {
+    "Name": "charge recharge rate increased",
+    "ID": 249
+  },
+  {
+    "Name": "air dash count",
+    "ID": 250
+  },
+  {
+    "Name": "speed buff ally",
+    "ID": 251
+  },
+  {
+    "Name": "damage force reduction",
+    "ID": 252
+  },
+  {
+    "Name": "mult cloak rate",
+    "ID": 253
+  },
+  {
+    "Name": "airblast pushback scale",
+    "ID": 255
+  },
+  {
+    "Name": "mult airblast refire time",
+    "ID": 256
+  },
+  {
+    "Name": "airblast vertical pushback scale",
+    "ID": 257
+  },
+  {
+    "Name": "ammo becomes health",
+    "ID": 258
+  },
+  {
+    "Name": "boots falling stomp",
+    "ID": 259
+  },
+  {
+    "Name": "deflection size multiplier",
+    "ID": 260
+  },
+  {
+    "Name": "set item tint RGB 2",
+    "ID": 261
+  },
+  {
+    "Name": "saxxy award category",
+    "ID": 262
+  },
+  {
+    "Name": "melee bounds multiplier",
+    "ID": 263
+  },
+  {
+    "Name": "melee range multiplier",
+    "ID": 264
+  },
+  {
+    "Name": "mod mini-crit airborne deploy",
+    "ID": 265
+  },
+  {
+    "Name": "projectile penetration",
+    "ID": 266
+  },
+  {
+    "Name": "mod crit while airborne",
+    "ID": 267
+  },
+  {
+    "Name": "mult sniper charge penalty DISPLAY ONLY",
+    "ID": 268
+  },
+  {
+    "Name": "mod see enemy health",
+    "ID": 269
+  },
+  {
+    "Name": "powerup max charges",
+    "ID": 270
+  },
+  {
+    "Name": "powerup charges",
+    "ID": 271
+  },
+  {
+    "Name": "powerup duration",
+    "ID": 272
+  },
+  {
+    "Name": "critboost",
+    "ID": 273
+  },
+  {
+    "Name": "ubercharge",
+    "ID": 274
+  },
+  {
+    "Name": "cancel falling damage",
+    "ID": 275
+  },
+  {
+    "Name": "bidirectional teleport",
+    "ID": 276
+  },
+  {
+    "Name": "multiple sentries",
+    "ID": 277
+  },
+  {
+    "Name": "effect bar recharge rate increased",
+    "ID": 278
+  },
+  {
+    "Name": "maxammo grenades1 increased",
+    "ID": 279
+  },
+  {
+    "Name": "override projectile type",
+    "ID": 280
+  },
+  {
+    "Name": "energy weapon no ammo",
+    "ID": 281
+  },
+  {
+    "Name": "energy weapon charged shot",
+    "ID": 282
+  },
+  {
+    "Name": "energy weapon penetration",
+    "ID": 283
+  },
+  {
+    "Name": "energy weapon no hurt building",
+    "ID": 284
+  },
+  {
+    "Name": "energy weapon no deflect",
+    "ID": 285
+  },
+  {
+    "Name": "engy building health bonus",
+    "ID": 286
+  },
+  {
+    "Name": "engy sentry damage bonus",
+    "ID": 287
+  },
+  {
+    "Name": "no crit boost",
+    "ID": 288
+  },
+  {
+    "Name": "centerfire projectile",
+    "ID": 289
+  },
+  {
+    "Name": "kill eater score type",
+    "ID": 292
+  },
+  {
+    "Name": "kill eater score type 2",
+    "ID": 293
+  },
+  {
+    "Name": "kill eater 2",
+    "ID": 294
+  },
+  {
+    "Name": "has pipboy build interface",
+    "ID": 295
+  },
+  {
+    "Name": "sapper kills collect crits",
+    "ID": 296
+  },
+  {
+    "Name": "sniper only fire zoomed",
+    "ID": 297
+  },
+  {
+    "Name": "mod ammo per shot",
+    "ID": 298
+  },
+  {
+    "Name": "add onhit addammo",
+    "ID": 299
+  },
+  {
+    "Name": "electrical airblast DISPLAY ONLY",
+    "ID": 300
+  },
+  {
+    "Name": "mod use metal ammo type",
+    "ID": 301
+  },
+  {
+    "Name": "expiration date",
+    "ID": 302
+  },
+  {
+    "Name": "mod max primary clip override",
+    "ID": 303
+  },
+  {
+    "Name": "sniper full charge damage bonus",
+    "ID": 304
+  },
+  {
+    "Name": "sniper fires tracer",
+    "ID": 305
+  },
+  {
+    "Name": "sniper no headshot without full charge",
+    "ID": 306
+  },
+  {
+    "Name": "mod no reload DISPLAY ONLY",
+    "ID": 307
+  },
+  {
+    "Name": "sniper penetrate players when charged",
+    "ID": 308
+  },
+  {
+    "Name": "crit kill will gib",
+    "ID": 309
+  },
+  {
+    "Name": "recall",
+    "ID": 310
+  },
+  {
+    "Name": "unlimited quantity",
+    "ID": 311
+  },
+  {
+    "Name": "disable weapon hiding for animations",
+    "ID": 312
+  },
+  {
+    "Name": "applies snare effect",
+    "ID": 313
+  },
+  {
+    "Name": "uber duration bonus",
+    "ID": 314
+  },
+  {
+    "Name": "refill_ammo",
+    "ID": 315
+  },
+  {
+    "Name": "store sort override DEPRECATED",
+    "ID": 317
+  },
+  {
+    "Name": "faster reload rate",
+    "ID": 318
+  },
+  {
+    "Name": "increase buff duration",
+    "ID": 319
+  },
+  {
+    "Name": "robo sapper",
+    "ID": 320
+  },
+  {
+    "Name": "build rate bonus",
+    "ID": 321
+  },
+  {
+    "Name": "taunt is press and hold",
+    "ID": 322
+  },
+  {
+    "Name": "attack projectiles",
+    "ID": 323
+  },
+  {
+    "Name": "accuracy scales damage",
+    "ID": 324
+  },
+  {
+    "Name": "currency bonus",
+    "ID": 325
+  },
+  {
+    "Name": "increased jump height",
+    "ID": 326
+  },
+  {
+    "Name": "building instant upgrade",
+    "ID": 327
+  },
+  {
+    "Name": "disable fancy class select anim",
+    "ID": 328
+  },
+  {
+    "Name": "airblast vulnerability multiplier",
+    "ID": 329
+  },
+  {
+    "Name": "override footstep sound set",
+    "ID": 330
+  },
+  {
+    "Name": "spawn with physics toy",
+    "ID": 331
+  },
+  {
+    "Name": "fish damage override",
+    "ID": 332
+  },
+  {
+    "Name": "SET BONUS: special dsp",
+    "ID": 333
+  },
+  {
+    "Name": "bombinomicon effect on death",
+    "ID": 334
+  },
+  {
+    "Name": "clip size bonus upgrade",
+    "ID": 335
+  },
+  {
+    "Name": "hide enemy health",
+    "ID": 336
+  },
+  {
+    "Name": "subtract victim medigun charge on hit",
+    "ID": 337
+  },
+  {
+    "Name": "subtract victim cloak on hit",
+    "ID": 338
+  },
+  {
+    "Name": "reveal cloaked victim on hit",
+    "ID": 339
+  },
+  {
+    "Name": "reveal disguised victim on hit",
+    "ID": 340
+  },
+  {
+    "Name": "jarate backstabber",
+    "ID": 341
+  },
+  {
+    "Name": "engy sentry fire rate increased",
+    "ID": 343
+  },
+  {
+    "Name": "engy sentry radius increased",
+    "ID": 344
+  },
+  {
+    "Name": "engy dispenser radius increased",
+    "ID": 345
+  },
+  {
+    "Name": "mod bat launches ornaments",
+    "ID": 346
+  },
+  {
+    "Name": "freeze backstab victim",
+    "ID": 347
+  },
+  {
+    "Name": "fire rate penalty HIDDEN",
+    "ID": 348
+  },
+  {
+    "Name": "energy weapon no drain",
+    "ID": 349
+  },
+  {
+    "Name": "ragdolls become ash",
+    "ID": 350
+  },
+  {
+    "Name": "engy disposable sentries",
+    "ID": 351
+  },
+  {
+    "Name": "alt fire teleport to spawn",
+    "ID": 352
+  },
+  {
+    "Name": "cannot pick up buildings",
+    "ID": 353
+  },
+  {
+    "Name": "stun enemies wielding same weapon",
+    "ID": 354
+  },
+  {
+    "Name": "mod ammo per shot missed DISPLAY ONLY",
+    "ID": 355
+  },
+  {
+    "Name": "airblast disabled",
+    "ID": 356
+  },
+  {
+    "Name": "increase buff duration HIDDEN",
+    "ID": 357
+  },
+  {
+    "Name": "crit forces victim to laugh",
+    "ID": 358
+  },
+  {
+    "Name": "melts in fire",
+    "ID": 359
+  },
+  {
+    "Name": "damage all connected",
+    "ID": 360
+  },
+  {
+    "Name": "become fireproof on hit by fire",
+    "ID": 361
+  },
+  {
+    "Name": "crit from behind",
+    "ID": 362
+  },
+  {
+    "Name": "crit does no damage",
+    "ID": 363
+  },
+  {
+    "Name": "add jingle to footsteps",
+    "ID": 364
+  },
+  {
+    "Name": "set icicle knife mode",
+    "ID": 365
+  },
+  {
+    "Name": "mod stun waist high airborne",
+    "ID": 366
+  },
+  {
+    "Name": "extinguish earns revenge crits",
+    "ID": 367
+  },
+  {
+    "Name": "burn damage earns rage",
+    "ID": 368
+  },
+  {
+    "Name": "tickle enemies wielding same weapon",
+    "ID": 369
+  },
+  {
+    "Name": "attach particle effect static",
+    "ID": 370
+  },
+  {
+    "Name": "cosmetic taunt sound",
+    "ID": 371
+  },
+  {
+    "Name": "accepted wedding ring account id 1",
+    "ID": 372
+  },
+  {
+    "Name": "accepted wedding ring account id 2",
+    "ID": 373
+  },
+  {
+    "Name": "tool escrow until date",
+    "ID": 374
+  },
+  {
+    "Name": "generate rage on damage",
+    "ID": 375
+  },
+  {
+    "Name": "aiming no flinch",
+    "ID": 376
+  },
+  {
+    "Name": "aiming knockback resistance",
+    "ID": 377
+  },
+  {
+    "Name": "sniper aiming movespeed decreased",
+    "ID": 378
+  },
+  {
+    "Name": "kill eater user 1",
+    "ID": 379
+  },
+  {
+    "Name": "kill eater user score type 1",
+    "ID": 380
+  },
+  {
+    "Name": "kill eater user 2",
+    "ID": 381
+  },
+  {
+    "Name": "kill eater user score type 2",
+    "ID": 382
+  },
+  {
+    "Name": "kill eater user 3",
+    "ID": 383
+  },
+  {
+    "Name": "kill eater user score type 3",
+    "ID": 384
+  },
+  {
+    "Name": "strange part new counter ID",
+    "ID": 385
+  },
+  {
+    "Name": "mvm completed challenges bitmask",
+    "ID": 386
+  },
+  {
+    "Name": "rage on kill",
+    "ID": 387
+  },
+  {
+    "Name": "kill eater kill type",
+    "ID": 388
+  },
+  {
+    "Name": "shot penetrate all players",
+    "ID": 389
+  },
+  {
+    "Name": "headshot damage increase",
+    "ID": 390
+  },
+  {
+    "Name": "SET BONUS: mystery solving time decrease",
+    "ID": 391
+  },
+  {
+    "Name": "damage penalty on bodyshot",
+    "ID": 392
+  },
+  {
+    "Name": "sniper rage DISPLAY ONLY",
+    "ID": 393
+  },
+  {
+    "Name": "fire rate bonus HIDDEN",
+    "ID": 394
+  },
+  {
+    "Name": "explosive sniper shot",
+    "ID": 395
+  },
+  {
+    "Name": "melee attack rate bonus",
+    "ID": 396
+  },
+  {
+    "Name": "projectile penetration heavy",
+    "ID": 397
+  },
+  {
+    "Name": "rage on assists",
+    "ID": 398
+  },
+  {
+    "Name": "armor piercing",
+    "ID": 399
+  },
+  {
+    "Name": "cannot pick up intelligence",
+    "ID": 400
+  },
+  {
+    "Name": "SET BONUS: chance of hunger decrease",
+    "ID": 401
+  },
+  {
+    "Name": "cannot be backstabbed",
+    "ID": 402
+  },
+  {
+    "Name": "squad surplus claimer id DEPRECATED",
+    "ID": 403
+  },
+  {
+    "Name": "share consumable with patient",
+    "ID": 404
+  },
+  {
+    "Name": "airblast vertical vulnerability multiplier",
+    "ID": 405
+  },
+  {
+    "Name": "vision opt in flags",
+    "ID": 406
+  },
+  {
+    "Name": "crit vs disguised players",
+    "ID": 407
+  },
+  {
+    "Name": "crit vs non burning players",
+    "ID": 408
+  },
+  {
+    "Name": "kill forces attacker to laugh",
+    "ID": 409
+  },
+  {
+    "Name": "damage bonus while disguised",
+    "ID": 410
+  },
+  {
+    "Name": "projectile spread angle penalty",
+    "ID": 411
+  },
+  {
+    "Name": "dmg taken increased",
+    "ID": 412
+  },
+  {
+    "Name": "auto fires full clip",
+    "ID": 413
+  },
+  {
+    "Name": "self mark for death",
+    "ID": 414
+  },
+  {
+    "Name": "counts as assister is some kind of pet this update is going to be awesome",
+    "ID": 415
+  },
+  {
+    "Name": "mod flaregun fires pellets with knockback",
+    "ID": 416
+  },
+  {
+    "Name": "can overload",
+    "ID": 417
+  },
+  {
+    "Name": "boost on damage",
+    "ID": 418
+  },
+  {
+    "Name": "hype resets on jump",
+    "ID": 419
+  },
+  {
+    "Name": "pyro year number",
+    "ID": 420
+  },
+  {
+    "Name": "no primary ammo from dispensers while active",
+    "ID": 421
+  },
+  {
+    "Name": "pyrovision only DISPLAY ONLY",
+    "ID": 422
+  },
+  {
+    "Name": "clip size penalty HIDDEN",
+    "ID": 424
+  },
+  {
+    "Name": "sapper damage bonus",
+    "ID": 425
+  },
+  {
+    "Name": "sapper damage penalty",
+    "ID": 426
+  },
+  {
+    "Name": "sapper damage leaches health",
+    "ID": 427
+  },
+  {
+    "Name": "sapper health bonus",
+    "ID": 428
+  },
+  {
+    "Name": "sapper health penalty",
+    "ID": 429
+  },
+  {
+    "Name": "ring of fire while aiming",
+    "ID": 430
+  },
+  {
+    "Name": "uses ammo while aiming",
+    "ID": 431
+  },
+  {
+    "Name": "sapper degenerates buildings",
+    "ID": 433
+  },
+  {
+    "Name": "sapper damage penalty hidden",
+    "ID": 434
+  },
+  {
+    "Name": "cleaver description",
+    "ID": 435
+  },
+  {
+    "Name": "ragdolls plasma effect",
+    "ID": 436
+  },
+  {
+    "Name": "crit vs stunned players",
+    "ID": 437
+  },
+  {
+    "Name": "crit vs wet players",
+    "ID": 438
+  },
+  {
+    "Name": "override item level desc string",
+    "ID": 439
+  },
+  {
+    "Name": "clip size upgrade atomic",
+    "ID": 440
+  },
+  {
+    "Name": "auto fires full clip all at once",
+    "ID": 441
+  },
+  {
+    "Name": "major move speed bonus",
+    "ID": 442
+  },
+  {
+    "Name": "major increased jump height",
+    "ID": 443
+  },
+  {
+    "Name": "head scale",
+    "ID": 444
+  },
+  {
+    "Name": "pyrovision opt in DISPLAY ONLY",
+    "ID": 445
+  },
+  {
+    "Name": "halloweenvision opt in DISPLAY ONLY",
+    "ID": 446
+  },
+  {
+    "Name": "halloweenvision filter DISPLAY ONLY",
+    "ID": 447
+  },
+  {
+    "Name": "player skin override",
+    "ID": 448
+  },
+  {
+    "Name": "never craftable",
+    "ID": 449
+  },
+  {
+    "Name": "zombiezombiezombiezombie",
+    "ID": 450
+  },
+  {
+    "Name": "sapper voice pak",
+    "ID": 451
+  },
+  {
+    "Name": "sapper voice pak idle wait",
+    "ID": 452
+  },
+  {
+    "Name": "merasmus hat level display ONLY",
+    "ID": 453
+  },
+  {
+    "Name": "strange restriction type 1",
+    "ID": 454
+  },
+  {
+    "Name": "strange restriction value 1",
+    "ID": 455
+  },
+  {
+    "Name": "strange restriction type 2",
+    "ID": 456
+  },
+  {
+    "Name": "strange restriction value 2",
+    "ID": 457
+  },
+  {
+    "Name": "strange restriction user type 1",
+    "ID": 458
+  },
+  {
+    "Name": "strange restriction user value 1",
+    "ID": 459
+  },
+  {
+    "Name": "strange restriction user type 2",
+    "ID": 460
+  },
+  {
+    "Name": "strange restriction user value 2",
+    "ID": 461
+  },
+  {
+    "Name": "strange restriction user type 3",
+    "ID": 462
+  },
+  {
+    "Name": "strange restriction user value 3",
+    "ID": 463
+  },
+  {
+    "Name": "engineer sentry build rate multiplier",
+    "ID": 464
+  },
+  {
+    "Name": "engineer teleporter build rate multiplier",
+    "ID": 465
+  },
+  {
+    "Name": "grenade launcher mortar mode",
+    "ID": 466
+  },
+  {
+    "Name": "grenade not explode on impact",
+    "ID": 467
+  },
+  {
+    "Name": "strange score selector",
+    "ID": 468
+  },
+  {
+    "Name": "engineer building teleporting pickup",
+    "ID": 469
+  },
+  {
+    "Name": "grenade damage reduction on world contact",
+    "ID": 470
+  },
+  {
+    "Name": "engineer rage on dmg",
+    "ID": 471
+  },
+  {
+    "Name": "mark for death on building pickup",
+    "ID": 472
+  },
+  {
+    "Name": "medigun charge is resists",
+    "ID": 473
+  },
+  {
+    "Name": "arrow heals buildings",
+    "ID": 474
+  },
+  {
+    "Name": "Projectile speed increased HIDDEN",
+    "ID": 475
+  },
+  {
+    "Name": "damage bonus HIDDEN",
+    "ID": 476
+  },
+  {
+    "Name": "cannonball push back",
+    "ID": 477
+  },
+  {
+    "Name": "rage giving scale",
+    "ID": 478
+  },
+  {
+    "Name": "overheal fill rate reduced",
+    "ID": 479
+  },
+  {
+    "Name": "canteen specialist",
+    "ID": 481
+  },
+  {
+    "Name": "overheal expert",
+    "ID": 482
+  },
+  {
+    "Name": "mad milk syringes",
+    "ID": 484
+  },
+  {
+    "Name": "rocket specialist",
+    "ID": 488
+  },
+  {
+    "Name": "SET BONUS: move speed set bonus",
+    "ID": 489
+  },
+  {
+    "Name": "SET BONUS: health regen set bonus",
+    "ID": 490
+  },
+  {
+    "Name": "SET BONUS: dmg taken from crit reduced set bonus",
+    "ID": 491
+  },
+  {
+    "Name": "SET BONUS: dmg taken from fire reduced set bonus",
+    "ID": 492
+  },
+  {
+    "Name": "healing mastery",
+    "ID": 493
+  },
+  {
+    "Name": "kill eater 3",
+    "ID": 494
+  },
+  {
+    "Name": "kill eater score type 3",
+    "ID": 495
+  },
+  {
+    "Name": "strange restriction type 3",
+    "ID": 496
+  },
+  {
+    "Name": "strange restriction value 3",
+    "ID": 497
+  },
+  {
+    "Name": "bot custom jump particle",
+    "ID": 498
+  },
+  {
+    "Name": "generate rage on heal",
+    "ID": 499
+  },
+  {
+    "Name": "custom name attr",
+    "ID": 500
+  },
+  {
+    "Name": "custom desc attr",
+    "ID": 501
+  },
+  {
+    "Name": "medigun bullet resist passive",
+    "ID": 503
+  },
+  {
+    "Name": "medigun blast resist passive",
+    "ID": 504
+  },
+  {
+    "Name": "medigun fire resist passive",
+    "ID": 505
+  },
+  {
+    "Name": "medigun bullet resist deployed",
+    "ID": 506
+  },
+  {
+    "Name": "medigun blast resist deployed",
+    "ID": 507
+  },
+  {
+    "Name": "medigun fire resist deployed",
+    "ID": 508
+  },
+  {
+    "Name": "medigun crit bullet percent bar deplete",
+    "ID": 509
+  },
+  {
+    "Name": "medigun crit blast percent bar deplete",
+    "ID": 510
+  },
+  {
+    "Name": "medigun crit fire percent bar deplete",
+    "ID": 511
+  },
+  {
+    "Name": "throwable fire speed",
+    "ID": 512
+  },
+  {
+    "Name": "throwable damage",
+    "ID": 513
+  },
+  {
+    "Name": "throwable healing",
+    "ID": 514
+  },
+  {
+    "Name": "throwable particle trail only",
+    "ID": 515
+  },
+  {
+    "Name": "SET BONUS: dmg taken from bullets increased",
+    "ID": 516
+  },
+  {
+    "Name": "SET BONUS: max health additive bonus",
+    "ID": 517
+  },
+  {
+    "Name": "scattergun knockback mult",
+    "ID": 518
+  },
+  {
+    "Name": "particle effect vertical offset",
+    "ID": 519
+  },
+  {
+    "Name": "particle effect use head origin",
+    "ID": 520
+  },
+  {
+    "Name": "use large smoke explosion",
+    "ID": 521
+  },
+  {
+    "Name": "damage causes airblast",
+    "ID": 522
+  },
+  {
+    "Name": "increased jump height from weapon",
+    "ID": 524
+  },
+  {
+    "Name": "damage force increase",
+    "ID": 525
+  },
+  {
+    "Name": "healing received bonus",
+    "ID": 526
+  },
+  {
+    "Name": "afterburn immunity",
+    "ID": 527
+  },
+  {
+    "Name": "decoded by itemdefindex",
+    "ID": 528
+  },
+  {
+    "Name": "hype decays over time",
+    "ID": 532
+  },
+  {
+    "Name": "SET BONUS: custom taunt particle attr",
+    "ID": 533
+  },
+  {
+    "Name": "airblast vulnerability multiplier hidden",
+    "ID": 534
+  },
+  {
+    "Name": "damage force increase hidden",
+    "ID": 535
+  },
+  {
+    "Name": "damage force increase text",
+    "ID": 536
+  },
+  {
+    "Name": "SET BONUS: calling card on kill",
+    "ID": 537
+  },
+  {
+    "Name": "righthand pose parameter",
+    "ID": 538
+  },
+  {
+    "Name": "set throwable type",
+    "ID": 539
+  },
+  {
+    "Name": "add head on hit",
+    "ID": 540
+  },
+  {
+    "Name": "item style override",
+    "ID": 542
+  },
+  {
+    "Name": "paint decal enum",
+    "ID": 543
+  },
+  {
+    "Name": "show paint description",
+    "ID": 544
+  },
+  {
+    "Name": "bot medic uber health threshold",
+    "ID": 545
+  },
+  {
+    "Name": "bot medic uber deploy delay duration",
+    "ID": 546
+  },
+  {
+    "Name": "single wep deploy time decreased",
+    "ID": 547
+  },
+  {
+    "Name": "halloween reload time decreased",
+    "ID": 548
+  },
+  {
+    "Name": "halloween fire rate bonus",
+    "ID": 549
+  },
+  {
+    "Name": "halloween increased jump height",
+    "ID": 550
+  },
+  {
+    "Name": "special taunt",
+    "ID": 551
+  },
+  {
+    "Name": "revive",
+    "ID": 554
+  },
+  {
+    "Name": "taunt attack name",
+    "ID": 556
+  },
+  {
+    "Name": "taunt attack time",
+    "ID": 557
+  },
+  {
+    "Name": "taunt force move forward",
+    "ID": 600
+  },
+  {
+    "Name": "taunt mimic",
+    "ID": 602
+  },
+  {
+    "Name": "taunt success sound",
+    "ID": 606
+  },
+  {
+    "Name": "taunt success sound offset",
+    "ID": 607
+  },
+  {
+    "Name": "taunt success sound loop",
+    "ID": 608
+  },
+  {
+    "Name": "taunt success sound loop offset",
+    "ID": 609
+  },
+  {
+    "Name": "increased air control",
+    "ID": 610
+  },
+  {
+    "Name": "rocket launch impulse",
+    "ID": 612
+  },
+  {
+    "Name": "minicritboost on kill",
+    "ID": 613
+  },
+  {
+    "Name": "no metal from dispensers while active",
+    "ID": 614
+  },
+  {
+    "Name": "projectile entity name",
+    "ID": 615
+  },
+  {
+    "Name": "is throwable primable",
+    "ID": 616
+  },
+  {
+    "Name": "throwable detonation time",
+    "ID": 617
+  },
+  {
+    "Name": "throwable recharge time",
+    "ID": 618
+  },
+  {
+    "Name": "closerange backattack minicrits",
+    "ID": 619
+  },
+  {
+    "Name": "torso scale",
+    "ID": 620
+  },
+  {
+    "Name": "rocketjump attackrate bonus",
+    "ID": 621
+  },
+  {
+    "Name": "is throwable chargeable",
+    "ID": 622
+  },
+  {
+    "Name": "back headshot",
+    "ID": 630
+  },
+  {
+    "Name": "rj air bombardment",
+    "ID": 632
+  },
+  {
+    "Name": "projectile particle name",
+    "ID": 633
+  },
+  {
+    "Name": "air jump on attack",
+    "ID": 634
+  },
+  {
+    "Name": "sniper crit no scope",
+    "ID": 636
+  },
+  {
+    "Name": "sniper independent zoom DISPLAY ONLY",
+    "ID": 637
+  },
+  {
+    "Name": "axtinguisher properties",
+    "ID": 638
+  },
+  {
+    "Name": "full charge turn control",
+    "ID": 639
+  },
+  {
+    "Name": "parachute attribute",
+    "ID": 640
+  },
+  {
+    "Name": "taunt force weapon slot",
+    "ID": 641
+  },
+  {
+    "Name": "mini rockets",
+    "ID": 642
+  },
+  {
+    "Name": "rocket jump damage reduction HIDDEN",
+    "ID": 643
+  },
+  {
+    "Name": "clipsize increase on kill",
+    "ID": 644
+  },
+  {
+    "Name": "breadgloves properties",
+    "ID": 645
+  },
+  {
+    "Name": "taunt turn speed",
+    "ID": 646
+  },
+  {
+    "Name": "sniper fires tracer HIDDEN",
+    "ID": 647
+  },
+  {
+    "Name": "fire rate bonus with reduced health",
+    "ID": 651
+  },
+  {
+    "Name": "tag__summer2014",
+    "ID": 661
+  },
+  {
+    "Name": "crate generation code",
+    "ID": 662
+  },
+  {
+    "Name": "stickybomb fizzle time",
+    "ID": 669
+  },
+  {
+    "Name": "stickybomb charge rate",
+    "ID": 670
+  },
+  {
+    "Name": "grenade no bounce",
+    "ID": 671
+  },
+  {
+    "Name": "class select override vcd",
+    "ID": 674
+  },
+  {
+    "Name": "custom projectile model",
+    "ID": 675
+  },
+  {
+    "Name": "lose demo charge on damage when charging",
+    "ID": 676
+  },
+  {
+    "Name": "grenade no spin",
+    "ID": 681
+  },
+  {
+    "Name": "grenade detonation damage penalty",
+    "ID": 684
+  },
+  {
+    "Name": "taunt turn acceleration time",
+    "ID": 687
+  },
+  {
+    "Name": "taunt move acceleration time",
+    "ID": 688
+  },
+  {
+    "Name": "taunt move speed",
+    "ID": 689
+  },
+  {
+    "Name": "shuffle crate item def min",
+    "ID": 690
+  },
+  {
+    "Name": "shuffle crate item def max",
+    "ID": 691
+  },
+  {
+    "Name": "limited quantity item",
+    "ID": 692
+  },
+  {
+    "Name": "SET BONUS: alien isolation xeno bonus pos",
+    "ID": 693
+  },
+  {
+    "Name": "SET BONUS: alien isolation xeno bonus neg",
+    "ID": 694
+  },
+  {
+    "Name": "SET BONUS: alien isolation merc bonus pos",
+    "ID": 695
+  },
+  {
+    "Name": "SET BONUS: alien isolation merc bonus neg",
+    "ID": 696
+  },
+  {
+    "Name": "disable weapon switch",
+    "ID": 698
+  },
+  {
+    "Name": "hand scale",
+    "ID": 699
+  },
+  {
+    "Name": "display duck leaderboard",
+    "ID": 700
+  },
+  {
+    "Name": "duck rating",
+    "ID": 701
+  },
+  {
+    "Name": "duck badge level",
+    "ID": 702
+  },
+  {
+    "Name": "tag__eotlearlysupport",
+    "ID": 703
+  },
+  {
+    "Name": "unlimited quantity hidden",
+    "ID": 704
+  },
+  {
+    "Name": "duckstreaks active",
+    "ID": 705
+  },
+  {
+    "Name": "panic_attack",
+    "ID": 708
+  },
+  {
+    "Name": "panic_attack_negative",
+    "ID": 709
+  },
+  {
+    "Name": "auto fires full clip penalty",
+    "ID": 710
+  },
+  {
+    "Name": "auto fires when full",
+    "ID": 711
+  },
+  {
+    "Name": "force weapon switch",
+    "ID": 712
+  },
+  {
+    "Name": "weapon_uses_stattrak_module",
+    "ID": 719
+  },
+  {
+    "Name": "is_operation_pass",
+    "ID": 723
+  },
+  {
+    "Name": "weapon_stattrak_module_scale",
+    "ID": 724
+  },
+  {
+    "Name": "set_item_texture_wear",
+    "ID": 725
+  },
+  {
+    "Name": "cloak_consume_on_feign_death_activate",
+    "ID": 726
+  },
+  {
+    "Name": "stickybomb_charge_damage_increase",
+    "ID": 727
+  },
+  {
+    "Name": "NoCloakWhenCloaked",
+    "ID": 728
+  },
+  {
+    "Name": "ReducedCloakFromAmmo",
+    "ID": 729
+  },
+  {
+    "Name": "elevate to unusual if applicable",
+    "ID": 730
+  },
+  {
+    "Name": "weapon_allow_inspect",
+    "ID": 731
+  },
+  {
+    "Name": "metal_pickup_decreased",
+    "ID": 732
+  },
+  {
+    "Name": "lose hype on take damage",
+    "ID": 733
+  },
+  {
+    "Name": "healing received penalty",
+    "ID": 734
+  },
+  {
+    "Name": "crit_vs_burning_FLARES_DISPLAY_ONLY",
+    "ID": 735
+  },
+  {
+    "Name": "speed_boost_on_kill",
+    "ID": 736
+  },
+  {
+    "Name": "speed_boost_on_hit",
+    "ID": 737
+  },
+  {
+    "Name": "spunup_damage_resistance",
+    "ID": 738
+  },
+  {
+    "Name": "ubercharge overheal rate penalty",
+    "ID": 739
+  },
+  {
+    "Name": "reduced_healing_from_medics",
+    "ID": 740
+  },
+  {
+    "Name": "health on radius damage",
+    "ID": 741
+  },
+  {
+    "Name": "style changes on strange level",
+    "ID": 742
+  },
+  {
+    "Name": "cannot restore",
+    "ID": 743
+  },
+  {
+    "Name": "hide crate series number",
+    "ID": 744
+  },
+  {
+    "Name": "has team color paintkit",
+    "ID": 745
+  },
+  {
+    "Name": "cosmetic_allow_inspect",
+    "ID": 746
+  },
+  {
+    "Name": "hat only unusual effect",
+    "ID": 747
+  },
+  {
+    "Name": "items traded in for",
+    "ID": 748
+  },
+  {
+    "Name": "texture_wear_default",
+    "ID": 749
+  },
+  {
+    "Name": "taunt only unusual effect",
+    "ID": 750
+  },
+  {
+    "Name": "deactive date",
+    "ID": 751
+  },
+  {
+    "Name": "is giger counter",
+    "ID": 752
+  },
+  {
+    "Name": "hide_strange_prefix",
+    "ID": 753
+  },
+  {
+    "Name": "always_transmit_so",
+    "ID": 754
+  },
+  {
+    "Name": "allow_halloween_offering",
+    "ID": 760
+  },
+  {
+    "Name": "cannot_transmute",
+    "ID": 762
+  },
+  {
+    "Name": "single wep holster time increased",
+    "ID": 772
+  },
+  {
+    "Name": "single wep deploy time increased",
+    "ID": 773
+  },
+  {
+    "Name": "charge time decreased",
+    "ID": 774
+  },
+  {
+    "Name": "dmg penalty vs buildings",
+    "ID": 775
+  },
+  {
+    "Name": "charge impact damage decreased",
+    "ID": 776
+  },
+  {
+    "Name": "non economy",
+    "ID": 777
+  },
+  {
+    "Name": "charge meter on hit",
+    "ID": 778
+  },
+  {
+    "Name": "minicrit_boost_when_charged",
+    "ID": 779
+  },
+  {
+    "Name": "minicrit_boost_charge_rate",
+    "ID": 780
+  },
+  {
+    "Name": "is_a_sword",
+    "ID": 781
+  },
+  {
+    "Name": "ammo gives charge",
+    "ID": 782
+  },
+  {
+    "Name": "extinguish restores health",
+    "ID": 783
+  },
+  {
+    "Name": "extinguish reduces cooldown",
+    "ID": 784
+  },
+  {
+    "Name": "cannot giftwrap",
+    "ID": 785
+  },
+  {
+    "Name": "tool needs giftwrap",
+    "ID": 786
+  },
+  {
+    "Name": "fuse bonus",
+    "ID": 787
+  },
+  {
+    "Name": "move speed bonus shield required",
+    "ID": 788
+  },
+  {
+    "Name": "damage bonus bullet vs sentry target",
+    "ID": 789
+  },
+  {
+    "Name": "mod teleporter cost",
+    "ID": 790
+  },
+  {
+    "Name": "damage blast push",
+    "ID": 791
+  },
+  {
+    "Name": "move speed bonus resource level",
+    "ID": 792
+  },
+  {
+    "Name": "hype on damage",
+    "ID": 793
+  },
+  {
+    "Name": "dmg taken from fire reduced on active",
+    "ID": 794
+  },
+  {
+    "Name": "damage bonus vs burning",
+    "ID": 795
+  },
+  {
+    "Name": "min_viewmodel_offset",
+    "ID": 796
+  },
+  {
+    "Name": "dmg pierces resists absorbs",
+    "ID": 797
+  },
+  {
+    "Name": "energy buff dmg taken multiplier",
+    "ID": 798
+  },
+  {
+    "Name": "lose revenge crits on death DISPLAY ONLY",
+    "ID": 799
+  },
+  {
+    "Name": "patient overheal penalty",
+    "ID": 800
+  },
+  {
+    "Name": "item_meter_charge_rate",
+    "ID": 801
+  },
+  {
+    "Name": "mult_spread_scale_first_shot",
+    "ID": 804
+  },
+  {
+    "Name": "unusualifier_attribute_template_name",
+    "ID": 805
+  },
+  {
+    "Name": "tool_target_item_icon_offset",
+    "ID": 806
+  },
+  {
+    "Name": "add_head_on_kill",
+    "ID": 807
+  },
+  {
+    "Name": "mult_spread_scales_consecutive",
+    "ID": 808
+  },
+  {
+    "Name": "fixed_shot_pattern",
+    "ID": 809
+  },
+  {
+    "Name": "mod_cloak_no_regen_from_items",
+    "ID": 810
+  },
+  {
+    "Name": "ubercharge_preserved_on_spawn_max",
+    "ID": 811
+  },
+  {
+    "Name": "mod_air_control_blast_jump",
+    "ID": 812
+  },
+  {
+    "Name": "spunup_push_force_immunity",
+    "ID": 813
+  },
+  {
+    "Name": "mod_mark_attacker_for_death",
+    "ID": 814
+  },
+  {
+    "Name": "use_model_cache_icon",
+    "ID": 815
+  },
+  {
+    "Name": "mod_disguise_consumes_cloak",
+    "ID": 816
+  },
+  {
+    "Name": "inspect_viewmodel_offset",
+    "ID": 817
+  },
+  {
+    "Name": "is_passive_weapon",
+    "ID": 818
+  },
+  {
+    "Name": "no_jump",
+    "ID": 819
+  },
+  {
+    "Name": "no_duck",
+    "ID": 820
+  },
+  {
+    "Name": "no_attack",
+    "ID": 821
+  },
+  {
+    "Name": "airblast_destroy_projectile",
+    "ID": 822
+  },
+  {
+    "Name": "airblast_pushback_disabled",
+    "ID": 823
+  },
+  {
+    "Name": "airblast_pushback_no_stun",
+    "ID": 824
+  },
+  {
+    "Name": "airblast_pushback_no_viewpunch",
+    "ID": 825
+  },
+  {
+    "Name": "airblast_deflect_projectiles_disabled",
+    "ID": 826
+  },
+  {
+    "Name": "airblast_put_out_teammate_disabled",
+    "ID": 827
+  },
+  {
+    "Name": "afterburn duration penalty",
+    "ID": 828
+  },
+  {
+    "Name": "afterburn duration bonus",
+    "ID": 829
+  },
+  {
+    "Name": "aoe_deflection",
+    "ID": 830
+  },
+  {
+    "Name": "mult_end_flame_size",
+    "ID": 831
+  },
+  {
+    "Name": "airblast_give_teammate_speed_boost",
+    "ID": 832
+  },
+  {
+    "Name": "airblast_turn_projectile_to_ammo",
+    "ID": 833
+  },
+  {
+    "Name": "paintkit_proto_def_index",
+    "ID": 834
+  },
+  {
+    "Name": "taunt_attr_player_invis_percent",
+    "ID": 835
+  },
+  {
+    "Name": "redirected_flame_size_mult",
+    "ID": 837
+  },
+  {
+    "Name": "flame_reflect_on_collision",
+    "ID": 838
+  },
+  {
+    "Name": "flame_spread_degree",
+    "ID": 839
+  },
+  {
+    "Name": "holster_anim_time",
+    "ID": 840
+  },
+  {
+    "Name": "flame_gravity",
+    "ID": 841
+  },
+  {
+    "Name": "flame_ignore_player_velocity",
+    "ID": 842
+  },
+  {
+    "Name": "flame_drag",
+    "ID": 843
+  },
+  {
+    "Name": "flame_speed",
+    "ID": 844
+  },
+  {
+    "Name": "grenades1_resupply_denied",
+    "ID": 845
+  },
+  {
+    "Name": "grenades2_resupply_denied",
+    "ID": 846
+  },
+  {
+    "Name": "grenades3_resupply_denied",
+    "ID": 847
+  },
+  {
+    "Name": "item_meter_resupply_denied",
+    "ID": 848
+  },
+  {
+    "Name": "mult_player_movespeed_active",
+    "ID": 851
+  },
+  {
+    "Name": "mult_dmgtaken_active",
+    "ID": 852
+  },
+  {
+    "Name": "mult_patient_overheal_penalty_active",
+    "ID": 853
+  },
+  {
+    "Name": "mult_health_fromhealers_penalty_active",
+    "ID": 854
+  },
+  {
+    "Name": "mod_maxhealth_drain_rate",
+    "ID": 855
+  },
+  {
+    "Name": "item_meter_charge_type",
+    "ID": 856
+  },
+  {
+    "Name": "max_flame_reflection_count",
+    "ID": 859
+  },
+  {
+    "Name": "flame_reflection_add_life_time",
+    "ID": 860
+  },
+  {
+    "Name": "reflected_flame_dmg_reduction",
+    "ID": 861
+  },
+  {
+    "Name": "flame_lifetime",
+    "ID": 862
+  },
+  {
+    "Name": "flame_random_life_time_offset",
+    "ID": 863
+  },
+  {
+    "Name": "flame_up_speed",
+    "ID": 865
+  },
+  {
+    "Name": "custom_paintkit_seed_lo",
+    "ID": 866
+  },
+  {
+    "Name": "custom_paintkit_seed_hi",
+    "ID": 867
+  },
+  {
+    "Name": "crit_dmg_falloff",
+    "ID": 868
+  },
+  {
+    "Name": "crits_become_minicrits",
+    "ID": 869
+  },
+  {
+    "Name": "falling_impact_radius_pushback",
+    "ID": 870
+  },
+  {
+    "Name": "falling_impact_radius_stun",
+    "ID": 871
+  },
+  {
+    "Name": "thermal_thruster_air_launch",
+    "ID": 872
+  },
+  {
+    "Name": "thermal_thruster",
+    "ID": 873
+  },
+  {
+    "Name": "mult_item_meter_charge_rate",
+    "ID": 874
+  },
+  {
+    "Name": "explode_on_ignite",
+    "ID": 875
+  },
+  {
+    "Name": "lunchbox healing decreased",
+    "ID": 876
+  },
+  {
+    "Name": "speed_boost_on_hit_enemy",
+    "ID": 877
+  },
+  {
+    "Name": "item_meter_starts_empty_DISPLAY_ONLY",
+    "ID": 878
+  },
+  {
+    "Name": "item_meter_charge_type_3_DISPLAY_ONLY",
+    "ID": 879
+  },
+  {
+    "Name": "repair health to metal ratio DISPLAY ONLY",
+    "ID": 880
+  },
+  {
+    "Name": "CARD: damage bonus",
+    "ID": 1000
+  },
+  {
+    "Name": "CARD: dmg taken from bullets reduced",
+    "ID": 1001
+  },
+  {
+    "Name": "CARD: move speed bonus",
+    "ID": 1002
+  },
+  {
+    "Name": "CARD: health regen",
+    "ID": 1003
+  },
+  {
+    "Name": "SPELL: set item tint RGB",
+    "ID": 1004
+  },
+  {
+    "Name": "SPELL: set Halloween footstep type",
+    "ID": 1005
+  },
+  {
+    "Name": "SPELL: Halloween voice modulation",
+    "ID": 1006
+  },
+  {
+    "Name": "SPELL: Halloween pumpkin explosions",
+    "ID": 1007
+  },
+  {
+    "Name": "SPELL: Halloween green flames",
+    "ID": 1008
+  },
+  {
+    "Name": "SPELL: Halloween death ghosts",
+    "ID": 1009
+  },
+  {
+    "Name": "Attack not cancel charge",
+    "ID": 1030
+  },
+  {
+    "Name": "recipe component defined item 1",
+    "ID": 2000
+  },
+  {
+    "Name": "recipe component defined item 2",
+    "ID": 2001
+  },
+  {
+    "Name": "recipe component defined item 3",
+    "ID": 2002
+  },
+  {
+    "Name": "recipe component defined item 4",
+    "ID": 2003
+  },
+  {
+    "Name": "recipe component defined item 5",
+    "ID": 2004
+  },
+  {
+    "Name": "recipe component defined item 6",
+    "ID": 2005
+  },
+  {
+    "Name": "recipe component defined item 7",
+    "ID": 2006
+  },
+  {
+    "Name": "recipe component defined item 8",
+    "ID": 2007
+  },
+  {
+    "Name": "recipe component defined item 9",
+    "ID": 2008
+  },
+  {
+    "Name": "recipe component defined item 10",
+    "ID": 2009
+  },
+  {
+    "Name": "start drop date",
+    "ID": 2010
+  },
+  {
+    "Name": "end drop date",
+    "ID": 2011
+  },
+  {
+    "Name": "tool target item",
+    "ID": 2012
+  },
+  {
+    "Name": "killstreak effect",
+    "ID": 2013
+  },
+  {
+    "Name": "killstreak idleeffect",
+    "ID": 2014
+  },
+  {
+    "Name": "spellbook page attr id",
+    "ID": 2015
+  },
+  {
+    "Name": "Halloween Spellbook Page: Tumidum",
+    "ID": 2016
+  },
+  {
+    "Name": "Halloween Spellbook Page: Gratanter",
+    "ID": 2017
+  },
+  {
+    "Name": "Halloween Spellbook Page: Audere",
+    "ID": 2018
+  },
+  {
+    "Name": "Halloween Spellbook Page: Congeriae",
+    "ID": 2019
+  },
+  {
+    "Name": "Halloween Spellbook Page: Veteris",
+    "ID": 2020
+  },
+  {
+    "Name": "additional halloween response criteria name",
+    "ID": 2021
+  },
+  {
+    "Name": "loot rarity",
+    "ID": 2022
+  },
+  {
+    "Name": "quality text override",
+    "ID": 2023
+  },
+  {
+    "Name": "item name text override",
+    "ID": 2024
+  },
+  {
+    "Name": "killstreak tier",
+    "ID": 2025
+  },
+  {
+    "Name": "wide item level",
+    "ID": 2026
+  },
+  {
+    "Name": "is australium item",
+    "ID": 2027
+  },
+  {
+    "Name": "is marketable",
+    "ID": 2028
+  },
+  {
+    "Name": "allowed in medieval mode",
+    "ID": 2029
+  },
+  {
+    "Name": "crit on hard hit",
+    "ID": 2030
+  },
+  {
+    "Name": "series number",
+    "ID": 2031
+  },
+  {
+    "Name": "recipe no partial complete",
+    "ID": 2032
+  },
+  {
+    "Name": "kill refills meter",
+    "ID": 2034
+  },
+  {
+    "Name": "random drop line item unusual chance",
+    "ID": 2035
+  },
+  {
+    "Name": "random drop line item unusual list",
+    "ID": 2036
+  },
+  {
+    "Name": "random drop line item 0",
+    "ID": 2037
+  },
+  {
+    "Name": "random drop line item 1",
+    "ID": 2038
+  },
+  {
+    "Name": "random drop line item 2",
+    "ID": 2039
+  },
+  {
+    "Name": "random drop line item 3",
+    "ID": 2040
+  },
+  {
+    "Name": "on taunt attach particle effect",
+    "ID": 2041
+  },
+  {
+    "Name": "loot list name",
+    "ID": 2042
+  },
+  {
+    "Name": "upgrade rate decrease",
+    "ID": 2043
+  },
+  {
+    "Name": "can shuffle crate contents",
+    "ID": 2044
+  },
+  {
+    "Name": "random drop line item footer desc",
+    "ID": 2045
+  },
+  {
+    "Name": "is commodity",
+    "ID": 2046
+  },
+  {
+    "Name": "voice pitch scale",
+    "ID": 2048
+  },
+  {
+    "Name": "gunslinger punch combo",
+    "ID": 2049
+  },
+  {
+    "Name": "cannot delete",
+    "ID": 2050
+  },
+  {
+    "Name": "quest loaner id low",
+    "ID": 2051
+  },
+  {
+    "Name": "quest loaner id hi",
+    "ID": 2052
+  },
+  {
+    "Name": "is_festivized",
+    "ID": 2053
+  },
+  {
+    "Name": "fire particle blue",
+    "ID": 2054
+  },
+  {
+    "Name": "fire particle red",
+    "ID": 2055
+  },
+  {
+    "Name": "fire particle blue crit",
+    "ID": 2056
+  },
+  {
+    "Name": "fire particle red crit",
+    "ID": 2057
+  },
+  {
+    "Name": "meter_label",
+    "ID": 2058
+  },
+  {
+    "Name": "item_meter_damage_for_full_charge",
+    "ID": 2059
+  },
+  {
+    "Name": "airblast cost scale hidden",
+    "ID": 2062
+  },
+  {
+    "Name": "dragons fury positive properties",
+    "ID": 2063
+  },
+  {
+    "Name": "dragons fury negative properties",
+    "ID": 2064
+  },
+  {
+    "Name": "dragons fury neutral properties",
+    "ID": 2065
+  },
+  {
+    "Name": "force center wrap",
+    "ID": 2066
+  },
+  {
+    "Name": "attack_minicrits_and_consumes_burning",
+    "ID": 2067
+  },
+  {
+    "Name": "item slot criteria 1",
+    "ID": 3000
+  },
+  {
+    "Name": "item in slot 1",
+    "ID": 3001
+  },
+  {
+    "Name": "item slot criteria 2",
+    "ID": 3002
+  },
+  {
+    "Name": "item in slot 2",
+    "ID": 3003
+  },
+  {
+    "Name": "item slot criteria 3",
+    "ID": 3004
+  },
+  {
+    "Name": "item in slot 3",
+    "ID": 3005
+  },
+  {
+    "Name": "item slot criteria 4",
+    "ID": 3006
+  },
+  {
+    "Name": "item in slot 4",
+    "ID": 3007
+  },
+  {
+    "Name": "item slot criteria 5",
+    "ID": 3008
+  },
+  {
+    "Name": "item in slot 5",
+    "ID": 3009
+  },
+  {
+    "Name": "item slot criteria 6",
+    "ID": 3010
+  },
+  {
+    "Name": "item in slot 6",
+    "ID": 3011
+  },
+  {
+    "Name": "item slot criteria 7",
+    "ID": 3012
+  },
+  {
+    "Name": "item in slot 7",
+    "ID": 3013
+  },
+  {
+    "Name": "item slot criteria 8",
+    "ID": 3014
+  },
+  {
+    "Name": "item in slot 8",
+    "ID": 3015
+  },
+  {
+    "Name": "quest earned standard points",
+    "ID": 3016
+  },
+  {
+    "Name": "quest earned bonus points",
+    "ID": 3017
+  },
+  {
+    "Name": "item drop wave",
+    "ID": 3018
+  }
+]

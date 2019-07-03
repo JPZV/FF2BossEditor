@@ -26,14 +26,33 @@ namespace FF2BossEditor.Windows
             DataContext = Attribute;
         }
 
+        private void WepAttrEditor_Loaded(object sender, RoutedEventArgs e)
+        {
+            AutoAttrDataGrid.DataContext = App.WeaponsAttributes;
+            if (!string.IsNullOrWhiteSpace(Attribute.Name))
+            {
+                AutoAttrDataGrid.SelectedIndex = App.WeaponsAttributes.FindIndex(t => t.Name == Attribute.Name);
+                if(AutoAttrDataGrid.SelectedItem != null)
+                    AutoAttrDataGrid.ScrollIntoView(AutoAttrDataGrid.SelectedItem);
+            }
+        }
+
         public Core.Classes.Weapon.Attribute Attribute = null;
 
         private void SaveBtn_Click(object sender, RoutedEventArgs e)
         {
             if(WepAttrTabs.SelectedIndex == 0) //Pre-existing
             {
-                //TODO: Automatic mode
-                DialogResult = false; //TODO: Change to TRUE
+                if (AutoAttrDataGrid.SelectedIndex < 0)
+                {
+                    MessageBox.Show("Please select an Attribute.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                Attribute.ID = App.WeaponsAttributes[AutoAttrDataGrid.SelectedIndex].ID;
+                Attribute.Name = App.WeaponsAttributes[AutoAttrDataGrid.SelectedIndex].Name;
+
+                DialogResult = true;
             } else //Custom
             {
                 if(string.IsNullOrWhiteSpace(Attribute.Name))

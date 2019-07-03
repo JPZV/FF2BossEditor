@@ -27,11 +27,54 @@ namespace FF2BossEditor.Views.RootFrame
             InitializeComponent();
         }
 
+        private void BasicInfoView_Loaded(object sender, RoutedEventArgs e)
+        {
+            ActualBoss.PropertyChanged -= ActualBoss_PropertyChanged;
+            ActualBoss.PropertyChanged += ActualBoss_PropertyChanged;
+        }
+
+        private void ActualBoss_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            OnPropertyChanged("IsTabReady");
+        }
+
+        public override bool CheckTabReady(bool ShowError)
+        {
+            if(string.IsNullOrWhiteSpace(ActualBoss.Name))
+            {
+                if(ShowError)
+                    MessageBox.Show("Please insert the boss' name.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            } else if(ActualBoss.Class <= 0)
+            {
+                if (ShowError)
+                    MessageBox.Show("Please select the boss' class.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            } else if (string.IsNullOrWhiteSpace(ActualBoss.Model))
+            {
+                if (ShowError)
+                    MessageBox.Show("Please browse for the boss' model.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            } else if (string.IsNullOrWhiteSpace(ActualBoss.RageDamage))
+            {
+                if (ShowError)
+                    MessageBox.Show("Please insert the boss' Rage Damage.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            } else if (string.IsNullOrWhiteSpace(ActualBoss.Health))
+            {
+                if (ShowError)
+                    MessageBox.Show("Please insert the boss' health.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+
+            return true;
+        }
+
         private void BrowseBtn_Click(object sender, RoutedEventArgs e)
         {
             if (ActualBoss == null)
                 ActualBoss = new Core.Classes.Boss();
-
+            
             Microsoft.Win32.OpenFileDialog openDialog = new Microsoft.Win32.OpenFileDialog()
             {
                 DefaultExt = ".mdl",
@@ -55,6 +98,29 @@ namespace FF2BossEditor.Views.RootFrame
                 return;
 
             e.Handled = !Core.CommonFunctions.IsStringInFormat(e.Text, "0123456789.n+-*/^");
+        }
+    }
+
+    public class ClassIndexConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        {
+            if (value is int valueInt)
+            {
+                return valueInt - 1;
+            }
+
+            return value;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        {
+            if (value is int valueInt)
+            {
+                return valueInt + 1;
+            }
+
+            return value;
         }
     }
 }

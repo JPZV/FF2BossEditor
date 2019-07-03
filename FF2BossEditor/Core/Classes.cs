@@ -97,7 +97,7 @@ namespace FF2BossEditor.Core
         public class Boss : INotifyPropertyChanged
         {
             private string _Name = "";
-            private int _Class = 0;
+            private int _Class = 1;
             private string _Model = "";
             private int _RageDist = 800;
             private string _RageDamage = "1900";
@@ -451,7 +451,7 @@ namespace FF2BossEditor.Core
 
                 private string _Name = "";
                 private int _ID = 1;
-                private int _Arg = 0;
+                private double _Arg = 0;
 
                 public string Name
                 {
@@ -471,7 +471,7 @@ namespace FF2BossEditor.Core
                         OnPropertyChanged("ID");
                     }
                 }
-                public int Arg
+                public double Arg
                 {
                     get => _Arg;
                     set
@@ -480,6 +480,7 @@ namespace FF2BossEditor.Core
                         OnPropertyChanged("Arg");
                     }
                 }
+                [Newtonsoft.Json.JsonIgnore]
                 public Weapon Parent { get; } = null;
 
                 public event PropertyChangedEventHandler PropertyChanged;
@@ -490,7 +491,7 @@ namespace FF2BossEditor.Core
                 }
             }
 
-            private int _Index = 0;
+            private int _Index = -1;
             private string _Class = "";
             private bool _Visible = false;
             private ObservableCollection<Attribute> _Attributes = new ObservableCollection<Attribute>();
@@ -537,6 +538,31 @@ namespace FF2BossEditor.Core
             protected void OnPropertyChanged(string name)
             {
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+            }
+        }
+
+        public class WeaponTemplate : Weapon
+        {
+            private List<int> _Characters = new List<int>();
+            private string _Name = "";
+
+            public List<int> Characters
+            {
+                get => _Characters;
+                set
+                {
+                    _Characters = value;
+                    OnPropertyChanged("Characters");
+                }
+            }
+            public string Name
+            {
+                get => _Name;
+                set
+                {
+                    _Name = value;
+                    OnPropertyChanged("Name");
+                }
             }
         }
     }

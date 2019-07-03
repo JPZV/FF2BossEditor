@@ -2,9 +2,12 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:FF2BossEditor"
+             xmlns:core="clr-namespace:FF2BossEditor.Core"
              StartupUri="RootFrame.xaml">
-    
+
     <Application.Resources>
+        <core:TabColorFromBoolConverter x:Key="TabColorFromBoolConverter"/>
+        
         <Style TargetType="Label">
             <Setter Property="VerticalContentAlignment" Value="Center"/>
         </Style>

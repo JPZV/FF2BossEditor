@@ -6,7 +6,8 @@
              xmlns:local="clr-namespace:FF2BossEditor.Views.RootFrame"
              xmlns:core="clr-namespace:FF2BossEditor.Core"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             Loaded="DescView_Loaded">
 
     <DockPanel Background="White">
         <Button x:Name="AddBtn" DockPanel.Dock="Top" Content="Add Language" Style="{StaticResource HeadBtnStyle}" Click="AddBtn_Click"/>
@@ -20,22 +21,26 @@
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Expander Height="150" IsExpanded="True">
+                        <Expander IsExpanded="True">
                             <Expander.Header>
-                                <ComboBox IsEditable="True" Text="{Binding Path=Lang, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Loaded="LangBox_Loaded">
-                                    <ComboBoxItem>en</ComboBoxItem>
-                                    <ComboBoxItem>ru</ComboBoxItem>
-                                    <ComboBoxItem>da</ComboBoxItem>
-                                    <ComboBoxItem>de</ComboBoxItem>
-                                    <ComboBoxItem>es</ComboBoxItem>
-                                    <ComboBoxItem>ko</ComboBoxItem>
-                                    <ComboBoxItem>it</ComboBoxItem>
-                                    <ComboBoxItem>nk</ComboBoxItem>
-                                    <ComboBoxItem>pl</ComboBoxItem>
-                                </ComboBox>
+                                <DockPanel>
+                                    <Button DockPanel.Dock="Right" Content="Delete" Style="{StaticResource HeadBtnStyle}" Click="DelBtn_Click"/>
+                                    
+                                    <ComboBox IsEditable="True" Text="{Binding Path=Lang, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Loaded="LangBox_Loaded">
+                                        <ComboBoxItem>en</ComboBoxItem>
+                                        <ComboBoxItem>ru</ComboBoxItem>
+                                        <ComboBoxItem>da</ComboBoxItem>
+                                        <ComboBoxItem>de</ComboBoxItem>
+                                        <ComboBoxItem>es</ComboBoxItem>
+                                        <ComboBoxItem>ko</ComboBoxItem>
+                                        <ComboBoxItem>it</ComboBoxItem>
+                                        <ComboBoxItem>nk</ComboBoxItem>
+                                        <ComboBoxItem>pl</ComboBoxItem>
+                                    </ComboBox>
+                                </DockPanel>
                             </Expander.Header>
 
-                            <TextBox Text="{Binding Path=Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLines="7" AcceptsReturn="True" PreviewKeyDown="DescText_PreviewKeyDown"/>
+                            <TextBox Text="{Binding Path=Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="120" MaxLines="7" AcceptsReturn="True" PreviewKeyDown="DescText_PreviewKeyDown"/>
                         </Expander>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
