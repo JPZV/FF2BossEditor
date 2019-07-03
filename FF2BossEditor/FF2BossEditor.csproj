@@ -99,6 +99,9 @@
     <Compile Include="Windows\WepAttrEditor.xaml.cs">
       <DependentUpon>WepAttrEditor.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\WepSelector.xaml.cs">
+      <DependentUpon>WepSelector.xaml</DependentUpon>
+    </Compile>
     <Page Include="RootFrame.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -135,6 +138,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\WepSelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -154,10 +161,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Data\weapons.json">
+    <None Include="Data\attributes.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Data\attributes.json">
+    <None Include="Data\weapons.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />

@@ -116,7 +116,12 @@ namespace FF2BossEditor.Views.RootFrame
                 return;
             if (((FrameworkElement)sender).DataContext is Core.Classes.Weapon wep)
             {
-                //TODO: Add Weapons DataBase
+                Windows.WepSelector wepSelector = new Windows.WepSelector(wep.Index);
+                if (wepSelector.ShowDialog() == true)
+                {
+                    wep.Class = wepSelector.SelectedTemplate.Class;
+                    wep.Index = wepSelector.SelectedTemplate.Index;
+                }
             }
         }
     }

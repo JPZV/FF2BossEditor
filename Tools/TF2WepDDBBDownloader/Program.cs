@@ -315,100 +315,92 @@ namespace TF2WepDDBBDownloader
                                 Name = ReplacePlaceholderName(JTokenToString(item["name"]))
                             };
 
-                            JObject propObj = item;
-                            if (item["prefab"] != null)
+                            List<JObject> prefabsList = new List<JObject>()
                             {
-                                string prefabName = JTokenToString(item["prefab"]);
-                                if (string.IsNullOrWhiteSpace(prefabName))
-                                    continue;
+                                item
+                            };
+                            while(prefabsList[prefabsList.Count - 1]["prefab"] != null)
+                            {
+                                string prefabName = JTokenToString(prefabsList[prefabsList.Count - 1]["prefab"]);
+                                if (string.IsNullOrWhiteSpace(prefabName) || prefabsList.Any(t => t.Properties().Where(p => p.Name == prefabName).Count() > 0))
+                                    break;
                                 if (prefabName.Contains(' '))
-                                    prefabName = prefabName.Substring(prefabName.LastIndexOf(' ') + 1);
+                                {
+                                    string[] prefArray = prefabName.Split(' ');
+                                    for(int i = 0; i < prefArray.Length; i++)
+                                    {
+                                        if (prefArray[i].StartsWith("weapon"))
+                                        {
+                                            prefabName = prefArray[i];
+                                            break;
+                                        }
+                                    }
+                                }
+                                    
 
                                 if (!(root["prefabs"][prefabName] is JObject prefab))
-                                    continue;
+                                    break;
 
-                                propObj = prefab;
+                                prefabsList.Add(prefab);
                             }
 
-                            neoWep.Class = JTokenToString(propObj["item_class"]);
-                            if (!neoWep.Class.StartsWith("tf_weapon") && !neoWep.Class.StartsWith("saxxy") && !neoWep.Class.StartsWith("tf_wearable"))
+                            foreach(JObject prefab in prefabsList)
+                            {
+                                if (prefab["item_class"] != null)
+                                {
+                                    neoWep.Class = JTokenToString(prefab["item_class"]);
+                                    break;
+                                }
+                            }
+                            if (string.IsNullOrWhiteSpace(neoWep.Class))
                                 continue;
 
-                            if (propObj["used_by_classes"] != null)
+                            if (!neoWep.Class.StartsWith("tf_weapon") && !neoWep.Class.StartsWith("saxxy"))
+                                continue;
+
+                            foreach (JObject prefab in prefabsList)
                             {
-                                foreach (JProperty characterProp in propObj["used_by_classes"].Children())
+                                if (prefab["used_by_classes"] != null)
                                 {
-                                    if (JTokenToString(characterProp.Value) != "1")
-                                        continue;
-                                    switch (characterProp.Name)
+                                    foreach (JProperty characterProp in prefab["used_by_classes"].Children())
                                     {
-                                        case "scout":
-                                            neoWep.Characters.Add(1);
-                                            break;
-                                        case "sniper":
-                                            neoWep.Characters.Add(2);
-                                            break;
-                                        case "soldier":
-                                            neoWep.Characters.Add(3);
-                                            break;
-                                        case "demoman":
-                                            neoWep.Characters.Add(4);
-                                            break;
-                                        case "medic":
-                                            neoWep.Characters.Add(5);
-                                            break;
-                                        case "heavy":
-                                            neoWep.Characters.Add(6);
-                                            break;
-                                        case "pyro":
-                                            neoWep.Characters.Add(7);
-                                            break;
-                                        case "spy":
-                                            neoWep.Characters.Add(8);
-                                            break;
-                                        case "engineer":
-                                            neoWep.Characters.Add(9);
-                                            break;
+                                        if (JTokenToString(characterProp.Value) != "1")
+                                            continue;
+                                        switch (characterProp.Name)
+                                        {
+                                            case "scout":
+                                                neoWep.Characters.Add(1);
+                                                break;
+                                            case "sniper":
+                                                neoWep.Characters.Add(2);
+                                                break;
+                                            case "soldier":
+                                                neoWep.Characters.Add(3);
+                                                break;
+                                            case "demoman":
+                                                neoWep.Characters.Add(4);
+                                                break;
+                                            case "medic":
+                                                neoWep.Characters.Add(5);
+                                                break;
+                                            case "heavy":
+                                                neoWep.Characters.Add(6);
+                                                break;
+                                            case "pyro":
+                                                neoWep.Characters.Add(7);
+                                                break;
+                                            case "spy":
+                                                neoWep.Characters.Add(8);
+                                                break;
+                                            case "engineer":
+                                                neoWep.Characters.Add(9);
+                                                break;
+                                        }
                                     }
-                                }
-                            } else if (item["used_by_classes"] != null)
-                            {
-                                foreach (JProperty characterProp in item["used_by_classes"].Children())
-                                {
-                                    if (JTokenToString(characterProp.Value) != "1")
-                                        continue;
-                                    switch (characterProp.Name)
-                                    {
-                                        case "scout":
-                                            neoWep.Characters.Add(1);
-                                            break;
-                                        case "sniper":
-                                            neoWep.Characters.Add(2);
-                                            break;
-                                        case "soldier":
-                                            neoWep.Characters.Add(3);
-                                            break;
-                                        case "demoman":
-                                            neoWep.Characters.Add(4);
-                                            break;
-                                        case "medic":
-                                            neoWep.Characters.Add(5);
-                                            break;
-                                        case "heavy":
-                                            neoWep.Characters.Add(6);
-                                            break;
-                                        case "pyro":
-                                            neoWep.Characters.Add(7);
-                                            break;
-                                        case "spy":
-                                            neoWep.Characters.Add(8);
-                                            break;
-                                        case "engineer":
-                                            neoWep.Characters.Add(9);
-                                            break;
-                                    }
+                                    break;
                                 }
                             }
+
                             wepList.Add(neoWep);
                         }
                     }

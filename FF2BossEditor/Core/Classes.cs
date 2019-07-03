@@ -491,7 +491,7 @@ namespace FF2BossEditor.Core
                 }
             }
 
-            private int _Index = 0;
+            private int _Index = -1;
             private string _Class = "";
             private bool _Visible = false;
             private ObservableCollection<Attribute> _Attributes = new ObservableCollection<Attribute>();

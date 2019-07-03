@@ -14,7 +14,7 @@ namespace FF2BossEditor.Core
             DataContext = ActualBoss;
         }
 
-        public virtual bool IsTabReady() => true;
+        public virtual bool IsTabReady(bool ShowError) => true;
         public Classes.Boss ActualBoss = new Classes.Boss();
 
         public void UpdateBoss(Classes.Boss NeoBoss)

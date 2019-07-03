@@ -5,9 +5,125 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FF2BossEditor.Windows"
         mc:Ignorable="d"
-        Title="WepSelector" Height="450" Width="800">
+        MinHeight="350" MinWidth="450"
+        Height="400" Width="500"
+        Title="Weapon Selector"
+        Loaded="WepSelector_Loaded">
     
-    <Grid>
+    <DockPanel>
+        <Grid DockPanel.Dock="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="SelBtn" Content="Select" Grid.Column="0" Style="{StaticResource HeadBtnStyle}" Click="SelBtn_Click"/>
+            <Button x:Name="CancelBtn" Content="Cancel" Grid.Column="1" Style="{StaticResource HeadBtnStyle}" Click="CancelBtn_Click"/>
+        </Grid>
+        <Grid DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <Label Content="Selected weapon" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontWeight="Bold"/>
+            
+            <!--Index-->
+            <Label Content="Index: " Grid.Row="1" Grid.Column="0" Margin="15, 0, 0, 0"/>
+            <Label Content="{Binding Index}" Grid.Row="1" Grid.Column="1"/>
+
+            <!--Name-->
+            <Label Content="Name: " Grid.Row="2" Grid.Column="0" Margin="15, 0, 0, 0"/>
+            <Label Content="{Binding Name}" Grid.Row="2" Grid.Column="1"/>
+        </Grid>
         
-    </Grid>
+        <TabControl x:Name="CharacterTabs">
+            <TabItem Header="Scout">
+                <DataGrid x:Name="ScoutWepsDG" ItemsSource="{Binding}" RowHeaderWidth="0" SelectionMode="Single" SelectionChanged="CharacterDG_SelectionChanged">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Index" Binding="{Binding Path=Index}"/>
+                        <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                        <DataGridTextColumn Header="Class" Binding="{Binding Path=Class}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Sniper">
+                <DataGrid x:Name="SniperWepsDG" ItemsSource="{Binding}" RowHeaderWidth="0" SelectionMode="Single" SelectionChanged="CharacterDG_SelectionChanged">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Index" Binding="{Binding Path=Index}"/>
+                        <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                        <DataGridTextColumn Header="Class" Binding="{Binding Path=Class}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Soldier">
+                <DataGrid x:Name="SoldierWepsDG" ItemsSource="{Binding}" RowHeaderWidth="0" SelectionMode="Single" SelectionChanged="CharacterDG_SelectionChanged">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Index" Binding="{Binding Path=Index}"/>
+                        <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                        <DataGridTextColumn Header="Class" Binding="{Binding Path=Class}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Demoman">
+                <DataGrid x:Name="DemoWepsDG" ItemsSource="{Binding}" RowHeaderWidth="0" SelectionMode="Single" SelectionChanged="CharacterDG_SelectionChanged">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Index" Binding="{Binding Path=Index}"/>
+                        <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                        <DataGridTextColumn Header="Class" Binding="{Binding Path=Class}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Medic">
+                <DataGrid x:Name="MedicWepsDG" ItemsSource="{Binding}" RowHeaderWidth="0" SelectionMode="Single" SelectionChanged="CharacterDG_SelectionChanged">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Index" Binding="{Binding Path=Index}"/>
+                        <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                        <DataGridTextColumn Header="Class" Binding="{Binding Path=Class}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Heavy">
+                <DataGrid x:Name="HeavyWepsDG" ItemsSource="{Binding}" RowHeaderWidth="0" SelectionMode="Single" SelectionChanged="CharacterDG_SelectionChanged">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Index" Binding="{Binding Path=Index}"/>
+                        <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                        <DataGridTextColumn Header="Class" Binding="{Binding Path=Class}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Pyro">
+                <DataGrid x:Name="PyroWepsDG" ItemsSource="{Binding}" RowHeaderWidth="0" SelectionMode="Single" SelectionChanged="CharacterDG_SelectionChanged">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Index" Binding="{Binding Path=Index}"/>
+                        <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                        <DataGridTextColumn Header="Class" Binding="{Binding Path=Class}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Spy">
+                <DataGrid x:Name="SpyWepsDG" ItemsSource="{Binding}" RowHeaderWidth="0" SelectionMode="Single" SelectionChanged="CharacterDG_SelectionChanged">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Index" Binding="{Binding Path=Index}"/>
+                        <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                        <DataGridTextColumn Header="Class" Binding="{Binding Path=Class}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Engineer">
+                <DataGrid x:Name="EngiWepsDG" ItemsSource="{Binding}" RowHeaderWidth="0" SelectionMode="Single" SelectionChanged="CharacterDG_SelectionChanged">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Index" Binding="{Binding Path=Index}"/>
+                        <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                        <DataGridTextColumn Header="Class" Binding="{Binding Path=Class}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+        </TabControl>
+    </DockPanel>
 </Window>
