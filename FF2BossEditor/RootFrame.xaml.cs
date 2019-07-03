@@ -82,6 +82,12 @@ namespace FF2BossEditor
 
         private async void ExportCFGBtn_Click(object sender, RoutedEventArgs e)
         {
+            if (!BasicInfo.CheckTabReady(true) ||
+                !Desc.CheckTabReady(true) ||
+                !Weps.CheckTabReady(true) ||
+                !Abilities.CheckTabReady(true))
+                return;
+
             ActualBoss = MergeBossesFromViews();
             await Core.CFGCore.ExportBoss(ActualBoss);
         }

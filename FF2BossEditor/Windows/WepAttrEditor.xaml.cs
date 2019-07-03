@@ -32,7 +32,8 @@ namespace FF2BossEditor.Windows
             if (!string.IsNullOrWhiteSpace(Attribute.Name))
             {
                 AutoAttrDataGrid.SelectedIndex = App.WeaponsAttributes.FindIndex(t => t.Name == Attribute.Name);
-                AutoAttrDataGrid.ScrollIntoView(AutoAttrDataGrid.SelectedItem);
+                if(AutoAttrDataGrid.SelectedItem != null)
+                    AutoAttrDataGrid.ScrollIntoView(AutoAttrDataGrid.SelectedItem);
             }
         }
 

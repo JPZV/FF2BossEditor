@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,64 @@ namespace FF2BossEditor.Views.RootFrame
         public WepView()
         {
             InitializeComponent();
+        }
+
+        private void WepView_Loaded(object sender, RoutedEventArgs e)
+        {
+            ActualBoss.Weapons.CollectionChanged -= Weapons_CollectionChanged;
+            ActualBoss.Weapons.CollectionChanged += Weapons_CollectionChanged;
+        }
+
+        private void Weapons_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+        {
+            if (e.NewItems != null)
+            {
+                foreach (object item in e.NewItems)
+                {
+                    ((INotifyPropertyChanged)item).PropertyChanged += delegate { OnPropertyChanged("IsTabReady"); };
+                    if(item is Core.Classes.Weapon weaponItem)
+                        weaponItem.Attributes.CollectionChanged += Weapons_CollectionChanged;
+                }
+            }
+            OnPropertyChanged("IsTabReady");
+        }
+
+        public override bool CheckTabReady(bool ShowError)
+        {
+            if (ActualBoss.Weapons.Count == 0)
+            {
+                if (ShowError)
+                    MessageBox.Show("Please add at least one weapon.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+
+            for(int i = 0; i < ActualBoss.Weapons.Count; i++)
+            {
+                if (ActualBoss.Weapons[i].Index < 0)
+                {
+                    if (ShowError)
+                        MessageBox.Show(string.Format("The weapon's Index must be greater than or equal to 0 (Zero).\nWeapon {0}", i + 1), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return false;
+                }
+                else if (string.IsNullOrWhiteSpace(ActualBoss.Weapons[i].Class))
+                {
+                    if (ShowError)
+                        MessageBox.Show(string.Format("Please insert the weapon's class.\nWeapon {0}", i + 1), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return false;
+                }
+
+                foreach(Core.Classes.Weapon.Attribute attr in ActualBoss.Weapons[i].Attributes)
+                {
+                    if (attr.ID <= 0)
+                    {
+                        if (ShowError)
+                            MessageBox.Show(string.Format("The attribute's Index must be greater than 0 (Zero).\nWeapon {0}", i + 1), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return false;
+                    }
+                }
+            }
+
+            return true;
         }
 
         private void AddBtn_Click(object sender, RoutedEventArgs e)

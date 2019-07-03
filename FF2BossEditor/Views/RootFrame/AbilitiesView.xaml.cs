@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,54 @@ namespace FF2BossEditor.Views.RootFrame
         public AbilitiesView()
         {
             InitializeComponent();
+        }
+
+        private void AbilitiesView_Loaded(object sender, RoutedEventArgs e)
+        {
+            ActualBoss.Abilities.CollectionChanged -= Abilities_CollectionChanged;
+            ActualBoss.Abilities.CollectionChanged += Abilities_CollectionChanged;
+        }
+
+        private void Abilities_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+        {
+            if (e.NewItems != null)
+            {
+                foreach (object item in e.NewItems)
+                {
+                    ((INotifyPropertyChanged)item).PropertyChanged += delegate { OnPropertyChanged("IsTabReady"); };
+                    if (item is Core.Classes.Ability abiItem)
+                        abiItem.Arguments.CollectionChanged += Abilities_CollectionChanged;
+                }
+            }
+            OnPropertyChanged("IsTabReady");
+        }
+
+        public override bool CheckTabReady(bool ShowError)
+        {
+            foreach(Core.Classes.Ability ability in ActualBoss.Abilities)
+            {
+                int dupArgs = 0;
+                if (string.IsNullOrWhiteSpace(ability.Name))
+                {
+                    if (ShowError)
+                        MessageBox.Show("Please insert the ability's name.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return false;
+                }
+                else if (string.IsNullOrWhiteSpace(ability.Plugin))
+                {
+                    if (ShowError)
+                        MessageBox.Show(string.Format("Please insert the ability's name.\nAbility: {0}", ability.Name), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return false;
+                }
+                else if(ability.Arguments.GroupBy(t => t.Index).Where(g => (dupArgs = g.Count()) > 1).Count() > 0)
+                {
+                    if (ShowError)
+                        MessageBox.Show(string.Format("There are {0} arguments with the same index.\nAbility: {1}", dupArgs, ability.Name), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         private void AddBtn_Click(object sender, RoutedEventArgs e)

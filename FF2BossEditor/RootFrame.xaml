@@ -33,22 +33,46 @@
         </Menu>
 
         <TabControl>
-            <TabItem Header="Basic info">
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock Text="Basic info" Foreground="{Binding IsTabReady, ElementName=BasicInfo, Converter={StaticResource TabColorFromBoolConverter}, Mode=OneWay}"/>
+                </TabItem.Header>
+                
                 <views:BasicInfoView x:Name="BasicInfo"/>
             </TabItem>
-            <TabItem Header="Descriptions">
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock Text="Descriptions" Foreground="{Binding IsTabReady, ElementName=Desc, Converter={StaticResource TabColorFromBoolConverter}, Mode=OneWay}"/>
+                </TabItem.Header>
+                
                 <views:DescView x:Name="Desc"/>
             </TabItem>
-            <TabItem Header="Weapons">
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock Text="Weapons" Foreground="{Binding IsTabReady, ElementName=Weps, Converter={StaticResource TabColorFromBoolConverter}, Mode=OneWay}"/>
+                </TabItem.Header>
+
                 <views:WepView x:Name="Weps"/>
             </TabItem>
-            <TabItem Header="Abilities">
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock Text="Abilities" Foreground="{Binding IsTabReady, ElementName=Abilities, Converter={StaticResource TabColorFromBoolConverter}, Mode=OneWay}"/>
+                </TabItem.Header>
+
                 <views:AbilitiesView x:Name="Abilities"/>
             </TabItem>
-            <TabItem Header="Sounds">
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock Text="Sounds" Foreground="{Binding IsTabReady, ElementName=Sounds, Converter={StaticResource TabColorFromBoolConverter}, Mode=OneWay}"/>
+                </TabItem.Header>
+
                 <views:SoundsView x:Name="Sounds"/>
             </TabItem>
-            <TabItem Header="Files">
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock Text="Files" Foreground="{Binding IsTabReady, ElementName=CustomFiles, Converter={StaticResource TabColorFromBoolConverter}, Mode=OneWay}"/>
+                </TabItem.Header>
+
                 <views:CustomFilesView x:Name="CustomFiles"/>
             </TabItem>
         </TabControl>
