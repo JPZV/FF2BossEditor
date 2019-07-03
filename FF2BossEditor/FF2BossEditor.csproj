@@ -121,6 +121,9 @@
     <Compile Include="Windows\AbilityEditor.xaml.cs">
       <DependentUpon>AbilityEditor.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\DDBBDownloader.xaml.cs">
+      <DependentUpon>DDBBDownloader.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\WepAttrEditor.xaml.cs">
       <DependentUpon>WepAttrEditor.xaml</DependentUpon>
     </Compile>
@@ -156,6 +159,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\AbilityEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DDBBDownloader.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

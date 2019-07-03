@@ -131,5 +131,11 @@ namespace FF2BossEditor
                 UpdateBossInViews();
             }
         }
+
+        private void DownloadDDBBMI_Click(object sender, RoutedEventArgs e)
+        {
+            Windows.DDBBDownloader downloader = new Windows.DDBBDownloader();
+            downloader.ShowDialog();
+        }
     }
 }
