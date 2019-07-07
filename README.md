@@ -19,7 +19,7 @@ Optional: Go to Settings>Download Weapon Database to download the lastest Weapon
 * [Newtonsoft.Json](https://www.newtonsoft.com/json) by James Newton-King
 * [Costura.Fody](https://github.com/Fody/Costura) by Fody
 
-## [ToDo List](projects/1)
+## [ToDo List](/../../projects/1)
 
 ## Contributing
 
