@@ -9,7 +9,8 @@
         MinHeight="450" MinWidth="600"
         Height="450" Width="800"
         Title="FF2 Boss Editor"
-        Loaded="RootFrame_Loaded">
+        Loaded="RootFrame_Loaded"
+        Closing="RootFrame_Closing">
 
     <DockPanel>
         <Button x:Name="ExportCFGBtn" Content="Export CFG" DockPanel.Dock="Bottom" Style="{StaticResource HeadBtnStyle}" Click="ExportCFGBtn_Click"/>

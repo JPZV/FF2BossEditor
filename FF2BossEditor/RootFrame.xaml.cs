@@ -24,7 +24,9 @@ namespace FF2BossEditor
             InitializeComponent();
         }
 
-        public Core.Classes.Boss ActualBoss = new Core.Classes.Boss();
+        private Core.Classes.Boss ActualBoss = new Core.Classes.Boss();
+        private Core.Classes.Boss PrevBoss = null;
+        private string ActualBossPath = "";
 
         private void RootFrame_Loaded(object sender, RoutedEventArgs e)
         {
@@ -92,33 +94,47 @@ namespace FF2BossEditor
             await Core.CFGCore.ExportBoss(ActualBoss);
         }
 
-        private void NewMI_Click(object sender, RoutedEventArgs e)
+        private async void NewMI_Click(object sender, RoutedEventArgs e)
         {
+            if (!await CheckIfBossHasChanges())
+                return;
+
             ActualBoss = new Core.Classes.Boss();
+            ActualBossPath = "";
+            PrevBoss = null;
             UpdateBossInViews();
         }
 
         private async void OpenMI_Click(object sender, RoutedEventArgs e)
         {
-            Core.Classes.Boss tmpBoss = await Core.StorageCore<Core.Classes.Boss>.GenericGetObject(
-                                            DefaultExt: ".ff2boss",
-                                            ExtFilter: "FF2 Boss File (*.ff2boss)|*.ff2boss"
-                                        );
+            if (!await CheckIfBossHasChanges())
+                return;
 
-            if(tmpBoss != null)
+            Microsoft.Win32.OpenFileDialog openDialog = new Microsoft.Win32.OpenFileDialog()
             {
-                ActualBoss = tmpBoss;
-                UpdateBossInViews();
+                DefaultExt = ".ff2boss",
+                Filter = "FF2 Boss File (*.ff2boss)|*.ff2boss"
+            };
+
+            bool? openResult = openDialog.ShowDialog();
+            if (openResult == true)
+            {
+                Core.Classes.Boss tmpBoss = await Core.StorageCore<Core.Classes.Boss>.GenericGetObject(openDialog.FileName);
+                if (tmpBoss != null)
+                {
+                    ActualBoss = tmpBoss;
+                    ActualBossPath = openDialog.FileName;
+                    PrevBoss = tmpBoss.Clone();
+                    UpdateBossInViews();
+                }
             }
         }
 
         private async void SaveMI_Click(object sender, RoutedEventArgs e)
         {
             ActualBoss = MergeBossesFromViews();
-            await Core.StorageCore<Core.Classes.Boss>.GenericSaveObject(ActualBoss,
-                                            DefaultExt: ".ff2boss",
-                                            ExtFilter: "FF2 Boss File (*.ff2boss)|*.ff2boss"
-                                        );
+            await SaveBoss(ActualBoss);
+            PrevBoss = ActualBoss.Clone();
         }
 
         private async void ImportCFGMI_Click(object sender, RoutedEventArgs e)
@@ -136,6 +152,46 @@ namespace FF2BossEditor
         {
             Windows.DDBBDownloader downloader = new Windows.DDBBDownloader();
             downloader.ShowDialog();
+        }
+
+        private async Task<bool> SaveBoss(Core.Classes.Boss Boss)
+        {
+            if (!string.IsNullOrWhiteSpace(ActualBossPath))
+                return await Core.StorageCore<Core.Classes.Boss>.GenericSaveObject(Boss, ActualBossPath);
+
+            Microsoft.Win32.SaveFileDialog saveDialog = new Microsoft.Win32.SaveFileDialog()
+            {
+                DefaultExt = ".ff2boss",
+                Filter = "FF2 Boss File (*.ff2boss)|*.ff2boss"
+            };
+
+            bool? saveResult = saveDialog.ShowDialog();
+            if (saveResult == true)
+            {
+                if(await Core.StorageCore<Core.Classes.Boss>.GenericSaveObject(Boss, saveDialog.FileName))
+                {
+                    ActualBossPath = saveDialog.FileName;
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private async void RootFrame_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            await CheckIfBossHasChanges();
+        }
+
+        private async Task<bool> CheckIfBossHasChanges()
+        {
+            Core.Classes.Boss mergedBoss = MergeBossesFromViews();
+
+            if (PrevBoss != null && !mergedBoss.IsClassEqual(PrevBoss) && !mergedBoss.IsClassEmpty())
+            {
+                if (MessageBox.Show("Do you want to save the current Boss Configuration?", "Warning", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                    return await SaveBoss(mergedBoss);
+            }
+            return true;
         }
     }
 }

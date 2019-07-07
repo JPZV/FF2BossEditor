@@ -46,7 +46,7 @@ namespace FF2BossEditor.Windows
                 DialogResult = true;
             } catch (Exception ex)
             {
-                if(MessageBox.Show("An error ocurred while downloading the DataBase.\nShow the exception?.", "Error", MessageBoxButton.YesNo, MessageBoxImage.Error) == MessageBoxResult.Yes)
+                if(MessageBox.Show("An error ocurred while downloading the DataBase.\nShow the exception?", "Error", MessageBoxButton.YesNo, MessageBoxImage.Error) == MessageBoxResult.Yes)
                     MessageBox.Show(ex.ToString(), "Exception", MessageBoxButton.OK, MessageBoxImage.Error);
                 DialogResult = false;
             }

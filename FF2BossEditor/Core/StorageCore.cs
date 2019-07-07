@@ -10,6 +10,24 @@ namespace FF2BossEditor.Core
 {
     public class StorageCore<T>
     {
+        public static async Task<T> GenericGetObject(string FullPath)
+        {
+            try
+            {
+                using (StreamReader sr = new StreamReader(FullPath))
+                {
+                    string json = await sr.ReadToEndAsync();
+                    T openObj = JsonConvert.DeserializeObject<T>(json);
+                    return openObj;
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.ToString());
+            }
+            return default;
+        }
+
         public static async Task<T> GenericGetObject(string DefaultExt, string ExtFilter)
         {
             Microsoft.Win32.OpenFileDialog openDialog = new Microsoft.Win32.OpenFileDialog()
@@ -20,22 +38,26 @@ namespace FF2BossEditor.Core
 
             bool? openResult = openDialog.ShowDialog();
             if (openResult == true)
+                return await GenericGetObject(openDialog.FileName);
+            return default;
+        }
+
+        public static async Task<bool> GenericSaveObject(T Obj, string FullPath)
+        {
+            try
             {
-                try
+                using (var file = File.CreateText(FullPath))
                 {
-                    using (StreamReader sr = new StreamReader(openDialog.FileName))
-                    {
-                        string json = await sr.ReadToEndAsync();
-                        T openObj = JsonConvert.DeserializeObject<T>(json);
-                        return openObj;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    System.Diagnostics.Debug.WriteLine(ex.ToString());
+                    string json = JsonConvert.SerializeObject(Obj, Formatting.Indented);
+                    await file.WriteAsync(json);
+                    return true;
                 }
             }
-            return default;
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.ToString());
+            }
+            return false;
         }
 
         public static async Task<bool> GenericSaveObject(T Obj, string DefaultExt, string ExtFilter)
@@ -48,20 +70,7 @@ namespace FF2BossEditor.Core
 
             bool? saveResult = saveDialog.ShowDialog();
             if (saveResult == true)
-            {
-                try
-                {
-                    using (var file = File.CreateText(saveDialog.FileName))
-                    {
-                        string json = JsonConvert.SerializeObject(Obj, Formatting.Indented);
-                        await file.WriteAsync(json);
-                        return true;
-                    }
-                } catch (Exception ex)
-                {
-                    System.Diagnostics.Debug.WriteLine(ex.ToString());
-                }
-            }
+                return await GenericSaveObject(Obj, saveDialog.FileName);
             return false;
         }
     }
