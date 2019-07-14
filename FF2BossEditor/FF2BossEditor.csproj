@@ -140,6 +140,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SplashScreen.xaml.cs">
+      <DependentUpon>SplashScreen.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\RootFrame\AbilitiesView.xaml.cs">
       <DependentUpon>AbilitiesView.xaml</DependentUpon>
     </Compile>
@@ -171,6 +174,10 @@
       <DependentUpon>WepSelector.xaml</DependentUpon>
     </Compile>
     <Page Include="RootFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SplashScreen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

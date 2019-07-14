@@ -16,6 +16,69 @@ namespace FF2BossEditor.Core
             bool IsClassEqual(IClassFunctions Obj); //I'm using this to avoid replacing the == operator
         }
 
+        #region App
+        public class AbilityTemplate : Ability
+        {
+            private string _PublicName = "";
+            public string PublicName
+            {
+                get => _PublicName;
+                set
+                {
+                    _PublicName = value;
+                    OnPropertyChanged("PublicName");
+                }
+            }
+        }
+
+        public class ObservableString : INotifyPropertyChanged
+        {
+            private string _Value = "";
+            public string Value
+            {
+                get => _Value;
+                set
+                {
+                    _Value = value;
+                    OnPropertyChanged("Value");
+                }
+            }
+
+            protected void OnPropertyChanged(string name)
+            {
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+            }
+
+            public event PropertyChangedEventHandler PropertyChanged;
+        }
+
+        public class PluginsPkg
+        {
+            public class AbilityPlugin
+            {
+                public string PluginName { get; set; } = "";
+                public List<AbilityTemplate> AbilityTemplates { get; set; } = new List<AbilityTemplate>();
+            }
+
+            public List<AbilityPlugin> AbilityPlugins { get; set; } = new List<AbilityPlugin>();
+
+            public void Clear()
+            {
+                AbilityPlugins.Clear();
+            }
+
+            public PluginsPkg Clone()
+            {
+                PluginsPkg neoPkg = new PluginsPkg
+                {
+                    AbilityPlugins = new List<AbilityPlugin>(AbilityPlugins)
+                };
+                return neoPkg;
+            }
+        }
+        #endregion
+
+        #region Boss
         public class Ability : INotifyPropertyChanged, IClassFunctions
         {
             public class Argument : INotifyPropertyChanged, IClassFunctions
@@ -989,6 +1052,7 @@ namespace FF2BossEditor.Core
                 }
             }
         }
+        #endregion
 
         public static bool CheckClassListEquality(IEnumerable<IClassFunctions> List1, IEnumerable<IClassFunctions> List2)
         {

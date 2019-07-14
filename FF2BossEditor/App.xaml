@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:FF2BossEditor"
              xmlns:core="clr-namespace:FF2BossEditor.Core"
-             StartupUri="RootFrame.xaml">
+             StartupUri="SplashScreen.xaml">
 
     <Application.Resources>
         <core:TabColorFromBoolConverter x:Key="TabColorFromBoolConverter"/>

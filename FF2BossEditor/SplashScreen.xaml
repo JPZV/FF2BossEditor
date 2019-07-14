@@ -1,0 +1,18 @@
+﻿<Window x:Class="FF2BossEditor.SplashScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FF2BossEditor"
+        mc:Ignorable="d"
+        Title="SplashScreen"
+        Height="400" Width="800"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Loaded="SplashScreen_Loaded"
+        WindowStartupLocation="CenterScreen">
+    
+    <Grid>
+        <Label Content="{Binding Status.Value}" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>
