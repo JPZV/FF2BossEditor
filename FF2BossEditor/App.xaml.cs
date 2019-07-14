@@ -80,13 +80,13 @@ namespace FF2BossEditor
                         {
                             string json = await sr.ReadToEndAsync();
                             JObject jObj = JsonConvert.DeserializeObject<JObject>(json);
-                            if (jObj["name"] == null)
+                            if (jObj["Name"] == null)
                             {
                                 System.Diagnostics.Debug.WriteLine(string.Format("{0} doesn't has a name!", pluginsFiles[file]));
                                 continue;
                             }
                             string plugName = jObj["name"].ToString();
-                            if (jObj["abilities"] != null && jObj["abilities"] is JArray abilities)
+                            if (jObj["Abilities"] != null && jObj["Abilities"] is JArray abilities)
                             {
                                 Core.Classes.PluginsPkg.AbilityPlugin abiPlugin = new Core.Classes.PluginsPkg.AbilityPlugin()
                                 {

@@ -1198,6 +1198,8 @@ namespace FF2BossEditor.Windows
             #endregion
         }.OrderBy(t => t.PublicName).ToList();
 
+        public readonly List<PluginsPkg.AbilityPlugin> AbilitiesPlugins = new List<PluginsPkg.AbilityPlugin>(App.Plugins.AbilityPlugins);
+
         public AbilityEditor(Ability _Ability)
         {
             InitializeComponent();
@@ -1205,8 +1207,10 @@ namespace FF2BossEditor.Windows
             DataContext = Ability;
             FF2OfficialMI.DataContext = FF2OfficialTemplates;
             FF2BatMI.DataContext = FF2BatTemplates;
+            PluginsMI.DataContext = AbilitiesPlugins;
+            PluginsMI.IsEnabled = AbilitiesPlugins.Count > 0;
         }
-
+        
         public Ability Ability = null;
 
         private void SaveBtn_Click(object sender, RoutedEventArgs e)
