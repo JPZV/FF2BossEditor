@@ -52,29 +52,46 @@ namespace FF2BossEditor.Core
             public event PropertyChangedEventHandler PropertyChanged;
         }
 
-        public class PluginsPkg
+        public class Plugin : INotifyPropertyChanged
         {
-            public class AbilityPlugin
-            {
-                public string PluginName { get; set; } = "";
-                public List<AbilityTemplate> AbilityTemplates { get; set; } = new List<AbilityTemplate>();
-            }
+            private string _PluginName = "";
+            private string _PluginPath = "";
+            private List<AbilityTemplate> _AbilityTemplates = new List<AbilityTemplate>();
 
-            public List<AbilityPlugin> AbilityPlugins { get; set; } = new List<AbilityPlugin>();
-
-            public void Clear()
+            public string PluginName
             {
-                AbilityPlugins.Clear();
-            }
-
-            public PluginsPkg Clone()
-            {
-                PluginsPkg neoPkg = new PluginsPkg
+                get => _PluginName;
+                set
                 {
-                    AbilityPlugins = new List<AbilityPlugin>(AbilityPlugins)
-                };
-                return neoPkg;
+                    _PluginName = value;
+                    OnPropertyChanged("PluginName");
+                }
             }
+            public string PluginPath
+            {
+                get => _PluginPath;
+                set
+                {
+                    _PluginPath = value;
+                    OnPropertyChanged("PluginPath");
+                }
+            }
+            public List<AbilityTemplate> AbilityTemplates
+            {
+                get => _AbilityTemplates;
+                set
+                {
+                    _AbilityTemplates = value;
+                    OnPropertyChanged("AbilityTemplates");
+                }
+            }
+
+            protected void OnPropertyChanged(string name)
+            {
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+            }
+
+            public event PropertyChangedEventHandler PropertyChanged;
         }
         #endregion
 

@@ -30,6 +30,8 @@
             <MenuItem Header="Settings">
                 <MenuItem Header="Download Weapon Database" Click="DownloadDDBBMI_Click"/>
                 <Separator/>
+                <MenuItem Header="Plugins Manager" Click="PluginsManagerMI_Click"/>
+                <Separator/>
                 <MenuItem Header="Settings" IsEnabled="False"/>
             </MenuItem>
         </Menu>

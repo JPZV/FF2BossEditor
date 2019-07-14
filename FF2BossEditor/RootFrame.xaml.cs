@@ -154,6 +154,13 @@ namespace FF2BossEditor
             downloader.ShowDialog();
         }
 
+        private void PluginsManagerMI_Click(object sender, RoutedEventArgs e)
+        {
+            Windows.PluginsManager manager = new Windows.PluginsManager();
+            manager.ShowDialog();
+            //TODO: Reload Plugins
+        }
+
         private async Task<bool> SaveBoss(Core.Classes.Boss Boss)
         {
             if (!string.IsNullOrWhiteSpace(ActualBossPath))

@@ -1198,7 +1198,7 @@ namespace FF2BossEditor.Windows
             #endregion
         }.OrderBy(t => t.PublicName).ToList();
 
-        public readonly List<PluginsPkg.AbilityPlugin> AbilitiesPlugins = new List<PluginsPkg.AbilityPlugin>(App.Plugins.AbilityPlugins);
+        public readonly List<Plugin> AbilitiesPlugins = App.Plugins.Where(t => t.AbilityTemplates.Count > 0).ToList();
 
         public AbilityEditor(Ability _Ability)
         {

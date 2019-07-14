@@ -2,6 +2,7 @@
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Configuration;
 using System.Data;
 using System.IO;
@@ -18,7 +19,7 @@ namespace FF2BossEditor
     {
         public static List<Core.Classes.Weapon.Attribute> WeaponsAttributes = new List<Core.Classes.Weapon.Attribute>();
         public static List<Core.Classes.WeaponTemplate> WeaponsTemplates = new List<Core.Classes.WeaponTemplate>();
-        public static Core.Classes.PluginsPkg Plugins = new Core.Classes.PluginsPkg();
+        public static ObservableCollection<Core.Classes.Plugin> Plugins = new ObservableCollection<Core.Classes.Plugin>();
 
         public static async Task ReloadWeaponsAttributes()
         {
@@ -62,9 +63,11 @@ namespace FF2BossEditor
 
         public static async Task ReloadPlugins()
         {
-            Core.Classes.PluginsPkg tmpPkg = new Core.Classes.PluginsPkg();
-            if(Plugins != null)
-                tmpPkg = Plugins.Clone();
+            ObservableCollection<Core.Classes.Plugin> tmpList;
+            if (Plugins != null)
+                tmpList = new ObservableCollection<Core.Classes.Plugin>(Plugins);
+            else
+                tmpList = new ObservableCollection<Core.Classes.Plugin>();
             try
             {
                 Plugins.Clear();
@@ -85,22 +88,22 @@ namespace FF2BossEditor
                                 System.Diagnostics.Debug.WriteLine(string.Format("{0} doesn't has a name!", pluginsFiles[file]));
                                 continue;
                             }
-                            string plugName = jObj["name"].ToString();
+                            string plugName = jObj["Name"].ToString();
+                            Core.Classes.Plugin neoPlugin = new Core.Classes.Plugin()
+                            {
+                                PluginName = plugName,
+                                PluginPath = pluginsFiles[file]
+                            };
                             if (jObj["Abilities"] != null && jObj["Abilities"] is JArray abilities)
                             {
-                                Core.Classes.PluginsPkg.AbilityPlugin abiPlugin = new Core.Classes.PluginsPkg.AbilityPlugin()
-                                {
-                                    PluginName = plugName
-                                };
-                                
                                 for(int abi = 0; abi < abilities.Count; abi++)
                                 {
                                     Core.Classes.AbilityTemplate template = abilities[abi].ToObject<Core.Classes.AbilityTemplate>();
-                                    abiPlugin.AbilityTemplates.Add(template);
+                                    neoPlugin.AbilityTemplates.Add(template);
                                 }
-
-                                Plugins.AbilityPlugins.Add(abiPlugin);
                             }
+                            if(neoPlugin.AbilityTemplates.Count != 0)
+                                Plugins.Add(neoPlugin);
                         }
                     } catch (Exception ex)
                     {
@@ -110,7 +113,7 @@ namespace FF2BossEditor
             } catch(Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.ToString());
-                Plugins = tmpPkg;
+                Plugins = tmpList;
             }
         }
     }

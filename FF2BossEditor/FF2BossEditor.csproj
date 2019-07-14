@@ -167,6 +167,12 @@
     <Compile Include="Windows\DDBBDownloader.xaml.cs">
       <DependentUpon>DDBBDownloader.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\PluginCreator.xaml.cs">
+      <DependentUpon>PluginCreator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\PluginsManager.xaml.cs">
+      <DependentUpon>PluginsManager.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\WepAttrEditor.xaml.cs">
       <DependentUpon>WepAttrEditor.xaml</DependentUpon>
     </Compile>
@@ -210,6 +216,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\DDBBDownloader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\PluginCreator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\PluginsManager.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
