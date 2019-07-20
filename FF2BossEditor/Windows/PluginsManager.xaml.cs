@@ -68,14 +68,14 @@ namespace FF2BossEditor.Windows
                 {
                     string json = await sr.ReadToEndAsync();
                     JObject jObj = JsonConvert.DeserializeObject<JObject>(json);
-                    if (jObj["Name"] == null)
+                    if (jObj["PluginName"] == null)
                     {
-                        MessageBox.Show("This plugin seems to be corrupted.\nMissing Plugin's Name (\"Name\").", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        MessageBox.Show("This plugin seems to be corrupted.\nMissing Plugin's Name (\"PluginName\").", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                         return;
                     }
-                    if (jObj["Abilities"] == null || !(jObj["Abilities"] is JArray abilities))
+                    if (jObj["AbilityTemplates"] == null || !(jObj["AbilityTemplates"] is JArray abilities))
                     {
-                        MessageBox.Show("This plugin seems to be corrupted.\nMissing Abilities Templates (\"Abilities\").", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        MessageBox.Show("This plugin seems to be corrupted.\nMissing Abilities Templates (\"AbilityTemplates\").", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                         return;
                     }
                 }

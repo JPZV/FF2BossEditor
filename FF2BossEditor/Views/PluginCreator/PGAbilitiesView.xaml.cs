@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,43 +13,24 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FF2BossEditor.Views.RootFrame
+namespace FF2BossEditor.Views.PluginCreator
 {
     /// <summary>
-    /// Interaction logic for AbilitiesView.xaml
+    /// Interaction logic for PGAbilitiesView.xaml
     /// </summary>
-    public partial class AbilitiesView : Core.UserControls.BossTabControl
+    public partial class PGAbilitiesView : Core.UserControls.PluginTabControl
     {
-        public AbilitiesView()
+        public PGAbilitiesView()
         {
             InitializeComponent();
         }
 
-        private void AbilitiesView_Loaded(object sender, RoutedEventArgs e)
-        {
-            ActualBoss.Abilities.CollectionChanged -= Abilities_CollectionChanged;
-            ActualBoss.Abilities.CollectionChanged += Abilities_CollectionChanged;
-        }
-
-        private void Abilities_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
-        {
-            if (e.NewItems != null)
-            {
-                foreach (object item in e.NewItems)
-                {
-                    ((INotifyPropertyChanged)item).PropertyChanged += delegate { OnPropertyChanged("IsTabReady"); };
-                    if (item is Core.Classes.Ability abiItem)
-                        abiItem.Arguments.CollectionChanged += Abilities_CollectionChanged;
-                }
-            }
-            OnPropertyChanged("IsTabReady");
-        }
-
         public override bool CheckTabReady(bool ShowError)
         {
-            foreach(Core.Classes.Ability ability in ActualBoss.Abilities)
+            foreach (Core.Classes.Ability ability in ActualPlugin.AbilityTemplates)
             {
                 int dupArgs = 0;
+                int emptyArgs = 0;
                 if (string.IsNullOrWhiteSpace(ability.Name))
                 {
                     if (ShowError)
@@ -63,10 +43,16 @@ namespace FF2BossEditor.Views.RootFrame
                         MessageBox.Show(string.Format("Please insert the ability's name.\nAbility: {0}", ability.Name), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     return false;
                 }
-                else if(ability.Arguments.GroupBy(t => t.Index).Where(g => (dupArgs = g.Count()) > 1).Count() > 0)
+                else if (ability.Arguments.GroupBy(t => t.Index).Where(g => (dupArgs = g.Count()) > 1).Count() > 0)
                 {
                     if (ShowError)
                         MessageBox.Show(string.Format("There are {0} arguments with the same index.\nAbility: {1}", dupArgs, ability.Name), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return false;
+                }
+                else if ((emptyArgs = ability.Arguments.Count(t => string.IsNullOrWhiteSpace(t.Alias))) > 0)
+                {
+                    if (ShowError)
+                        MessageBox.Show(string.Format("There are {0} arguments without an alias.\nAbility: {1}", emptyArgs, ability.Name), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     return false;
                 }
             }
@@ -74,16 +60,26 @@ namespace FF2BossEditor.Views.RootFrame
             return true;
         }
 
-        private void AddBtn_Click(object sender, RoutedEventArgs e)
+        private void AddAbiBtn_Click(object sender, RoutedEventArgs e)
         {
-            Windows.AbilityEditor abilityEditor = new Windows.AbilityEditor(new Core.Classes.Ability());
-            if (abilityEditor.ShowDialog() == true)
+            if (ActualPlugin == null)
+                ActualPlugin = new Core.Classes.Plugin();
+            ActualPlugin.AbilityTemplates.Add(new Core.Classes.AbilityTemplate());
+        }
+
+        private void DeleteBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (sender == null)
+                return;
+            if (((FrameworkElement)sender).DataContext is Core.Classes.AbilityTemplate abi)
             {
-                ActualBoss.Abilities.Add(abilityEditor.Ability);
+                if (ActualPlugin == null)
+                    ActualPlugin = new Core.Classes.Plugin();
+                ActualPlugin.AbilityTemplates.Remove(abi);
             }
         }
 
-        private void EditAbility_Click(object sender, RoutedEventArgs e)
+        private void EditBtn_Click(object sender, RoutedEventArgs e)
         {
             if (sender == null)
                 return;
@@ -96,16 +92,6 @@ namespace FF2BossEditor.Views.RootFrame
                     ability.Plugin = abilityEditor.Ability.Plugin;
                     ability.Arguments = abilityEditor.Ability.Arguments;
                 }
-            }
-        }
-
-        private void DelAbility_Click(object sender, RoutedEventArgs e)
-        {
-            if (sender == null)
-                return;
-            if (((FrameworkElement)sender).DataContext is Core.Classes.Ability ability)
-            {
-                ActualBoss.Abilities.Remove(ability);
             }
         }
     }

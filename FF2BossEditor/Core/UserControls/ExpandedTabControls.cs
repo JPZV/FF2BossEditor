@@ -8,11 +8,11 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace FF2BossEditor.Core
+namespace FF2BossEditor.Core.UserControls
 {
-    public class ExpandedTabControl : UserControl, INotifyPropertyChanged
+    public class BossTabControl : UserControl, INotifyPropertyChanged
     {
-        public ExpandedTabControl()
+        public BossTabControl()
         {
             DataContext = ActualBoss;
         }
@@ -66,6 +66,35 @@ namespace FF2BossEditor.Core
 
             //Custom files
             ActualBoss.CustomFiles = NeoBoss.CustomFiles;
+        }
+    }
+
+    public class PluginTabControl : UserControl
+    {
+        public PluginTabControl()
+        {
+            DataContext = ActualPlugin;
+        }
+
+        public virtual bool CheckTabReady(bool ShowError) => true;
+        public Classes.Plugin ActualPlugin = new Classes.Plugin();
+
+        public void UpdatePlugin(Classes.Plugin NeoPlugin)
+        {
+            if (NeoPlugin == null)
+                return;
+            if (ActualPlugin == null)
+            {
+                ActualPlugin = new Classes.Plugin();
+                DataContext = ActualPlugin;
+            }
+
+            //Misc
+            ActualPlugin.PluginName = NeoPlugin.PluginName;
+            ActualPlugin.PluginPath = NeoPlugin.PluginPath;
+
+            //Abilities
+            ActualPlugin.AbilityTemplates = NeoPlugin.AbilityTemplates;
         }
     }
 

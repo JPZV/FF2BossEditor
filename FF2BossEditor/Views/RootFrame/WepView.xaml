@@ -1,17 +1,17 @@
-﻿<core:ExpandedTabControl x:Class="FF2BossEditor.Views.RootFrame.WepView"
+﻿<uc:BossTabControl x:Class="FF2BossEditor.Views.RootFrame.WepView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:FF2BossEditor.Views.RootFrame"
-             xmlns:core="clr-namespace:FF2BossEditor.Core"
+             xmlns:uc="clr-namespace:FF2BossEditor.Core.UserControls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              Loaded="WepView_Loaded">
 
-    <core:ExpandedTabControl.Resources>
+    <uc:BossTabControl.Resources>
         <local:WeaponIndexConverter x:Key="WeaponIndexConverter"/>
-    </core:ExpandedTabControl.Resources>
+    </uc:BossTabControl.Resources>
     
     <DockPanel Background="White">
         <Button x:Name="AddBtn" DockPanel.Dock="Top" Content="Add Weapon" Style="{StaticResource HeadBtnStyle}" Click="AddBtn_Click"/>
@@ -85,4 +85,4 @@
             </ItemsControl>
         </ScrollViewer>
     </DockPanel>
-</core:ExpandedTabControl>
+</uc:BossTabControl>

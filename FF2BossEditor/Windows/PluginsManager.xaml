@@ -22,7 +22,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button x:Name="CreateBtn" Content="Create Plugin" Grid.Column="0" Style="{StaticResource HeadBtnStyle}" Click="CreateBtn_Click"/>
+            <Button x:Name="CreateBtn" Content="Plugin Creator" Grid.Column="0" Style="{StaticResource HeadBtnStyle}" Click="CreateBtn_Click"/>
             <Button x:Name="ImportBtn" Content="Import Plugin" Grid.Column="1" Style="{StaticResource HeadBtnStyle}" Click="ImportBtn_Click"/>
             <Button x:Name="RefreshBtn" Content="Refresh list" Grid.Column="2" Style="{StaticResource HeadBtnStyle}" Click="RefreshBtn_Click"/>
         </Grid>

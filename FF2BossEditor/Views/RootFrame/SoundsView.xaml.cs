@@ -21,7 +21,7 @@ namespace FF2BossEditor.Views.RootFrame
     /// <summary>
     /// Interaction logic for SoundsView.xaml
     /// </summary>
-    public partial class SoundsView : Core.ExpandedTabControl
+    public partial class SoundsView : Core.UserControls.BossTabControl
     {
         public enum BrowseResult
         {

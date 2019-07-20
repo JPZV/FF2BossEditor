@@ -19,7 +19,7 @@ namespace FF2BossEditor.Views.RootFrame
     /// <summary>
     /// Interaction logic for CustomFilesView.xaml
     /// </summary>
-    public partial class CustomFilesView : Core.ExpandedTabControl
+    public partial class CustomFilesView : Core.UserControls.BossTabControl
     {
         private readonly string[] allowedFolders = { "materials", "media", "models", "particles", "resource", "sound" };
 

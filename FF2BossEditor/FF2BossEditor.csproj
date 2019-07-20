@@ -131,7 +131,7 @@
     <Compile Include="Core\CFGCore.cs" />
     <Compile Include="Core\Classes.cs" />
     <Compile Include="Core\CommonFunctions.cs" />
-    <Compile Include="Core\ExpandedTabControl.cs" />
+    <Compile Include="Core\UserControls\ExpandedTabControls.cs" />
     <Compile Include="Core\StorageCore.cs" />
     <Compile Include="RootFrame.xaml.cs">
       <DependentUpon>RootFrame.xaml</DependentUpon>
@@ -142,6 +142,9 @@
     </Compile>
     <Compile Include="SplashScreen.xaml.cs">
       <DependentUpon>SplashScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PluginCreator\PGAbilitiesView.xaml.cs">
+      <DependentUpon>PGAbilitiesView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\RootFrame\AbilitiesView.xaml.cs">
       <DependentUpon>AbilitiesView.xaml</DependentUpon>
@@ -184,6 +187,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SplashScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PluginCreator\PGAbilitiesView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

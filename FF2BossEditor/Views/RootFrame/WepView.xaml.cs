@@ -19,7 +19,7 @@ namespace FF2BossEditor.Views.RootFrame
     /// <summary>
     /// Interaction logic for WepView.xaml
     /// </summary>
-    public partial class WepView : Core.ExpandedTabControl
+    public partial class WepView : Core.UserControls.BossTabControl
     {
         public WepView()
         {
@@ -113,12 +113,7 @@ namespace FF2BossEditor.Views.RootFrame
                 return;
             if (((FrameworkElement)sender).DataContext is Core.Classes.Weapon.Attribute attr)
             {
-                Windows.WepAttrEditor attrEditor = new Windows.WepAttrEditor(new Core.Classes.Weapon.Attribute(attr.Parent)
-                {
-                    Arg = attr.Arg,
-                    ID = attr.ID,
-                    Name = attr.Name
-                });
+                Windows.WepAttrEditor attrEditor = new Windows.WepAttrEditor(attr.Clone(attr.Parent));
                 if (attrEditor.ShowDialog() == true)
                 {
                     attr.Arg = attrEditor.Attribute.Arg;

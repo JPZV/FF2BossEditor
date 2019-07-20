@@ -20,7 +20,7 @@ namespace FF2BossEditor.Views.RootFrame
     /// <summary>
     /// Interaction logic for BasicInfoView.xaml
     /// </summary>
-    public partial class BasicInfoView : Core.ExpandedTabControl
+    public partial class BasicInfoView : Core.UserControls.BossTabControl
     {
         public BasicInfoView()
         {
