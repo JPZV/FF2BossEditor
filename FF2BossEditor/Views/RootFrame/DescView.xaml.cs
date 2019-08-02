@@ -20,7 +20,7 @@ namespace FF2BossEditor.Views.RootFrame
     /// <summary>
     /// Interaction logic for DescView.xaml
     /// </summary>
-    public partial class DescView : Core.ExpandedTabControl
+    public partial class DescView : Core.UserControls.BossTabControl
     {
         public DescView()
         {

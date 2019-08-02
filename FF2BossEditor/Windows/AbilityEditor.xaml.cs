@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using static FF2BossEditor.Core.Classes;
 
 namespace FF2BossEditor.Windows
 {
@@ -19,20 +20,6 @@ namespace FF2BossEditor.Windows
     /// </summary>
     public partial class AbilityEditor : Window
     {
-        public class AbilityTemplate : Core.Classes.Ability
-        {
-            private string _PublicName = "";
-            public string PublicName
-            {
-                get => _PublicName;
-                set
-                {
-                    _PublicName = value;
-                    OnPropertyChanged("PublicName");
-                }
-            }
-        }
-
         public readonly List<AbilityTemplate> FF2OfficialTemplates = new List<AbilityTemplate>()
         {
             #region Default Abilities
@@ -1211,16 +1198,20 @@ namespace FF2BossEditor.Windows
             #endregion
         }.OrderBy(t => t.PublicName).ToList();
 
-        public AbilityEditor(Core.Classes.Ability _Ability)
+        public readonly List<Plugin> AbilitiesPlugins = App.Plugins.Where(t => t.AbilityTemplates.Count > 0).ToList();
+
+        public AbilityEditor(Ability _Ability)
         {
             InitializeComponent();
             Ability = _Ability;
             DataContext = Ability;
             FF2OfficialMI.DataContext = FF2OfficialTemplates;
             FF2BatMI.DataContext = FF2BatTemplates;
+            PluginsMI.DataContext = AbilitiesPlugins;
+            PluginsMI.IsEnabled = AbilitiesPlugins.Count > 0;
         }
-
-        public Core.Classes.Ability Ability = null;
+        
+        public Ability Ability = null;
 
         private void SaveBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -1254,7 +1245,7 @@ namespace FF2BossEditor.Windows
         {
             if (sender == null)
                 return;
-            if (((FrameworkElement)sender).DataContext is Core.Classes.Ability.Argument arg)
+            if (((FrameworkElement)sender).DataContext is Ability.Argument arg)
             {
                 Ability.Arguments.Remove(arg);
                 //This is needed when deleting the new row
@@ -1269,7 +1260,7 @@ namespace FF2BossEditor.Windows
                 return;
 
             FrameworkElement senderElement = ((FrameworkElement)sender);
-            senderElement.Visibility = senderElement.DataContext is Core.Classes.Ability.Argument ? Visibility.Visible : Visibility.Collapsed;
+            senderElement.Visibility = senderElement.DataContext is Ability.Argument ? Visibility.Visible : Visibility.Collapsed;
         }
 
         private void FF2TemplateMI_Click(object sender, RoutedEventArgs e)

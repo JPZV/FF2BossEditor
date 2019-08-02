@@ -1,0 +1,45 @@
+﻿<Window x:Class="FF2BossEditor.Windows.PluginCreator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FF2BossEditor.Windows"
+        xmlns:views="clr-namespace:FF2BossEditor.Views.PluginCreator"
+        mc:Ignorable="d"
+        MinHeight="450" MinWidth="600"
+        Height="450" Width="800"
+        Title="Plugin Creator"
+        Loaded="PluginCreator_Loaded"
+        Closing="PluginCreator_Closing"
+        WindowStartupLocation="CenterScreen">
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="New" Click="NewMI_Click"/>
+                <MenuItem Header="Open" Click="OpenMI_Click"/>
+                <MenuItem Header="Save" Click="SaveMI_Click"/>
+                <Separator/>
+                <MenuItem Header="Exit"/>
+            </MenuItem>
+        </Menu>
+
+        <DockPanel>
+            <Grid DockPanel.Dock="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Content="Plugin's name: " Grid.Column="0"/>
+                <TextBox Text="{Binding Path=PluginName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1"/>
+            </Grid>
+
+            <TabControl>
+                <TabItem Header="Abilities templates">
+                    <views:PGAbilitiesView x:Name="Abilities"/>
+                </TabItem>
+            </TabControl>
+        </DockPanel>
+    </DockPanel>
+</Window>

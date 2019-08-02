@@ -37,6 +37,22 @@
                         </Style>
                     </MenuItem.ItemContainerStyle>
                 </MenuItem>
+                <Separator/>
+                <MenuItem x:Name="PluginsMI" Header="Plugins" ItemsSource="{Binding}" Click="FF2TemplateMI_Click">
+                    <MenuItem.ItemContainerStyle>
+                        <Style>
+                            <Setter Property="MenuItem.Header" Value="{Binding PluginName}"/>
+                            <Setter Property="MenuItem.ItemsSource" Value="{Binding AbilityTemplates}"/>
+                            <Setter Property="MenuItem.ItemContainerStyle">
+                                <Setter.Value>
+                                    <Style>
+                                        <Setter Property="MenuItem.Header" Value="{Binding PublicName}"/>
+                                    </Style>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </MenuItem.ItemContainerStyle>
+                </MenuItem>
             </MenuItem>
         </Menu>
 

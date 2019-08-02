@@ -133,7 +133,8 @@ namespace FF2BossEditor
         private async void SaveMI_Click(object sender, RoutedEventArgs e)
         {
             ActualBoss = MergeBossesFromViews();
-            await SaveBoss(ActualBoss);
+            if (!await SaveBoss(ActualBoss))
+                return;
             PrevBoss = ActualBoss.Clone();
         }
 
@@ -152,6 +153,18 @@ namespace FF2BossEditor
         {
             Windows.DDBBDownloader downloader = new Windows.DDBBDownloader();
             downloader.ShowDialog();
+        }
+
+        private void PluginsManagerMI_Click(object sender, RoutedEventArgs e)
+        {
+            Windows.PluginsManager manager = new Windows.PluginsManager();
+            manager.ShowDialog();
+        }
+
+        private void PluginsCreatorMI_Click(object sender, RoutedEventArgs e)
+        {
+            Windows.PluginCreator creator = new Windows.PluginCreator();
+            creator.Show();
         }
 
         private async Task<bool> SaveBoss(Core.Classes.Boss Boss)
@@ -186,7 +199,7 @@ namespace FF2BossEditor
         {
             Core.Classes.Boss mergedBoss = MergeBossesFromViews();
 
-            if (PrevBoss != null && !mergedBoss.IsClassEqual(PrevBoss) && !mergedBoss.IsClassEmpty())
+            if ((PrevBoss == null || !mergedBoss.IsClassEqual(PrevBoss)) && !mergedBoss.IsClassEmpty())
             {
                 if (MessageBox.Show("Do you want to save the current Boss Configuration?", "Warning", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                     return await SaveBoss(mergedBoss);

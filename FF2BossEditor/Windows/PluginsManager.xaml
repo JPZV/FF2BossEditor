@@ -1,0 +1,55 @@
+﻿<Window x:Class="FF2BossEditor.Windows.PluginsManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FF2BossEditor.Windows"
+        mc:Ignorable="d"
+        MinHeight="450" MinWidth="600"
+        Height="450" Width="800"
+        Title="Plugins Manager"
+        WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <local:IsListEmptyConverter x:Key="IsListEmptyConverter"/>
+    </Window.Resources>
+
+    <DockPanel>
+        <Grid DockPanel.Dock="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="CreateBtn" Content="Plugin Creator" Grid.Column="0" Style="{StaticResource HeadBtnStyle}" Click="CreateBtn_Click"/>
+            <Button x:Name="ImportBtn" Content="Import Plugin" Grid.Column="1" Style="{StaticResource HeadBtnStyle}" Click="ImportBtn_Click"/>
+            <Button x:Name="RefreshBtn" Content="Refresh list" Grid.Column="2" Style="{StaticResource HeadBtnStyle}" Click="RefreshBtn_Click"/>
+        </Grid>
+
+        <DataGrid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" ItemsSource="{Binding}" RowHeaderWidth="0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name"  Binding="{Binding Path=PluginName}"/>
+                <DataGridTemplateColumn Header="Has Abilities?">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <CheckBox IsChecked="{Binding Path=AbilityTemplates, Converter={StaticResource IsListEmptyConverter}}" IsEnabled="False"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Action">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Click="DelPlugin_Click" Content="Delete"/>
+                                <!--TODO: Create Edit Button-->
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+</Window>

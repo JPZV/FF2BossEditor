@@ -16,6 +16,154 @@ namespace FF2BossEditor.Core
             bool IsClassEqual(IClassFunctions Obj); //I'm using this to avoid replacing the == operator
         }
 
+        #region App
+        public class AbilityTemplate : Ability
+        {
+            private string _PublicName = "";
+            public string PublicName
+            {
+                get => _PublicName;
+                set
+                {
+                    _PublicName = value;
+                    OnPropertyChanged("PublicName");
+                }
+            }
+
+            public new AbilityTemplate Clone()
+            {
+                AbilityTemplate clone = new AbilityTemplate()
+                {
+                    Name = Name,
+                    Plugin = Plugin,
+                    PublicName = PublicName
+                };
+                foreach (Argument arg in Arguments)
+                    clone.Arguments.Add(arg.Clone());
+                return clone;
+            }
+
+            public override bool IsClassEmpty()
+            {
+                if (string.IsNullOrWhiteSpace(PublicName))
+                    return true;
+                return base.IsClassEmpty();
+            }
+
+            public override bool IsClassEqual(IClassFunctions Obj)
+            {
+                if (Obj is AbilityTemplate template)
+                    if (PublicName != template.PublicName)
+                        return false;
+
+                return base.IsClassEqual(Obj);
+            }
+        }
+
+        public class ObservableString : INotifyPropertyChanged
+        {
+            private string _Value = "";
+            public string Value
+            {
+                get => _Value;
+                set
+                {
+                    _Value = value;
+                    OnPropertyChanged("Value");
+                }
+            }
+
+            protected void OnPropertyChanged(string name)
+            {
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+            }
+
+            public event PropertyChangedEventHandler PropertyChanged;
+        }
+
+        public class Plugin : INotifyPropertyChanged, IClassFunctions
+        {
+            private string _PluginName = "";
+            private string _PluginPath = "";
+            private ObservableCollection<AbilityTemplate> _AbilityTemplates = new ObservableCollection<AbilityTemplate>();
+
+            public string PluginName
+            {
+                get => _PluginName;
+                set
+                {
+                    _PluginName = value;
+                    OnPropertyChanged("PluginName");
+                }
+            }
+            [Newtonsoft.Json.JsonIgnore]
+            public string PluginPath
+            {
+                get => _PluginPath;
+                set
+                {
+                    _PluginPath = value;
+                    OnPropertyChanged("PluginPath");
+                }
+            }
+            public ObservableCollection<AbilityTemplate> AbilityTemplates
+            {
+                get => _AbilityTemplates;
+                set
+                {
+                    _AbilityTemplates = value;
+                    OnPropertyChanged("AbilityTemplates");
+                }
+            }
+
+            public Plugin Clone()
+            {
+                Plugin clone = new Plugin()
+                {
+                    PluginName = PluginName,
+                    PluginPath = PluginPath
+                };
+
+                foreach (AbilityTemplate template in AbilityTemplates)
+                    clone.AbilityTemplates.Add(template.Clone());
+
+                return clone;
+            }
+
+            public bool IsClassEmpty()
+            {
+                foreach (IClassFunctions classF in AbilityTemplates)
+                    if (!classF.IsClassEmpty())
+                        return false;
+
+                return string.IsNullOrWhiteSpace(PluginName) && string.IsNullOrWhiteSpace(PluginPath) && AbilityTemplates.Count == 0;
+            }
+
+            public bool IsClassEqual(IClassFunctions Obj)
+            {
+                if (Obj is Plugin plugin)
+                {
+                    if (PluginName != plugin.PluginName || PluginPath != plugin.PluginPath)
+                        return false;
+
+                    if (!CheckClassListEquality(plugin.AbilityTemplates, AbilityTemplates))
+                        return false;
+
+                    return true;
+                }
+                return false;
+            }
+
+            public event PropertyChangedEventHandler PropertyChanged;
+
+            protected void OnPropertyChanged(string name)
+            {
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+            }
+        }
+        #endregion
+
+        #region Boss
         public class Ability : INotifyPropertyChanged, IClassFunctions
         {
             public class Argument : INotifyPropertyChanged, IClassFunctions
@@ -138,7 +286,7 @@ namespace FF2BossEditor.Core
                 return clone;
             }
 
-            public bool IsClassEmpty()
+            public virtual bool IsClassEmpty()
             {
                 foreach(IClassFunctions classF in Arguments)
                     if (!classF.IsClassEmpty())
@@ -147,7 +295,7 @@ namespace FF2BossEditor.Core
                 return string.IsNullOrWhiteSpace(Name) && string.IsNullOrWhiteSpace(Plugin) && Arguments.Count == 0;
             }
 
-            public bool IsClassEqual(IClassFunctions Obj)
+            public virtual bool IsClassEqual(IClassFunctions Obj)
             {
                 if (Obj is Ability abi)
                 {
@@ -989,6 +1137,7 @@ namespace FF2BossEditor.Core
                 }
             }
         }
+        #endregion
 
         public static bool CheckClassListEquality(IEnumerable<IClassFunctions> List1, IEnumerable<IClassFunctions> List2)
         {
