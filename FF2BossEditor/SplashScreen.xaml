@@ -13,6 +13,7 @@
         WindowStartupLocation="CenterScreen">
     
     <Grid>
-        <Label Content="{Binding Status.Value}" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Image Source="Resources/Images/SpalshScreen-1080.png" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Content="{Binding Status.Value}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Foreground="White"/>
     </Grid>
 </Window>

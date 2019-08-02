@@ -61,7 +61,7 @@
                                 <Button x:Name="AddAttrBtn" Content="Add Attribute" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Click="AddAttrBtn_Click"/>
                                 <DataGrid Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" ItemsSource="{Binding Attributes}" Style="{StaticResource DataGridWithoutScroll}">
                                     <DataGrid.Columns>
-                                        <DataGridTextColumn Header="Attribute's name"  Binding="{Binding Name}"/>
+                                        <DataGridTextColumn Header="Attribute's name" Binding="{Binding Name}"/>
                                         <DataGridTextColumn Header="Value" Binding="{Binding Arg}"/>
                                         <DataGridTemplateColumn Header="Actions">
                                             <DataGridTemplateColumn.CellTemplate>
