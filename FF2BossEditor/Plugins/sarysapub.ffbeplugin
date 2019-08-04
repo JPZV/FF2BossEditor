@@ -1,0 +1,1705 @@
+{
+  "PluginName": "Sarysapub",
+  "AbilityTemplates": [
+    {
+      "PublicName": "ROTT Static Weapons",
+      "Name": "rage_rott_static_weapons",
+      "Plugin": "ff2_sarysapub1",
+      "Arguments": [
+        {
+          "Index": 1,
+          "Value": "tf_weapon_pistol_scout",
+          "Alias": "Ranged Weapon Classname"
+        },
+        {
+          "Index": 2,
+          "Value": "209",
+          "Alias": "Ranged Weapon Index"
+        },
+        {
+          "Index": 3,
+          "Value": "15 ; 0 ; 1 ; 0.33 ; 4 ; 8.33",
+          "Alias": "Ranged Weapon Attributes"
+        },
+        {
+          "Index": 4,
+          "Value": "1",
+          "Alias": "Ranged Weapon Visibility"
+        },
+        {
+          "Index": 5,
+          "Value": "99",
+          "Alias": "Ranged Weapon Clip Size"
+        },
+        {
+          "Index": 6,
+          "Value": "0",
+          "Alias": "Is Ranged Weapon Primary"
+        },
+        {
+          "Index": 11,
+          "Value": "tf_weapon_bat",
+          "Alias": "Melee Weapon Classname"
+        },
+        {
+          "Index": 12,
+          "Value": "44",
+          "Alias": "Melee Weapon Index"
+        },
+        {
+          "Index": 13,
+          "Value": "15 ; 0 ; 1 ; 0.75 ; 49 ; 1 ; 38 ; 0 ; 258 ; 1",
+          "Alias": "Melee Weapon Attributes"
+        },
+        {
+          "Index": 14,
+          "Value": "1",
+          "Alias": "Melee Weapon Visibility"
+        }
+      ]
+    },
+    {
+      "PublicName": "ROTT Weapons",
+      "Name": "rage_rott_weapons",
+      "Plugin": "ff2_sarysapub1",
+      "Arguments": [
+        {
+          "Index": 0,
+          "Value": "0",
+          "Alias": "Ability Slot"
+        },
+        {
+          "Index": 1,
+          "Value": "7",
+          "Alias": "Number of Weapons & Powerups (Use ROTT Weapon Info)"
+        },
+        {
+          "Index": 2,
+          "Value": "1",
+          "Alias": "Weapon Visibility"
+        },
+        {
+          "Index": 3,
+          "Value": "0.1",
+          "Alias": "Homing Calculation Interval (Lower values, increases lag)"
+        },
+        {
+          "Index": 4,
+          "Value": "25;20;15;15;10;10;5",
+          "Alias": "Weapon Odds (Must add up to 100)"
+        },
+        {
+          "Index": 5,
+          "Value": "60.0",
+          "Alias": "Max Angle Deviation for Homing Lock-On"
+        },
+        {
+          "Index": 6,
+          "Value": "90.0",
+          "Alias": "Max Angle Deviation to Keep Homing"
+        },
+        {
+          "Index": 7,
+          "Value": "freak_fortress_2\\rott\\thi_god_mode_ambient1.mp3;freak_fortress_2\\rott\\thi_god_mode_ambient2.mp3",
+          "Alias": "Ambient Godmode Sounds (Up to 5, semicolon separated)"
+        },
+        {
+          "Index": 8,
+          "Value": "1.0",
+          "Alias": "Rocket Jumping Modifier"
+        },
+        {
+          "Index": 19,
+          "Value": "Don't crouch while trying to rocket jump! Simply jump, look down, and fire.",
+          "Alias": "Error Message for Crouch Rocket Jumping"
+        }
+      ]
+    },
+    {
+      "PublicName": "ROTT Weapon Info #1",
+      "Name": "rage_rott_weapon_info0",
+      "Plugin": "ff2_sarysapub1",
+      "Arguments": [
+        {
+          "Index": 1,
+          "Value": "1",
+          "Alias": "Item Type (See Thi Barrett)"
+        },
+        {
+          "Index": 2,
+          "Value": "10",
+          "Alias": "Weapon Clip Size"
+        },
+        {
+          "Index": 3,
+          "Value": "tf_weapon_rocketlauncher",
+          "Alias": "Weapon Classname"
+        },
+        {
+          "Index": 4,
+          "Value": "513",
+          "Alias": "Weapon Index"
+        },
+        {
+          "Index": 5,
+          "Value": "15 ; 0 ; 1 ; 0.4 ; 99 ; 1.3 ; 118 ; 1.0 ; 137 ; 7.0",
+          "Alias": "Weapon Attributes"
+        },
+        {
+          "Index": 6,
+          "Value": "0.0",
+          "Alias": "Powerup Duration"
+        },
+        {
+          "Index": 7,
+          "Value": "0",
+          "Alias": "Extra Projectiles per Shot"
+        },
+        {
+          "Index": 8,
+          "Value": "0.0",
+          "Alias": "Max Degrees for Homing Projectiles"
+        },
+        {
+          "Index": 9,
+          "Value": "0",
+          "Alias": "Don't Re-home When Lost Target"
+        },
+        {
+          "Index": 10,
+          "Value": "0",
+          "Alias": "Extra Explosions in each Direction"
+        },
+        {
+          "Index": 11,
+          "Value": "0.0",
+          "Alias": "Delay Between Explosions"
+        },
+        {
+          "Index": 12,
+          "Value": "0.0",
+          "Alias": "Degrees per sec of Random Deviation"
+        },
+        {
+          "Index": 13,
+          "Value": "",
+          "Alias": "Projectile Model Override"
+        },
+        {
+          "Index": 14,
+          "Value": "",
+          "Alias": "Projectile Particle Override"
+        },
+        {
+          "Index": 15,
+          "Value": "You bagged a bazooka!",
+          "Alias": "Acquisition Message"
+        },
+        {
+          "Index": 16,
+          "Value": "freak_fortress_2\\rott\\thi_rage_bazooka.mp3",
+          "Alias": "Local Rage Sound"
+        },
+        {
+          "Index": 17,
+          "Value": "0.0",
+          "Alias": "Override Typical Lock-on Angle"
+        },
+        {
+          "Index": 18,
+          "Value": "0.0",
+          "Alias": "Override Typical Stay-on Angle"
+        }
+      ]
+    },
+    {
+      "PublicName": "ROTT Props",
+      "Name": "rage_rott_props",
+      "Plugin": "ff2_sarysapub1",
+      "Arguments": [
+        {
+          "Index": 1,
+          "Value": "1",
+          "Alias": "Use Jump Pad"
+        },
+        {
+          "Index": 2,
+          "Value": "5.0",
+          "Alias": "Jump Pad Cost"
+        },
+        {
+          "Index": 3,
+          "Value": "1",
+          "Alias": "Use Angle Jump Pad"
+        },
+        {
+          "Index": 4,
+          "Value": "10.0",
+          "Alias": "Angle Jump Pad Cost"
+        },
+        {
+          "Index": 5,
+          "Value": "1",
+          "Alias": "Use Slicer"
+        },
+        {
+          "Index": 6,
+          "Value": "20.0",
+          "Alias": "Slicer Cost"
+        },
+        {
+          "Index": 7,
+          "Value": "1",
+          "Alias": "Use Platform"
+        },
+        {
+          "Index": 8,
+          "Value": "2.5",
+          "Alias": "Platform Cost"
+        },
+        {
+          "Index": 15,
+          "Value": "Not enough rage to spawn this prop!",
+          "Alias": "Cost Error"
+        },
+        {
+          "Index": 16,
+          "Value": "This must be placed on the ground!",
+          "Alias": "Slicer Error"
+        },
+        {
+          "Index": 17,
+          "Value": "Another player is blocking placement!",
+          "Alias": "Collision Error"
+        },
+        {
+          "Index": 18,
+          "Value": "1",
+          "Alias": "Prevent Player Falldamage"
+        },
+        {
+          "Index": 19,
+          "Value": "Press RELOAD (R) to switch between props. Press ALT-FIRE (MOUSE2) to place.\\nCurrently Selected: %s (%.1f RAGE)",
+          "Alias": "Boss HUD"
+        }
+      ]
+    },
+    {
+      "PublicName": "ROTT Jump Pad Info",
+      "Name": "rage_rott_jump_pad_info",
+      "Plugin": "ff2_sarysapub1",
+      "Arguments": [
+        {
+          "Index": 1,
+          "Value": "0.85",
+          "Alias": "Jump Pad Intensity"
+        },
+        {
+          "Index": 2,
+          "Value": "1000",
+          "Alias": "Jump Pad Health"
+        },
+        {
+          "Index": 3,
+          "Value": "models/freak_fortress_2/rott/jump_pad.mdl",
+          "Alias": "Jump Pad Model"
+        },
+        {
+          "Index": 4,
+          "Value": "-49.0,-49.0,-10.0 49.0,49.0,5.0",
+          "Alias": "Jump Pad Collision"
+        },
+        {
+          "Index": 5,
+          "Value": "Jump Pad",
+          "Alias": "Jump Pad Name"
+        },
+        {
+          "Index": 10,
+          "Value": "freak_fortress_2\\rott\\thi_jump_pad.mp3",
+          "Alias": "Bounce Sound"
+        },
+        {
+          "Index": 11,
+          "Value": "1.2",
+          "Alias": "Angle Jump Pad Intensity"
+        },
+        {
+          "Index": 12,
+          "Value": "1000",
+          "Alias": "Angle Jump Pad Health"
+        },
+        {
+          "Index": 13,
+          "Value": "models/freak_fortress_2/rott/jump_pad.mdl",
+          "Alias": "Angle Jump Pad Model"
+        },
+        {
+          "Index": 14,
+          "Value": "-42.6,-42.6,-13.6 42.6,42.6,13.6",
+          "Alias": "Angle Jump Pad Collision"
+        },
+        {
+          "Index": 15,
+          "Value": "Angle Jump Pad",
+          "Alias": "Angle Jump Pad Name"
+        },
+        {
+          "Index": 16,
+          "Value": "0.5",
+          "Alias": "Dapening of Velocity"
+        }
+      ]
+    },
+    {
+      "PublicName": "ROTT Slicer Platform Info",
+      "Name": "rage_rott_slicer_platform_info",
+      "Plugin": "ff2_sarysapub1",
+      "Arguments": [
+        {
+          "Index": 1,
+          "Value": "0.2",
+          "Alias": "Damage Interval"
+        },
+        {
+          "Index": 2,
+          "Value": "25.0",
+          "Alias": "Damage"
+        },
+        {
+          "Index": 3,
+          "Value": "1",
+          "Alias": "Disable Push Force"
+        },
+        {
+          "Index": 4,
+          "Value": "models/freak_fortress_2/rott/slicer.mdl",
+          "Alias": "Slicer Model"
+        },
+        {
+          "Index": 5,
+          "Value": "-65.0,-65.0,-1.0 65.0,65.0,51.0",
+          "Alias": "Slicer Collision"
+        },
+        {
+          "Index": 6,
+          "Value": "1.0",
+          "Alias": "Spawn Delay"
+        },
+        {
+          "Index": 7,
+          "Value": "Slicer",
+          "Alias": "Slicer Name"
+        },
+        {
+          "Index": 11,
+          "Value": "1000",
+          "Alias": "Platform Health"
+        },
+        {
+          "Index": 12,
+          "Value": "models/freak_fortress_2/rott/platform.mdl",
+          "Alias": "Platform Model"
+        },
+        {
+          "Index": 13,
+          "Value": "Platform",
+          "Alias": "Platform Name"
+        }
+      ]
+    },
+    {
+      "PublicName": "ROTT Infinity Pistol",
+      "Name": "rage_rott_infinity_pistol",
+      "Plugin": "ff2_sarysapub1",
+      "Arguments": [
+        {
+          "Index": 1,
+          "Value": "tf_weapon_pistol_scout",
+          "Alias": "Weapon Classname"
+        },
+        {
+          "Index": 2,
+          "Value": "209",
+          "Alias": "Weapon Index"
+        },
+        {
+          "Index": 3,
+          "Value": "15 ; 0 ; 1 ; 0.33 ; 4 ; 8.33",
+          "Alias": "Weapon Attributes"
+        },
+        {
+          "Index": 4,
+          "Value": "1",
+          "Alias": "Weapon Visibility"
+        },
+        {
+          "Index": 5,
+          "Value": "99",
+          "Alias": "Weapon Clip Size"
+        },
+        {
+          "Index": 6,
+          "Value": "0",
+          "Alias": "Is Primary Weapon"
+        }
+      ]
+    },
+    {
+      "PublicName": "ROTT Fixed Melee",
+      "Name": "rage_rott_fixed_melee",
+      "Plugin": "ff2_sarysapub1",
+      "Arguments": [
+        {
+          "Index": 1,
+          "Value": "tf_weapon_bat",
+          "Alias": "Weapon Classname"
+        },
+        {
+          "Index": 2,
+          "Value": "44",
+          "Alias": "Weapon Index"
+        },
+        {
+          "Index": 3,
+          "Value": "15 ; 0 ; 1 ; 0.76 ; 49 ; 1 ; 38 ; 0 ; 258 ; 1",
+          "Alias": "Weapon Attributes"
+        },
+        {
+          "Index": 4,
+          "Value": "1",
+          "Alias": "Weapon Visibility"
+        }
+      ]
+    },
+    {
+      "PublicName": "Parasite",
+      "Name": "rage_parasite",
+      "Plugin": "ff2_sarysapub2",
+      "Arguments": [
+        {
+          "Index": 0,
+          "Value": "0",
+          "Alias": "Ability Slot"
+        },
+        {
+          "Index": 1,
+          "Value": "",
+          "Alias": "Model Name"
+        },
+        {
+          "Index": 2,
+          "Value": "superrare_beams1",
+          "Alias": "Particle Effect"
+        },
+        {
+          "Index": 3,
+          "Value": "1",
+          "Alias": "Spawn Location (See parasite_hale.cfg)"
+        },
+        {
+          "Index": 4,
+          "Value": "foot_R",
+          "Alias": "Player Attachment Point"
+        },
+        {
+          "Index": 5,
+          "Value": "70.0",
+          "Alias": "Z Offset from Victim"
+        },
+        {
+          "Index": 6,
+          "Value": "-49.0,-49.0,-10.0 49.0,49.0,5.0",
+          "Alias": "Collision Rect"
+        },
+        {
+          "Index": 7,
+          "Value": "10.0",
+          "Alias": "Damage"
+        },
+        {
+          "Index": 8,
+          "Value": "0.5",
+          "Alias": "Damage Interval"
+        },
+        {
+          "Index": 9,
+          "Value": "10.0",
+          "Alias": "Duration to Stick to Victim"
+        },
+        {
+          "Index": 10,
+          "Value": "60.0",
+          "Alias": "Overall Duration"
+        },
+        {
+          "Index": 11,
+          "Value": "3.0",
+          "Alias": "Immunity Duration for Previous Victim"
+        },
+        {
+          "Index": 12,
+          "Value": "1.0",
+          "Alias": "Spawn Delay"
+        },
+        {
+          "Index": 13,
+          "Value": "500.0",
+          "Alias": "Toxicity Radius"
+        },
+        {
+          "Index": 19,
+          "Value": "0x06f7",
+          "Alias": "Flag Settings (See parasite_hale.cfg)"
+        }
+      ]
+    },
+    {
+      "PublicName": "Underwater Charge",
+      "Name": "ff2_underwater_charge",
+      "Plugin": "ff2_sarysapub2",
+      "Arguments": [
+        {
+          "Index": 1,
+          "Value": "1",
+          "Alias": "Allow Free Movement"
+        },
+        {
+          "Index": 2,
+          "Value": "0.2",
+          "Alias": "Velocity Dampening"
+        },
+        {
+          "Index": 3,
+          "Value": "2000.0",
+          "Alias": "Charge Velocity"
+        },
+        {
+          "Index": 4,
+          "Value": "0.05",
+          "Alias": "Charge Refresh Interval"
+        },
+        {
+          "Index": 5,
+          "Value": "1.25",
+          "Alias": "Charge Duration"
+        },
+        {
+          "Index": 6,
+          "Value": "12.0",
+          "Alias": "Ability Cooldown"
+        },
+        {
+          "Index": 7,
+          "Value": "misc\\doomsday_missile_explosion.wav",
+          "Alias": "Ability Sound"
+        },
+        {
+          "Index": 8,
+          "Value": "0.0",
+          "Alias": "Rage Cost"
+        },
+        {
+          "Index": 9,
+          "Value": "1",
+          "Alias": "ALT-Fire than Reload"
+        },
+        {
+          "Index": 16,
+          "Value": "Charge is on cooldown. %.1f seconds remaining.",
+          "Alias": "Cooldown Message"
+        },
+        {
+          "Index": 17,
+          "Value": "Charge ability ready. Press ALT-FIRE to charge!",
+          "Alias": "Ready Message"
+        },
+        {
+          "Index": 18,
+          "Value": "Not enough rage! Need %.1f rage total!",
+          "Alias": "Low Rage Message"
+        }
+      ]
+    },
+    {
+      "PublicName": "Water Arena",
+      "Name": "ff2_water_arena",
+      "Plugin": "ff2_sarysapub2",
+      "Arguments": [
+        {
+          "Index": 1,
+          "Value": "1.75",
+          "Alias": "Secondary Weapon Damage Bonus for Pyros"
+        },
+        {
+          "Index": 2,
+          "Value": "1.5",
+          "Alias": "Melee Weapon Damage Bonus for Pyros"
+        },
+        {
+          "Index": 3,
+          "Value": "0.5",
+          "Alias": "Interval for Fixing Overlay"
+        },
+        {
+          "Index": 4,
+          "Value": "freak_fortress_2\\underwater.mp3",
+          "Alias": "Waterwater Sound"
+        },
+        {
+          "Index": 5,
+          "Value": "4.75",
+          "Alias": "Sound Interval"
+        },
+        {
+          "Index": 6,
+          "Value": "200.0",
+          "Alias": "Fireball Spell Damage Replacement"
+        },
+        {
+          "Index": 7,
+          "Value": "1100.0",
+          "Alias": "Fireball Spell Speed Replacement"
+        },
+        {
+          "Index": 8,
+          "Value": "effects/water_warp",
+          "Alias": "Water Overlay"
+        },
+        {
+          "Index": 9,
+          "Value": "1",
+          "Alias": "Allow Sandman/Wrap Assassin Balls"
+        },
+        {
+          "Index": 10,
+          "Value": "50",
+          "Alias": "Dalokohs Health Boost"
+        },
+        {
+          "Index": 11,
+          "Value": "25",
+          "Alias": "Dalokohs Health Regen"
+        },
+        {
+          "Index": 12,
+          "Value": "75",
+          "Alias": "Sandvich Health Regen"
+        },
+        {
+          "Index": 13,
+          "Value": "",
+          "Alias": "Pyro Shotgun Attributes"
+        },
+        {
+          "Index": 14,
+          "Value": "",
+          "Alias": "Sniperrifle Attributes"
+        },
+        {
+          "Index": 15,
+          "Value": "1100,239,1084,43",
+          "Alias": "Heavy Health Degen Weapons"
+        },
+        {
+          "Index": 16,
+          "Value": "0",
+          "Alias": "Don't Display Nooverlay Instructions"
+        },
+        {
+          "Index": 17,
+          "Value": "0",
+          "Alias": "Don't Switch to Good Water after all Engi deaths"
+        },
+        {
+          "Index": 18,
+          "Value": "",
+          "Alias": "Rocket Launchers to not gain mini-crit airshots"
+        }
+      ]
+    },
+    {
+      "PublicName": "Underwater Speed",
+      "Name": "ff2_underwater_speed",
+      "Plugin": "ff2_sarysapub2",
+      "Arguments": [
+        {
+          "Index": 1,
+          "Value": "340.0",
+          "Alias": "Starting Speed (80% of Value)"
+        },
+        {
+          "Index": 2,
+          "Value": "418.0",
+          "Alias": "Ending Speed (80% of Value)"
+        }
+      ]
+    },
+    {
+      "PublicName": "Zatoichi Workaround",
+      "Name": "ff2_zatoichi_workaround",
+      "Plugin": "ff2_sarysapub2",
+      "Arguments": [
+        {
+          "Index": 1,
+          "Value": "65.0",
+          "Alias": "Expected (Non-Boosted) Base Damage"
+        }
+      ]
+    },
+    {
+      "PublicName": "Ability Management System",
+      "Name": "ability_management_system",
+      "Plugin": "ff2_sarysapub3",
+      "Arguments": [
+        {
+          "Index": 1,
+          "Value": "0",
+          "Alias": "Activation Key (See epicscout.cfg)"
+        },
+        {
+          "Index": 2,
+          "Value": "1",
+          "Alias": "Selection Key"
+        },
+        {
+          "Index": 3,
+          "Value": "3",
+          "Alias": "Reverse Selection Key"
+        },
+        {
+          "Index": 4,
+          "Value": "0xc00000",
+          "Alias": "Unavailable HUD Color"
+        },
+        {
+          "Index": 5,
+          "Value": "%s (%.0f rage) [RELOAD (R) to change]\\n%s\\nAbility is currently unavailable.",
+          "Alias": "Unavailable HUD Text"
+        },
+        {
+          "Index": 6,
+          "Value": "0xffffff",
+          "Alias": "Available HUD Color"
+        },
+        {
+          "Index": 7,
+          "Value": "%s (%.0f rage) [RELOAD (R) to change]\\n%s\\nAbility is available. (press E)",
+          "Alias": "Available HUD Text"
+        },
+        {
+          "Index": 8,
+          "Value": "0.68",
+          "Alias": "HUD Y"
+        },
+        {
+          "Index": 9,
+          "Value": "Rage: %.0f%%\\nHealth: %d / %d",
+          "Alias": "Replacement HUD Text"
+        },
+        {
+          "Index": 10,
+          "Value": "0.8",
+          "Alias": "Replacement HUD Y"
+        },
+        {
+          "Index": 11,
+          "Value": "",
+          "Alias": "Casting Particle"
+        },
+        {
+          "Index": 12,
+          "Value": "",
+          "Alias": "Casting Particle Attachment Point"
+        }
+      ]
+    },
+    {
+      "PublicName": "Random Weapon",
+      "Name": "rage_random_weapon",
+      "Plugin": "ff2_sarysapub3a",
+      "Arguments": [
+        {
+          "Index": 0,
+          "Value": "0",
+          "Alias": "Ability Slot"
+        },
+        {
+          "Index": 1,
+          "Value": "1",
+          "Alias": "Triggered by AMS"
+        },
+        {
+          "Index": 2,
+          "Value": "3",
+          "Alias": "Number of Weapons (Up to 10)"
+        },
+        {
+          "Index": 3,
+          "Value": "vo/scout_meleedare02.mp3",
+          "Alias": "Global Rage Sound"
+        },
+        {
+          "Index": 11,
+          "Value": "tf_weapon_revolver",
+          "Alias": "Weapon Classname"
+        },
+        {
+          "Index": 12,
+          "Value": "61",
+          "Alias": "Weapon Index"
+        },
+        {
+          "Index": 13,
+          "Value": "15 ; 0 ; 1 ; 0.5 ; 51 ; 1 ; 390 ; 2.0",
+          "Alias": "Weapon Attributes"
+        },
+        {
+          "Index": 14,
+          "Value": "1",
+          "Alias": "Weapon Visibility"
+        },
+        {
+          "Index": 15,
+          "Value": "64",
+          "Alias": "Weapon Alpha"
+        },
+        {
+          "Index": 16,
+          "Value": "0",
+          "Alias": "Weapon Slot"
+        },
+        {
+          "Index": 17,
+          "Value": "",
+          "Alias": "Bodygroup Swap"
+        },
+        {
+          "Index": 18,
+          "Value": "4",
+          "Alias": "Weapon Clip"
+        },
+        {
+          "Index": 19,
+          "Value": "0",
+          "Alias": "Weapon Ammo"
+        },
+        {
+          "Index": 1001,
+          "Value": "0.0",
+          "Alias": "Initial Delay"
+        },
+        {
+          "Index": 1002,
+          "Value": "0.0",
+          "Alias": "Cooldown"
+        },
+        {
+          "Index": 1003,
+          "Value": "Random Weapon",
+          "Alias": "Name"
+        },
+        {
+          "Index": 1004,
+          "Value": "Load a random weapon from Epic Scout's supply.",
+          "Alias": "Description"
+        },
+        {
+          "Index": 1005,
+          "Value": "100.0",
+          "Alias": "Rage Cost"
+        },
+        {
+          "Index": 1006,
+          "Value": "0",
+          "Alias": "AMS Index"
+        }
+      ]
+    },
+    {
+      "PublicName": "Steal Next Weapon",
+      "Name": "rage_steal_next_weapon",
+      "Plugin": "ff2_sarysapub3a",
+      "Arguments": [
+        {
+          "Index": 0,
+          "Value": "0",
+          "Alias": "Ability Slot"
+        },
+        {
+          "Index": 1,
+          "Value": "1",
+          "Alias": "Triggered by AMS"
+        },
+        {
+          "Index": 2,
+          "Value": "10.0",
+          "Alias": "Duration"
+        },
+        {
+          "Index": 3,
+          "Value": "15.0",
+          "Alias": "Weapon Duration"
+        },
+        {
+          "Index": 4,
+          "Value": "vo/scout_laughevil02.mp3",
+          "Alias": "Global Rage Sound"
+        },
+        {
+          "Index": 5,
+          "Value": "15.0",
+          "Alias": "Victim Slot Suppression"
+        },
+        {
+          "Index": 11,
+          "Value": "tf_weapon_pistol_scout",
+          "Alias": "Scout Weapon Classname"
+        },
+        {
+          "Index": 12,
+          "Value": "209",
+          "Alias": "Scout Weapon Index"
+        },
+        {
+          "Index": 13,
+          "Value": "15 ; 0 ; 2 ; 1.25",
+          "Alias": "Scout Weapon Attributes"
+        },
+        {
+          "Index": 14,
+          "Value": "1",
+          "Alias": "Scout Weapon Visibility"
+        },
+        {
+          "Index": 15,
+          "Value": "255",
+          "Alias": "Scout Weapon Alpha"
+        },
+        {
+          "Index": 16,
+          "Value": "1",
+          "Alias": "Scout Weapon Slot"
+        },
+        {
+          "Index": 17,
+          "Value": "12",
+          "Alias": "Scout Weapon Clip"
+        },
+        {
+          "Index": 18,
+          "Value": "12",
+          "Alias": "Scout Weapon Ammo"
+        },
+        {
+          "Index": 19,
+          "Value": "vo/scout_jeers10.mp3",
+          "Alias": "Scout Sound"
+        },
+        {
+          "Index": 21,
+          "Value": "tf_weapon_compound_bow",
+          "Alias": "Sniper Weapon Classname"
+        },
+        {
+          "Index": 22,
+          "Value": "56",
+          "Alias": "Sniper Weapon Index"
+        },
+        {
+          "Index": 23,
+          "Value": "15 ; 0 ; 97 ; 0.2 ; 1 ; 0.13",
+          "Alias": "Sniper Weapon Attributes"
+        },
+        {
+          "Index": 24,
+          "Value": "1",
+          "Alias": "Sniper Weapon Visibility"
+        },
+        {
+          "Index": 25,
+          "Value": "255",
+          "Alias": "Sniper Weapon Alpha"
+        },
+        {
+          "Index": 26,
+          "Value": "0",
+          "Alias": "Sniper Weapon Slot"
+        },
+        {
+          "Index": 27,
+          "Value": "0",
+          "Alias": "Sniper Weapon Clip"
+        },
+        {
+          "Index": 28,
+          "Value": "5",
+          "Alias": "Sniper Weapon Ammo"
+        },
+        {
+          "Index": 29,
+          "Value": "vo/sniper_autodejectedtie02.mp3",
+          "Alias": "Sniper Sound"
+        },
+        {
+          "Index": 31,
+          "Value": "tf_weapon_rocketlauncher",
+          "Alias": "Soldier Weapon Classname"
+        },
+        {
+          "Index": 32,
+          "Value": "205",
+          "Alias": "Soldier Weapon Index"
+        },
+        {
+          "Index": 33,
+          "Value": "15 ; 0 ; 1 ; 0.75",
+          "Alias": "Soldier Weapon Attributes"
+        },
+        {
+          "Index": 34,
+          "Value": "1",
+          "Alias": "Soldier Weapon Visibility"
+        },
+        {
+          "Index": 35,
+          "Value": "255",
+          "Alias": "Soldier Weapon Alpha"
+        },
+        {
+          "Index": 36,
+          "Value": "0",
+          "Alias": "Soldier Weapon Slot"
+        },
+        {
+          "Index": 37,
+          "Value": "4",
+          "Alias": "Soldier Weapon Clip"
+        },
+        {
+          "Index": 38,
+          "Value": "0",
+          "Alias": "Soldier Weapon Ammo"
+        },
+        {
+          "Index": 39,
+          "Value": "vo/soldier_negativevocalization04.mp3",
+          "Alias": "Soldier Sound"
+        },
+        {
+          "Index": 41,
+          "Value": "tf_weapon_grenadelauncher",
+          "Alias": "Demoman Weapon Classname"
+        },
+        {
+          "Index": 42,
+          "Value": "308",
+          "Alias": "Demoman Weapon Index"
+        },
+        {
+          "Index": 43,
+          "Value": "15 ; 0 ; 1 ; 0.75 ; 127 ; 2.0",
+          "Alias": "Demoman Weapon Attributes"
+        },
+        {
+          "Index": 44,
+          "Value": "1",
+          "Alias": "Demoman Weapon Visibility"
+        },
+        {
+          "Index": 45,
+          "Value": "92",
+          "Alias": "Demoman Weapon Alpha"
+        },
+        {
+          "Index": 46,
+          "Value": "0",
+          "Alias": "Demoman Weapon Slot"
+        },
+        {
+          "Index": 47,
+          "Value": "4",
+          "Alias": "Demoman Weapon Clip"
+        },
+        {
+          "Index": 48,
+          "Value": "0",
+          "Alias": "Demoman Weapon Ammo"
+        },
+        {
+          "Index": 49,
+          "Value": "vo/demoman_autodejectedtie02.mp3",
+          "Alias": "Demoman Sound"
+        },
+        {
+          "Index": 51,
+          "Value": "tf_weapon_syringegun_medic",
+          "Alias": "Medic Weapon Classname"
+        },
+        {
+          "Index": 52,
+          "Value": "204",
+          "Alias": "Medic Weapon Index"
+        },
+        {
+          "Index": 53,
+          "Value": "15 ; 0 ; 2 ; 1.5",
+          "Alias": "Medic Weapon Attributes"
+        },
+        {
+          "Index": 54,
+          "Value": "1",
+          "Alias": "Medic Weapon Visibility"
+        },
+        {
+          "Index": 55,
+          "Value": "128",
+          "Alias": "Medic Weapon Alpha"
+        },
+        {
+          "Index": 56,
+          "Value": "0",
+          "Alias": "Medic Weapon Slot"
+        },
+        {
+          "Index": 57,
+          "Value": "40",
+          "Alias": "Medic Weapon Clip"
+        },
+        {
+          "Index": 58,
+          "Value": "0",
+          "Alias": "Medic Weapon Ammo"
+        },
+        {
+          "Index": 59,
+          "Value": "vo/medic_autodejectedtie07.mp3",
+          "Alias": "Medic Sound"
+        },
+        {
+          "Index": 61,
+          "Value": "tf_weapon_minigun",
+          "Alias": "Heavy Weapon Name"
+        },
+        {
+          "Index": 62,
+          "Value": "202",
+          "Alias": "Heavy Weapon Index"
+        },
+        {
+          "Index": 63,
+          "Value": "15 ; 0 ; 1 ; 0.9",
+          "Alias": "Heavy Weapon Attributes"
+        },
+        {
+          "Index": 64,
+          "Value": "1",
+          "Alias": "Heavy Weapon Visibility"
+        },
+        {
+          "Index": 65,
+          "Value": "128",
+          "Alias": "Heavy Weapon Alpha"
+        },
+        {
+          "Index": 66,
+          "Value": "0",
+          "Alias": "Heavy Weapon Slot"
+        },
+        {
+          "Index": 67,
+          "Value": "0",
+          "Alias": "Heavy Weapon Clip"
+        },
+        {
+          "Index": 68,
+          "Value": "50",
+          "Alias": "Heavy Weapon Ammo"
+        },
+        {
+          "Index": 69,
+          "Value": "vo/heavy_negativevocalization05.mp3",
+          "Alias": "Heavy Sound"
+        },
+        {
+          "Index": 71,
+          "Value": "tf_weapon_flamethrower",
+          "Alias": "Pyro Weapon Classname"
+        },
+        {
+          "Index": 72,
+          "Value": "40",
+          "Alias": "Pyro Weapon Index"
+        },
+        {
+          "Index": 73,
+          "Value": "15 ; 0 ; 1 ; 0.5 ; 24 ; 1 ; 72 ; 0.333 ; 74 ; 0.70\"",
+          "Alias": "Pyro Weapon Attributes"
+        },
+        {
+          "Index": 74,
+          "Value": "1",
+          "Alias": "Pyro Weapon Visibility"
+        },
+        {
+          "Index": 75,
+          "Value": "128",
+          "Alias": "Pyro Weapon Alpha"
+        },
+        {
+          "Index": 76,
+          "Value": "0",
+          "Alias": "Pyro Weapon Slot"
+        },
+        {
+          "Index": 77,
+          "Value": "0",
+          "Alias": "Pyro Weapon Clip"
+        },
+        {
+          "Index": 78,
+          "Value": "80",
+          "Alias": "Pyro Weapon Ammo"
+        },
+        {
+          "Index": 79,
+          "Value": "vo/pyro_jeers02.mp3",
+          "Alias": "Pyro Sound"
+        },
+        {
+          "Index": 81,
+          "Value": "tf_weapon_revolver",
+          "Alias": "Spy Weapon Classname"
+        },
+        {
+          "Index": 82,
+          "Value": "224",
+          "Alias": "Spy Weapon Index"
+        },
+        {
+          "Index": 83,
+          "Value": "15 ; 0 ; 2 ; 1.05",
+          "Alias": "Spy Weapon Attributes"
+        },
+        {
+          "Index": 84,
+          "Value": "1",
+          "Alias": "Spy Weapon Visibility"
+        },
+        {
+          "Index": 85,
+          "Value": "255",
+          "Alias": "Spy Weapon Alpha"
+        },
+        {
+          "Index": 86,
+          "Value": "0",
+          "Alias": "Spy Weapon Slot"
+        },
+        {
+          "Index": 87,
+          "Value": "6",
+          "Alias": "Spy Weapon Clip"
+        },
+        {
+          "Index": 88,
+          "Value": "3",
+          "Alias": "Spy Weapon Ammo"
+        },
+        {
+          "Index": 89,
+          "Value": "vo/taunts/spy/spy_taunt_killme_01.mp3",
+          "Alias": "Spy Sound"
+        },
+        {
+          "Index": 91,
+          "Value": "tf_weapon_shotgun_building_rescue",
+          "Alias": "Engineer Weapon Classname"
+        },
+        {
+          "Index": 92,
+          "Value": "997",
+          "Alias": "Engineer Weapon Index"
+        },
+        {
+          "Index": 93,
+          "Value": "15 ; 0 ; 2 ; 1.1 ; 280 ; 18.0 ; 469 ; 130.0 ; 474 ; 75.0 ; 3 ; 0.66 ; 77 ; 0.5 ; 472 ; 1.0",
+          "Alias": "Engineer Weapon Attributes"
+        },
+        {
+          "Index": 94,
+          "Value": "1",
+          "Alias": "Engineer Weapon Visibility"
+        },
+        {
+          "Index": 95,
+          "Value": "255",
+          "Alias": "Engineer Weapon Alpha"
+        },
+        {
+          "Index": 96,
+          "Value": "0",
+          "Alias": "Engineer Weapon Slot"
+        },
+        {
+          "Index": 97,
+          "Value": "4",
+          "Alias": "Engineer Weapon Clip"
+        },
+        {
+          "Index": 98,
+          "Value": "8",
+          "Alias": "Engineer Weapon Ammo"
+        },
+        {
+          "Index": 99,
+          "Value": "vo/engineer_autodejectedtie01.mp3",
+          "Alias": "Engineer Sound"
+        },
+        {
+          "Index": 1001,
+          "Value": "0.0",
+          "Alias": "Initial Delay"
+        },
+        {
+          "Index": 1002,
+          "Value": "0.0",
+          "Alias": "Cooldown"
+        },
+        {
+          "Index": 1003,
+          "Value": "Steal Next Weapon",
+          "Alias": "Name"
+        },
+        {
+          "Index": 1004,
+          "Value": "Steal weapon from next person you melee. Limited time to do it.",
+          "Alias": "Description"
+        },
+        {
+          "Index": 1005,
+          "Value": "75.0",
+          "Alias": "Rage Cost"
+        },
+        {
+          "Index": 1006,
+          "Value": "1",
+          "Alias": "AMS Index"
+        }
+      ]
+    },
+    {
+      "PublicName": "Front Protection",
+      "Name": "rage_front_protection",
+      "Plugin": "ff2_sarysapub3a",
+      "Arguments": [
+        {
+          "Index": 0,
+          "Value": "0",
+          "Alias": "Ability Slot"
+        },
+        {
+          "Index": 1,
+          "Value": "1",
+          "Alias": "Triggered by AMS"
+        },
+        {
+          "Index": 2,
+          "Value": "10.0",
+          "Alias": "Duration"
+        },
+        {
+          "Index": 3,
+          "Value": "1500.0",
+          "Alias": "Maximum Shield Health"
+        },
+        {
+          "Index": 4,
+          "Value": "weapons/fx/rics/arrow_impact_wood4.wav",
+          "Alias": "Absorb Sound"
+        },
+        {
+          "Index": 5,
+          "Value": "-60.0",
+          "Alias": "Min Yaw Offset"
+        },
+        {
+          "Index": 6,
+          "Value": "90.0",
+          "Alias": "Max Yaw Offset"
+        },
+        {
+          "Index": 7,
+          "Value": "player/spy_shield_break.wav",
+          "Alias": "Shield Break Sound"
+        },
+        {
+          "Index": 8,
+          "Value": "vo/scout_moveup01.mp3",
+          "Alias": "Global Rage Sound"
+        },
+        {
+          "Index": 9,
+          "Value": "0",
+          "Alias": "Bodygroup Swap"
+        },
+        {
+          "Index": 10,
+          "Value": "models/epicscout/epic_scout_protected.mdl",
+          "Alias": "Model Swap"
+        },
+        {
+          "Index": 1001,
+          "Value": "10.0",
+          "Alias": "Initial Delay"
+        },
+        {
+          "Index": 1002,
+          "Value": "40.0",
+          "Alias": "Cooldown"
+        },
+        {
+          "Index": 1003,
+          "Value": "Razorback Shield",
+          "Alias": "Name"
+        },
+        {
+          "Index": 1004,
+          "Value": "Protection and knockback immune from most of front.",
+          "Alias": "Description"
+        },
+        {
+          "Index": 1005,
+          "Value": "15.0",
+          "Alias": "Rage Cost"
+        },
+        {
+          "Index": 1006,
+          "Value": "2",
+          "Alias": "AMS Index"
+        }
+      ]
+    },
+    {
+      "PublicName": "Fake Dead Ringer",
+      "Name": "rage_fake_dead_ringer",
+      "Plugin": "ff2_sarysapub3a",
+      "Arguments": [
+        {
+          "Index": 0,
+          "Value": "0",
+          "Alias": "Ability Slot"
+        },
+        {
+          "Index": 1,
+          "Value": "1",
+          "Alias": "Triggered by AMS"
+        },
+        {
+          "Index": 2,
+          "Value": "5.0",
+          "Alias": "Duration"
+        },
+        {
+          "Index": 3,
+          "Value": "1.5",
+          "Alias": "Unlock Attack Delay"
+        },
+        {
+          "Index": 1001,
+          "Value": "0.0",
+          "Alias": "Initial Delay"
+        },
+        {
+          "Index": 1002,
+          "Value": "35.0",
+          "Alias": "Cooldown"
+        },
+        {
+          "Index": 1003,
+          "Value": "Dead Ringer",
+          "Alias": "Name"
+        },
+        {
+          "Index": 1004,
+          "Value": "Puts up a dead ringer.",
+          "Alias": "Description"
+        },
+        {
+          "Index": 1005,
+          "Value": "0.0",
+          "Alias": "Rage Cost"
+        },
+        {
+          "Index": 1006,
+          "Value": "3",
+          "Alias": "AMS Index"
+        },
+        {
+          "Index": 1007,
+          "Value": "1",
+          "Alias": "Can Be Ended Early"
+        }
+      ]
+    },
+    {
+      "PublicName": "Dodge Specific Damage",
+      "Name": "rage_dodge_specific_damage",
+      "Plugin": "ff2_sarysapub3a",
+      "Arguments": [
+        {
+          "Index": 0,
+          "Value": "0",
+          "Alias": "Ability Slot"
+        },
+        {
+          "Index": 1,
+          "Value": "1",
+          "Alias": "Triggered by AMS"
+        },
+        {
+          "Index": 2,
+          "Value": "7.5",
+          "Alias": "Duration"
+        },
+        {
+          "Index": 3,
+          "Value": "520.0",
+          "Alias": "Speed Override"
+        },
+        {
+          "Index": 4,
+          "Value": "0.5",
+          "Alias": "Timescale"
+        },
+        {
+          "Index": 5,
+          "Value": "1",
+          "Alias": "Dodge Bullets"
+        },
+        {
+          "Index": 6,
+          "Value": "0",
+          "Alias": "Dodge Blasts"
+        },
+        {
+          "Index": 7,
+          "Value": "0",
+          "Alias": "Dodge Fire"
+        },
+        {
+          "Index": 8,
+          "Value": "1",
+          "Alias": "Dodge Melee"
+        },
+        {
+          "Index": 9,
+          "Value": "vo/taunts/scout/scout_taunt_nun_81.mp3",
+          "Alias": "Global Rage Sound"
+        },
+        {
+          "Index": 1001,
+          "Value": "25.0",
+          "Alias": "Initial Delay"
+        },
+        {
+          "Index": 1002,
+          "Value": "45.0",
+          "Alias": "Cooldown"
+        },
+        {
+          "Index": 1003,
+          "Value": "Dodge Bullets",
+          "Alias": "Name"
+        },
+        {
+          "Index": 1004,
+          "Value": "Slow down time, dodge bullets and melee.",
+          "Alias": "Description"
+        },
+        {
+          "Index": 1005,
+          "Value": "25.0",
+          "Alias": "Rage Cost"
+        },
+        {
+          "Index": 1006,
+          "Value": "4",
+          "Alias": "AMS Index"
+        }
+      ]
+    },
+    {
+      "PublicName": "AMS Dynamic Teleport",
+      "Name": "rage_ams_dynamic_teleport",
+      "Plugin": "ff2_sarysapub3a",
+      "Arguments": [
+        {
+          "Index": 0,
+          "Value": "0",
+          "Alias": "Ability Slot"
+        },
+        {
+          "Index": 1,
+          "Value": "1",
+          "Alias": "Triggered by AMS"
+        },
+        {
+          "Index": 2,
+          "Value": "1",
+          "Alias": "Teleport on Top"
+        },
+        {
+          "Index": 3,
+          "Value": "0",
+          "Alias": "Teleport to Side"
+        },
+        {
+          "Index": 4,
+          "Value": "0.5",
+          "Alias": "Stun Duration"
+        },
+        {
+          "Index": 5,
+          "Value": "vo/scout_sf13_spell_teleport_self01.mp3",
+          "Alias": "Global Rage Sound"
+        },
+        {
+          "Index": 6,
+          "Value": "5",
+          "Alias": "Required Amount of Alive Players"
+        },
+        {
+          "Index": 1001,
+          "Value": "60.0",
+          "Alias": "Initial Delay"
+        },
+        {
+          "Index": 1002,
+          "Value": "90.0",
+          "Alias": "Cooldown"
+        },
+        {
+          "Index": 1003,
+          "Value": "Teleport",
+          "Alias": "Name"
+        },
+        {
+          "Index": 1004,
+          "Value": "Teleport to an enemy. If parkour won't get you there...",
+          "Alias": "Description"
+        },
+        {
+          "Index": 1005,
+          "Value": "0.0",
+          "Alias": "Rage Cost"
+        },
+        {
+          "Index": 1006,
+          "Value": "5",
+          "Alias": "AMS Index"
+        }
+      ]
+    }
+  ]
+}
