@@ -16,6 +16,16 @@ namespace FF2BossEditor.Core
             bool IsClassEqual(IClassFunctions Obj); //I'm using this to avoid replacing the == operator
         }
 
+        public class ObservableClass : INotifyPropertyChanged
+        {
+            public event PropertyChangedEventHandler PropertyChanged;
+
+            protected virtual void OnPropertyChanged(string name)
+            {
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+            }
+        }
+
         #region App
         public class AbilityTemplate : Ability
         {
@@ -60,7 +70,7 @@ namespace FF2BossEditor.Core
             }
         }
 
-        public class ObservableString : INotifyPropertyChanged
+        public class ObservableString : ObservableClass
         {
             private string _Value = "";
             public string Value
@@ -72,18 +82,12 @@ namespace FF2BossEditor.Core
                     OnPropertyChanged("Value");
                 }
             }
-
-            protected void OnPropertyChanged(string name)
-            {
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-            }
-
-            public event PropertyChangedEventHandler PropertyChanged;
         }
 
-        public class Plugin : INotifyPropertyChanged, IClassFunctions
+        public class Plugin : ObservableClass, IClassFunctions
         {
             private string _PluginName = "";
+            private string _PluginAuthor = "";
             private string _PluginPath = "";
             private ObservableCollection<AbilityTemplate> _AbilityTemplates = new ObservableCollection<AbilityTemplate>();
 
@@ -94,6 +98,15 @@ namespace FF2BossEditor.Core
                 {
                     _PluginName = value;
                     OnPropertyChanged("PluginName");
+                }
+            }
+            public string PluginAuthor
+            {
+                get => _PluginAuthor;
+                set
+                {
+                    _PluginAuthor = value;
+                    OnPropertyChanged("PluginAuthor");
                 }
             }
             [Newtonsoft.Json.JsonIgnore]
@@ -153,20 +166,13 @@ namespace FF2BossEditor.Core
                 }
                 return false;
             }
-
-            public event PropertyChangedEventHandler PropertyChanged;
-
-            protected void OnPropertyChanged(string name)
-            {
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-            }
         }
         #endregion
 
         #region Boss
-        public class Ability : INotifyPropertyChanged, IClassFunctions
+        public class Ability : ObservableClass, IClassFunctions
         {
-            public class Argument : INotifyPropertyChanged, IClassFunctions
+            public class Argument : ObservableClass, IClassFunctions
             {
                 private int _Index = 1;
                 private string _Value = "";
@@ -200,13 +206,6 @@ namespace FF2BossEditor.Core
                     }
                 }
                 
-                public event PropertyChangedEventHandler PropertyChanged;
-
-                protected void OnPropertyChanged(string name)
-                {
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-                }
-
                 public Argument Clone()
                 {
                     Argument clone = new Argument()
@@ -266,14 +265,7 @@ namespace FF2BossEditor.Core
                     OnPropertyChanged("Arguments");
                 }
             }
-
-            public event PropertyChangedEventHandler PropertyChanged;
-
-            protected void OnPropertyChanged(string name)
-            {
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-            }
-
+            
             public Ability Clone()
             {
                 Ability clone = new Ability()
@@ -311,7 +303,7 @@ namespace FF2BossEditor.Core
             }
         }
 
-        public class Boss : INotifyPropertyChanged, IClassFunctions
+        public class Boss : ObservableClass, IClassFunctions
         {
             private const string DEFAULTRAGEDAMAGE = "1900";
             private const string DEFAULTHEALTH = "(((760+n)*n)^1.04)";
@@ -458,13 +450,6 @@ namespace FF2BossEditor.Core
                 }
             }
 
-            public event PropertyChangedEventHandler PropertyChanged;
-
-            protected void OnPropertyChanged(string name)
-            {
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-            }
-
             public Boss Clone()
             {
                 Boss clone = new Boss()
@@ -561,7 +546,7 @@ namespace FF2BossEditor.Core
             }
         }
 
-        public class Description : INotifyPropertyChanged, IClassFunctions
+        public class Description : ObservableClass, IClassFunctions
         {
             private string _Lang = "";
             private string _Text = "";
@@ -584,14 +569,7 @@ namespace FF2BossEditor.Core
                     OnPropertyChanged("Text");
                 }
             }
-
-            public event PropertyChangedEventHandler PropertyChanged;
-
-            protected void OnPropertyChanged(string name)
-            {
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-            }
-
+            
             public Description Clone()
             {
                 Description clone = new Description()
@@ -617,9 +595,9 @@ namespace FF2BossEditor.Core
             }
         }
 
-        public class SoundPkg : INotifyPropertyChanged, IClassFunctions
+        public class SoundPkg : ObservableClass, IClassFunctions
         {
-            public class Sound : INotifyPropertyChanged, IClassFunctions
+            public class Sound : ObservableClass, IClassFunctions
             {
                 private string _Path = "";
 
@@ -631,13 +609,6 @@ namespace FF2BossEditor.Core
                         _Path = value;
                         OnPropertyChanged("Path");
                     }
-                }
-
-                public event PropertyChangedEventHandler PropertyChanged;
-
-                protected void OnPropertyChanged(string name)
-                {
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
                 }
 
                 public Sound Clone()
@@ -831,14 +802,7 @@ namespace FF2BossEditor.Core
                     OnPropertyChanged("Backstab");
                 }
             }
-
-            public event PropertyChangedEventHandler PropertyChanged;
-
-            protected void OnPropertyChanged(string name)
-            {
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-            }
-
+            
             public SoundPkg Clone()
             {
                 SoundPkg clone = new SoundPkg();
@@ -951,9 +915,9 @@ namespace FF2BossEditor.Core
             }
         }
 
-        public class Weapon : INotifyPropertyChanged, IClassFunctions
+        public class Weapon : ObservableClass, IClassFunctions
         {
-            public class Attribute : INotifyPropertyChanged, IClassFunctions
+            public class Attribute : ObservableClass, IClassFunctions
             {
                 public Attribute(Weapon parent)
                 {
@@ -993,13 +957,6 @@ namespace FF2BossEditor.Core
                 }
                 [Newtonsoft.Json.JsonIgnore]
                 public Weapon Parent { get; } = null;
-
-                public event PropertyChangedEventHandler PropertyChanged;
-
-                protected void OnPropertyChanged(string name)
-                {
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-                }
 
                 public Attribute Clone(Weapon _Parent)
                 {
@@ -1067,13 +1024,6 @@ namespace FF2BossEditor.Core
                     _Attributes = value;
                     OnPropertyChanged("Attributes");
                 }
-            }
-
-            public event PropertyChangedEventHandler PropertyChanged;
-
-            protected void OnPropertyChanged(string name)
-            {
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
             }
 
             public Weapon Clone()
