@@ -91,6 +91,7 @@ namespace FF2BossEditor.Core.UserControls
 
             //Misc
             ActualPlugin.PluginName = NeoPlugin.PluginName;
+            ActualPlugin.PluginAuthor = NeoPlugin.PluginAuthor;
             ActualPlugin.PluginPath = NeoPlugin.PluginPath;
 
             //Abilities
