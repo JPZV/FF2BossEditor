@@ -232,6 +232,8 @@
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="File's path"  Binding="{Binding Path=Path}" IsReadOnly="True"/>
                                 <DataGridTextColumn Header="Length (Seconds)"  Binding="{Binding Path=Length}"/>
+                                <DataGridTextColumn Header="Music's name"  Binding="{Binding Path=Name}"/>
+                                <DataGridTextColumn Header="Music's artist"  Binding="{Binding Path=Artist}"/>
                                 <DataGridTemplateColumn Header="Action">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>

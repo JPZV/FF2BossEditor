@@ -670,6 +670,8 @@ namespace FF2BossEditor.Core
             public class MusicSound : Sound
             {
                 private int _Length = 0;
+                private string _Name = "";
+                private string _Artist = "";
 
                 public int Length
                 {
@@ -678,6 +680,24 @@ namespace FF2BossEditor.Core
                     {
                         _Length = value;
                         OnPropertyChanged("Length");
+                    }
+                }
+                public string Name
+                {
+                    get => _Name;
+                    set
+                    {
+                        _Name = value;
+                        OnPropertyChanged("Name");
+                    }
+                }
+                public string Artist
+                {
+                    get => _Artist;
+                    set
+                    {
+                        _Artist = value;
+                        OnPropertyChanged("Artist");
                     }
                 }
 
