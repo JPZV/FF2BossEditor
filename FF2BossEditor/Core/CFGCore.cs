@@ -197,6 +197,24 @@ namespace FF2BossEditor.Core
                                                     neoMusicList.Add(new Classes.SoundPkg.MusicSound());
                                                 neoMusicList[musicIndex - 1].Length = JTokenToInt(music[musicToken]);
                                             }
+                                        } else if (musicToken.StartsWith("name"))
+                                        {
+                                            Match indexMatch = Regex.Match(musicToken, "name([0-9]+)");
+                                            if (indexMatch.Success && indexMatch.Groups[1] != null && int.TryParse(indexMatch.Groups[1].Value, out int musicIndex))
+                                            {
+                                                for (int i = 0; neoMusicList.Count < musicIndex; i++)
+                                                    neoMusicList.Add(new Classes.SoundPkg.MusicSound());
+                                                neoMusicList[musicIndex - 1].Name = JTokenToString(music[musicToken]);
+                                            }
+                                        } else if (musicToken.StartsWith("artist"))
+                                        {
+                                            Match indexMatch = Regex.Match(musicToken, "artist([0-9]+)");
+                                            if (indexMatch.Success && indexMatch.Groups[1] != null && int.TryParse(indexMatch.Groups[1].Value, out int musicIndex))
+                                            {
+                                                for (int i = 0; neoMusicList.Count < musicIndex; i++)
+                                                    neoMusicList.Add(new Classes.SoundPkg.MusicSound());
+                                                neoMusicList[musicIndex - 1].Artist = JTokenToString(music[musicToken]);
+                                            }
                                         }
                                     }
                                     openedBoss.Sounds.Music = new System.Collections.ObjectModel.ObservableCollection<Classes.SoundPkg.MusicSound>(neoMusicList);
@@ -397,11 +415,13 @@ namespace FF2BossEditor.Core
                         List<string> allSoundsPath = new List<string>();
                         cfg += "\t\"sound_bgm\"" + NEWLINE;
                         cfg += "\t{" + NEWLINE;
-                        int maxMusicIndex = Boss.Sounds.Music.Count.ToString().Length + 4;
+                        int maxMusicIndex = Boss.Sounds.Music.Count.ToString().Length + 6;
                         for(i = 0; i < Boss.Sounds.Music.Count; i++)
                         {
                             cfg += NodeCreator("path" + (i + 1).ToString(), RemoveSoundFromPath(Boss.Sounds.Music[i].Path), 2, maxMusicIndex, "Path relative to 'sound' folder.");
-                            cfg += NodeCreator("time" + (i + 1).ToString(), Boss.Sounds.Music[i].Length.ToString(), 2, maxMusicIndex, "Music length in seconds.");
+                            cfg += NodeCreator("time" + (i + 1).ToString(), Boss.Sounds.Music[i].Length.ToString(), 2, maxMusicIndex, "Music's length in seconds.");
+                            cfg += NodeCreator("name" + (i + 1).ToString(), Boss.Sounds.Music[i].Name.ToString(), 2, maxMusicIndex, "Music's name.");
+                            cfg += NodeCreator("artist" + (i + 1).ToString(), Boss.Sounds.Music[i].Artist.ToString(), 2, maxMusicIndex, "Music's artist.");
                             allSoundsPath.Add(Boss.Sounds.Music[i].Path);
                         }
                         cfg += "\t}" + NEWLINE;

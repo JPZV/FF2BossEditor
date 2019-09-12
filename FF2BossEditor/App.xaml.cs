@@ -89,9 +89,11 @@ namespace FF2BossEditor
                                 continue;
                             }
                             string plugName = jObj["PluginName"].ToString();
+                            string plugAuthor = jObj["PluginAuthor"] != null ? jObj["PluginAuthor"].ToString() : "Unknown";
                             Core.Classes.Plugin neoPlugin = new Core.Classes.Plugin()
                             {
                                 PluginName = plugName,
+                                PluginAuthor = plugAuthor,
                                 PluginPath = pluginsFiles[file]
                             };
                             if (jObj["AbilityTemplates"] != null && jObj["AbilityTemplates"] is JArray abilities)

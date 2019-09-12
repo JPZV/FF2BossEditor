@@ -25,9 +25,19 @@ namespace FF2BossEditor.Windows
             DataContext = ActualPlugin;
         }
 
-        private Core.Classes.Plugin ActualPlugin = new Core.Classes.Plugin();
+        private Core.Classes.Plugin _ActualPlugin = new Core.Classes.Plugin();
         private Core.Classes.Plugin PrevPlugin = null;
         private string ActualPluginPath = "";
+
+        private Core.Classes.Plugin ActualPlugin
+        {
+            get => _ActualPlugin;
+            set
+            {
+                _ActualPlugin = value;
+                DataContext = ActualPlugin;
+            }
+        }
 
         private Core.Classes.Plugin MergePluginFromViews()
         {
@@ -35,6 +45,7 @@ namespace FF2BossEditor.Windows
             if(ActualPlugin != null)
             {
                 neoPlugin.PluginName = ActualPlugin.PluginName;
+                neoPlugin.PluginAuthor = ActualPlugin.PluginAuthor;
             }
 
             if (Abilities.ActualPlugin != null)

@@ -1,5 +1,6 @@
 {
   "PluginName": "Sarysapub",
+  "PluginAuthor": "Batfoxkid",
   "AbilityTemplates": [
     {
       "PublicName": "ROTT Static Weapons",

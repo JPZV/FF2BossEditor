@@ -53,19 +53,27 @@ namespace FF2BossEditor.Core.UserControls
             ActualBoss.BlockVoice = NeoBoss.BlockVoice;
 
             //Descriptions
-            ActualBoss.Descriptions = NeoBoss.Descriptions;
+            ActualBoss.Descriptions.Clear();
+            foreach (Classes.Description desc in NeoBoss.Descriptions)
+                ActualBoss.Descriptions.Add(desc);
 
             //Weapons
-            ActualBoss.Weapons = NeoBoss.Weapons;
+            ActualBoss.Weapons.Clear();
+            foreach (Classes.Weapon wep in NeoBoss.Weapons)
+                ActualBoss.Weapons.Add(wep);
 
             //Abilities
-            ActualBoss.Abilities = NeoBoss.Abilities;
+            ActualBoss.Abilities.Clear();
+            foreach (Classes.Ability abi in NeoBoss.Abilities)
+                ActualBoss.Abilities.Add(abi);
 
             //Sounds
             ActualBoss.Sounds = NeoBoss.Sounds;
 
             //Custom files
-            ActualBoss.CustomFiles = NeoBoss.CustomFiles;
+            ActualBoss.CustomFiles.Clear();
+            foreach (string file in NeoBoss.CustomFiles)
+                ActualBoss.CustomFiles.Add(file);
         }
     }
 
@@ -91,6 +99,7 @@ namespace FF2BossEditor.Core.UserControls
 
             //Misc
             ActualPlugin.PluginName = NeoPlugin.PluginName;
+            ActualPlugin.PluginAuthor = NeoPlugin.PluginAuthor;
             ActualPlugin.PluginPath = NeoPlugin.PluginPath;
 
             //Abilities
